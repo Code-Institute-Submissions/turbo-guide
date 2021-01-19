@@ -1,14 +1,78 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Lower Silesia Turbo Guide
 
-Welcome USER_NAME,
+[View webpage in Github Pages]
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+# Introduction
 
-## Gitpod Reminders
+# User Experience
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
+## First time users looking 
+
+`
+## Returning users often want
+
+# Designe
+
+## Wireframes
+
+Are available here [wireframes]
+
+## Features
+
+### Global
+
+### Local
+
+# Technologies Used
+
+## Languages Used
+
+* HTML
+* CSS
+* JS 
+
+## Frameworks, Libraries & Programs Used
+
+[Balsamic] was used to create wireframes for each site on this project.
+
+[Github] was used to store the project.
+
+[Gitpod] is an Integrated Development Enviroment (IDE) which was used to create project. 
+
+[Git] will be used to version control.
+
+[Github Pages] will be used to present created page.
+
+[Bootstrap] will be used for styling webpage.
+
+[Fontawesome] will be used to increse user experience by adding, expected by users, icons.
+
+[Paint] will be used to resize images.
+
+[Procreate] will be used to create logo.
+
+# Testing
+
+# Deployment
+
+# Credits
+
+## Code
+
+
+## Content
+
+
+## Media
+
+# Acknowledgements
+
+
+
+
+
 
 A blue button should appear to click: *Make Public*,
 
