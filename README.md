@@ -1,6 +1,6 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-# TEST
+
 
 # Turbo Guide
 
@@ -108,4 +108,7 @@ Are available here [wireframes]
 
 # Acknowledgements
 
-Like always I want to thank you **Brian Macharia** (my Mentor) and **Jim Lynx** (my friend from course). 
+I want to thank you: 
+**Brian Macharia** (my Mentor) 
+**Jim Lynx** (my friend from course) 
+**Scot** from Tutors Support 
