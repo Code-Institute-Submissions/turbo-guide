@@ -3,6 +3,7 @@
 
 
 # Turbo Guide
+## my favourite Galway, Achill Island and Sligo 
 
 [View webpage in Github Pages]
 
@@ -47,12 +48,12 @@ Before I started creating this project, I thought about the aims and goals I wan
 
 1.	Up to date information about travel.
 2.	New articles on the website.
-3.	Answers to their own questions, which can be available in FAQ. 
-4.	Contact with me.
+3.	Answers to their own questions, which can be available in FAQ (in future).
 5.	Collaborating with me.
 6.	Planning their own trips with me (available in the future).
 
 # Designe
+
 
 ## Wireframes
 
@@ -61,6 +62,21 @@ Are available here [wireframes]
 ## Features
 
 ### Global
+
+This website will be very simple and intuitive, to give my audience a great user experience. 
+
+That can be achieved by:
+* Home button (logo placed on the top left corner).
+* Responsive menu on the left side below logo,
+* On the top right side, will insert the social icons to follow us on the 
+  Instagram, Facebook and You Toube . Those links will be open in separate pages. 
+* And footer stuck at the bottom of each page with copyright information. 
+
+
+Because currently most people are watch the websites on smartphones, then this websate is create with the mobile first design.
+
+Those features will be the same for all of my pages in website. 
+
 
 ### Local
 
@@ -109,6 +125,6 @@ Are available here [wireframes]
 # Acknowledgements
 
 I want to thank you: 
-**Brian Macharia** (my Mentor) 
-**Jim Lynx** (my friend from course) 
-**Scot** from Tutors Support 
+**Brian Macharia** (my Mentor, which provide me by this project) 
+**Jim Lynx** (my friend from course, which is the first instance after Slack Community;) 
+**Scot** from Tutors Support for his help with my terminal:)
