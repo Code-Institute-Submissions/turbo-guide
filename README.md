@@ -137,7 +137,7 @@ I would also like to create a carousel gallery with those places. Upon clicking 
 
 **Paint** will be used to resize images.
 
-**Procreate** will be used to create logo.
+[FreeLogoDesign](https://www.freelogodesign.org) was used to create logo
 
 # Testing
 

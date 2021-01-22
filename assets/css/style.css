@@ -1,11 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap|Open+Sans:wght@300');
 
+
 *{
-    margin: 0;
-    padding:0;
     border:0;
+    box-sizing: border-box;
+    margin: 0;
+    outline:none;
+    padding:0;
 }
 
 body{
-   font-family: "Open Sans", sans-serif; 
+   background-color: #f5f3f5; 
+   font-family: "Open Sans", sans-serif;
+   
+}
+
+.turbo-guide-logo{
+    float: left;
+}
+/* -------------------navigation bar with logo image---*/
+header{
+    background-color: #588068;
+    color: #e580a4;
+    display: inline-block;
+    font-size: large;
+    padding: 20px 20px;
+    position: fixed;  
+    width:100%;
+}
+
+.turbo-guide-logo{
+    float: left;
+}
+.toggle-btn{
+    display:none;
+    position: fixed;
+    right: 50px;
+    top: 10px;
+    width: 25px;
+}
+
+.toggle-btn span{
+    background-color:#e580a4;
+    display:inline-block;
+    height: 2px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+ a{
+    text-decoration: underline;
+
+}
+
+a:hover {
+    color: #1f3b2c;
+    font-weight: 600;
+}
+
+nav{
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    display: inline-block;
+    color:  #e580a4;
+    font-weight: 400;
+}  
+
+@media (max-width: 991px){
+    .toggle-btn {
+        display: block;
+    }
+
+    nav{
+        border-top: 1px solid #e580a4;
+        display: none;
+        padding-top: 20px;
+        margin-top: 30px;
+
+    }
+}
+
+/*--------------------footer------------*/
+footer{
+    background-color: #588068;
+    color: #e580a4;
+    display: inline-block;
+    font-size: large;
+    padding: 20px 20px;
+    position:absolute;  
+    width:100%;
 }
