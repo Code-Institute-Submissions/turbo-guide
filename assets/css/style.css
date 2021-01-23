@@ -25,7 +25,7 @@ header{
     display: inline-block;
     font-size: large;
     padding: 20px 20px;
-    position: fixed;  
+    position: relative;  
     width:100%;
 }
 
@@ -35,9 +35,10 @@ header{
 .toggle-btn{
     display:none;
     position: fixed;
+    height: 80px;
     right: 50px;
-    top: 10px;
-    width: 25px;
+    top: 18px;
+    width: 60px;
 }
 
 .toggle-btn span{
@@ -47,9 +48,11 @@ header{
     margin-bottom: 5px;
     width: 100%;
 }
- a{
-    text-decoration: underline;
 
+
+ a{
+    margin-left:15px;
+    text-decoration: underline;
 }
 
 a:hover {
@@ -73,6 +76,10 @@ nav ul li a{
     font-weight: 400;
 }  
 
+/*img {
+    vertical-align: bottom;
+    border-style: none;
+}*/
 @media (max-width: 991px){
     .toggle-btn {
         display: block;
@@ -87,7 +94,7 @@ nav ul li a{
     }
 }
 
-/*--------------------footer------------*/
+/*--------------------footer------------
 footer{
     background-color: #588068;
     color: #e580a4;
@@ -96,4 +103,4 @@ footer{
     padding: 20px 20px;
     position:absolute;  
     width:100%;
-}
+}---*/
