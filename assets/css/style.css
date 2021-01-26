@@ -32,10 +32,16 @@ header{
     padding: 20px 20px;
     position: relative;  
     width:100%;
+    
 }
 
 p{
     color: #1f3b2c;
+}
+
+i{
+    padding-right: 30px;
+    margin-bottom: 30px;
 }
 
 .turbo-guide-logo{
@@ -103,6 +109,20 @@ nav ul li a{
 
     }
 }
+/*-----------------carousel with 5 photos-----*/
+
+.carusel-container{
+    margin-left: 2vh;
+    margin-right: 2vh;
+    text-align: center;
+    background-color: #e580a4;
+    height: 500px;
+    width: 100%;
+}
+
+
+
+
 
 /*--------------------footer-------
 

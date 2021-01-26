@@ -73,7 +73,7 @@ Website's first time visitors could want:
 Are available here:
 [Home](..assets/wireframes/home.bmpr)
 [Trips](..assets/wireframes/Trips.bmpr)
-[Contact] (..assets/wireframes/contact.bmpr)
+[Contact](..assets/wireframes/contact.bmpr)
 
 ## Features
 
