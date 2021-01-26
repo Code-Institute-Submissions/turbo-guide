@@ -3,11 +3,14 @@
 
 *{
     border:0;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     margin: 0;
-    outline:none;
+    /*outline:none;*/
     padding:0;
 }
+
+
+/* -------- apply to whole web*/
 
 body{
    background-color: #f5f3f5; 
@@ -18,7 +21,9 @@ body{
 .turbo-guide-logo{
     float: left;
 }
-/* -------------------navigation bar with logo image---*/
+/* -------------------navigation bar with logo image
+the orginal code is taken from : https://www.youtube.com/watch?v=bIlqqzI4ByE&t=281s ---*/
+
 header{
     background-color: #588068;
     color: #e580a4;
@@ -27,6 +32,10 @@ header{
     padding: 20px 20px;
     position: relative;  
     width:100%;
+}
+
+p{
+    color: #1f3b2c;
 }
 
 .turbo-guide-logo{
@@ -53,10 +62,11 @@ header{
  a{
     margin-left:15px;
     text-decoration: underline;
+    color:#e580a4;
 }
 
 a:hover {
-    color: #1f3b2c;
+    color: #f5f3f5;
     font-weight: 600;
 }
 
@@ -94,13 +104,26 @@ nav ul li a{
     }
 }
 
-/*--------------------footer------------
+/*--------------------footer-------
+
 footer{
     background-color: #588068;
     color: #e580a4;
-    display: inline-block;
-    font-size: large;
+    display:block;
+    font-size:1rem;
+    font-weight: 400;
+    min-height: 100%;
+    margin-bottom: 120px;
     padding: 20px 20px;
-    position:absolute;  
+    position: absolute;  
     width:100%;
-}---*/
+}----*/
+
+
+
+.social-links{
+    color:#e580a4;
+}
+
+
+
