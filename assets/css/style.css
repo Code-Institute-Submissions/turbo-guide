@@ -12,26 +12,22 @@ html{
     min-height: 100%;
 }
 
-/* -------- apply to whole web*/
-
 body{
    background-color: #f5f3f5; 
    font-family: "Open Sans", sans-serif;
    
 }
 
-.turbo-guide-logo{
-    float: left;
-}
 /* -------------------navigation bar with logo image
 the orginal code is taken from : https://www.youtube.com/watch?v=bIlqqzI4ByE&t=281s ---*/
 
 header{
-    background-color: #588068;
+    background-color: #578368;
     color: #e580a4;
     display: inline-block;
-    font-size: large;
-    padding: 20px 20px;
+    height: 100px;
+    /*font-size: large;
+    /*padding: 20px 20px;*/
     position: relative;  
     width:100%;
     
@@ -41,14 +37,22 @@ p{
     color: #1f3b2c;
 }
 
-i{
-    padding-right: 30px;
-    margin-bottom: 30px;
-}
 
 .turbo-guide-logo{
     float: left;
 }
+
+.hero-image{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    position: relative;
+    width: 100%;
+}
+
+
+
 .toggle-btn{
     display:none;
     position: fixed;
@@ -67,7 +71,7 @@ i{
 }
 
 
- a{
+a{
     margin-left:15px;
     text-decoration: underline;
     color:#e580a4;
@@ -122,6 +126,20 @@ nav ul li a{
     width: 100%;
 }----*/
 
+/*---------------map-----------*/
+
+/*Set the size of the div element that contains the map */
+
+div#map{
+    min-height: 360px;
+} 
+
+#map {
+    height: 400px;
+    width: 100%;
+
+}
+
 
 
 
@@ -133,34 +151,16 @@ footer{
     bottom:0;
     color: #e580a4;
     display:inline-flex;
-    font-size:1rem;
     font-weight: 400;
     height: 100px;
-    margin-bottom: 120px;
     left:0;
-    padding: 20px 20px;
     position: absolute;  
     width:100%;
 }
-
-
-
 .social-links{
+    
+    
     color:#e580a4;
-}
-/*---------------map-----------*/
-
-.bg-color-map{
-    color:#1f3b2c;
-}
-
-/* Set the size of the div element that contains the map */
-#map {
-  height: 500px;
-  /* The height is 400 pixels */
-  width: 100%;
-  /* The width is the width of the web page */
-
 }
 
 
