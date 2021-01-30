@@ -14,7 +14,8 @@
     <!---from https://www.bootstrapcdn.com/--->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
+       
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -25,7 +26,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="container">
               
         <div class="logo turbo-guide-logo toggle-btn">
             <a class="navbar"><img src="assets/img/logo_60x60.png"   height="60" title="turbo guide logo" alt="turbo guide logo"></a>
@@ -46,10 +47,24 @@
     </header>
 
     <div class=" jumbotrone hero-image">
-        <img src="assets/img/ben-bulben.jpg" alt="sligo ben-bulben">
-
+        <img src="assets/img/sligo_bridge.jpg" alt="Sligo bridge">
 
     </div>
+
+    <div class="container">
+        <div class="row">
+            <div sm-4 md-6 >
+                <h1>Beaches</h1>
+                <div>
+                    <img src="#" alt="">
+                    <h3>Rosses Point</h3>
+                    <p>lorem ipsum</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!--<section>
         
         orginal code becomes from https://getbootstrap.com/docs/4.4/components/carousel/--
@@ -113,7 +128,7 @@
     <section id="place-on-map">
         <div class="places">
             <h1>Sligo</h1>
-            <div class="place-text-description"></div>
+            <div class="place-text"></div>
                 I like this place. 
         </div>
          
@@ -151,7 +166,9 @@
                
     </footer>
     
-      
+    <!--this link is required for zoom effect-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+     
     <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbPbb9bzbVrjy5Wk0vbUBHsTjX52Jxr6g&callback=initMap"></script>
     <script src="/assets/js/maps.js"></script>

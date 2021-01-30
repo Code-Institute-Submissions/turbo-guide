@@ -112,7 +112,6 @@ nav ul li a{
         display: none;
         padding-top: 20px;
         margin-top: 30px;
-
     }
 }
 /*-----------------carousel with 5 photos
@@ -158,8 +157,7 @@ footer{
     width:100%;
 }
 .social-links{
-    
-    
+        
     color:#e580a4;
 }
 
