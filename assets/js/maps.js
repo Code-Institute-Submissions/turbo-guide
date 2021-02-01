@@ -12,8 +12,7 @@ function initMap() {
     addMarker(town, map);
 
 
-    // This event listener calls addMarker() when the map is clicked.
-// I am not sure in this case event means Map ( just like in line 6 ?)
+// This event listener calls addMarker() when the map is clicked.
 
   google.maps.event.addListener(map, "click", (event) => {
     addMarker(event.town, map);
@@ -29,12 +28,12 @@ const marker = new google.maps.Marker({
     position: town,
     map,
     title: "Click to zoom",
-} 
+});
 
 
 // Create an array of alphabetical characters used to label the markers (markers appear when the user clicks on the map)
 
-// why here I have mistake this line is the same as here: https://developers.google.com/maps/documentation/javascript/examples/marker-labels
+//https://developers.google.com/maps/documentation/javascript/examples/marker-labels
 
 const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let labelIndex = 0;
@@ -42,7 +41,6 @@ let labelIndex = 0;
 
 // create an array with places in and nearby Sligo
 
-// Follow by your instuctions I should fill here all details with info about places  or insted in index.html ?  I assumed, I should do this here, but afrer I found this:
 // https://developers.google.com/maps/documentation/javascript/examples/infowindow-simple#maps_infowindow_simple-javascript
 
 const locations = [
@@ -107,8 +105,8 @@ const markers = locations.map((location, i) => {
     });
   });
   
-  // Add a marker clusterer to manage the markers.
-  //https://developers.google.com/maps/documentation/javascript/marker-clustering
+// Add a marker clusterer to manage the markers.
+//https://developers.google.com/maps/documentation/javascript/marker-clustering
   
   new MarkerClusterer(map, markers, {
     imagePath:

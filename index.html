@@ -8,50 +8,51 @@
     <!--favicons-->
     <link rel="apple-touch-icon" sizes="160x160" href="/logo_160x160.pgn">
     <link rel="icon" type="image/pgn" href="/logo_16x16.pgn">
-    <link rel="icon" type="image/pgn" href="/logo_32x32.pgn">   
-    <!--<link rel="manifest" href="/site.webmanifest">-->
-      
-    <!---from https://www.bootstrapcdn.com/--->
-
+    <link rel="icon" type="image/pgn" href="/logo_32x32.pgn">
+    
+    <!--link from https://code.jquery.com/-->  
+    <script 
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous">
+    </script>
+    
+    <!-- lines below are copied from Bootstrap CDN -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-       
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    
     <link rel="stylesheet" href="assets/css/style.css">   
              
     <title>Turbo Guide Sligo| Home</title>
 </head>
 
 <body>
-<!--toggle-btn"-->
+
     <header class="page-header"> 
         <div class="header" role="banner">          
-            <a class=""><img src="assets/img/logo_60x60.png"   height="60" title="turbo guide logo" alt="turbo guide logo"></a>
+            <a class=""><img src="assets/img/logo_60x60.png" height="60" title="turbo guide logo" alt="turbo guide logo"></a>
                 <nav>           
                     <ul>
-                        <li>
-                            <a href="./index.html"><i class="fas fa-home"></i>Home</a>
+                        <li class="item">
+                            <a class="nav-link" ref="index.html"><i class="fas fa-home"></i><span>Home</span></a>
                         </li>
-                        <li>
-                            <a href="./places.html"><i class="far fa-compass"></i>Places</a>
+                        <li class="item">
+                            <a class="nav-link" href="places.html"><i class="far fa-compass"></i><span>Places</span></a>
                         </li>
-                        <li>
-                            <a href="./contact.html"><i class="far fa-envelope"></i>Contact</a>
+                        <li class="item">
+                            <a class="nav-link" href="contact.html"><i class="far fa-envelope"></i><span>Contact</span></a>
                         </li>
                     </ul>
                 </nav>
         </div>
        
     
-    </header>
-    
+    </header> 
+    <section class="last-section"></section>
     <section>
-        <div class=" jumbotrone">
+        <div class=" jumbotron">
             <div class="container hero-image">
-                <img src="assets/img/sligo_bridge.jpg" alt="Sligo bridge">
+                <!--<img src="assets/img/sligo_bridge_op.jpg" alt="Sligo bridge">-->
             </div>
         </div>
     </section>
@@ -63,13 +64,13 @@
     <footer class="bottom-container justify-content-center">
         <div>
             <div class="social-links">
-                <a class="icon" href= "https://facebook.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-facebook"></i>
+                <a class="icon social-links" href= "https://facebook.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-facebook"></i>
                 </a>
-                <a class="icon" href= "https://instagram.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-instagram"></i>
+                <a class="icon social-links" href= "https://instagram.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-instagram"></i>
                 </a>
-                <a class="icon" href= "https://youtube.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-youtube"></i>
+                <a class="icon social-links" href= "https://youtube.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-youtube"></i>
                 </a>
-                <a class="icon" href= "https://pinterest.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-pinterest"></i>
+                <a class="icon social-links" href= "https://pinterest.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-pinterest"></i>
                 </a>
             </div>
             <div>

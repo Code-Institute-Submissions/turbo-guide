@@ -7,32 +7,55 @@
     padding:0;
 }
 
-/*html{
-    position:relative;
+html {   
+    box-sizing: border-box;
     min-height: 100%;
-}*/
-
-html {
-
+    position:relative;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box;
 }
 
 *, *:before, *:after {
+    box-sizing: inherit;
     -webkit-box-sizing: inherit;
     -moz-box-sizing: inherit;
-    box-sizing: inherit;
-} */
+    
+} 
 
 body{
    background-color: #f5f3f5; 
    font-family: "Open Sans", sans-serif;
    
 }
-header,footer{
+header,
+footer{
+    background-color: #578368;
+    color: #e580a4;
     display: inline-flex;
+    height: 100px;
+    width:100%; 
+    
 }
+
+header{
+    position: relative;      
+}
+
+footer{
+    bottom:0;
+    /*display:inline-flex;*/
+    font-weight: 400;
+    left:0;
+    position: absolute;  
+}
+
+img {
+    border-radius: 5rem;
+    border-style: none;
+    margin:20px 5px;
+    vertical-align:center;  
+}
+
 h1,
 h3,
 p{
@@ -54,22 +77,12 @@ h3{
     font-size: 24px;  
 }
 
-
-header{
-    background-color: #578368;
-    color: #e580a4;
-    /*display:block;*/
-    height: 100px;
-    position: relative;  
-    width:100%; 
-}
-
 /* -------------------navigation bar with logo image
 the orginal code is taken from : https://www.youtube.com/watch?v=bIlqqzI4ByE&t=281s ---*/
 
 
 nav{
-    box-sizing: border-box;
+    box-sizing: content-box;
     float: right;
 }
 
@@ -80,7 +93,7 @@ nav ul{
 
 nav ul li {
     display: inline-block;
-    padding: 10px 15px;
+    padding: 20px 15px;
 }
 
 nav ul li a{
@@ -91,33 +104,32 @@ nav ul li a{
 }  
 
 
-/*a{
-    margin-left:15px;
-    text-decoration: underline;
+a{
+    /*margin-left:15px;
+    text-decoration: underline;*/
     color:#e580a4;
-
-a:hover {
-    color: #f5f3f5;
-    font-weight: 600;
-}*/
-
-footer{
-    background-color: #588068;
-    bottom:0;
-    color: #e580a4;
-    /*display:inline-flex;*/
-    font-weight: 400;
-    height: 100px;
-    left:0;
-    position: absolute;  
-    width:100%;
 }
 
+a:hover{
+    color: #f5f3f5;  
+}
+
+i fas.fa-home::before,
+i far.fa-home::before,
+i far.fa-home::before{
+    margin-bottom: 20px;
+}
+
+
+
 .hero-image{
+    background-image: url("../img/sligo_bridge_op.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    box-sizing: content-box;
     height: 300px;
+    margin-bottom:0;
     position: relative;
     width: 100%;
 }
@@ -133,6 +145,10 @@ div#map{
     width: 100%;
 }
 
+#f-design{
+    text-align: center;
+    
+}
 
 /*.toggle-btn{
     display:none;
@@ -150,13 +166,6 @@ div#map{
     margin-bottom: 5px;
     width: 100%;
 }*/
-
-
-/*img {
-    vertical-align: bottom;
-    border-style: none;
-}*/
-
 
 /*@media (max-width: 991px){
     .toggle-btn {
@@ -187,6 +196,8 @@ div#map{
 .social-links{
            
     color:#e580a4;
+    padding: 20px;
+    
     
 }
 
