@@ -1,24 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<!--<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0
     shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatibile" content="IE=edge,chrome=1"/>
     
-    <!--favicons-->
+    <!--favicons--
     <link rel="apple-touch-icon" sizes="160x160" href="/logo_160x160.pgn">
     <link rel="icon" type="image/pgn" href="/logo_16x16.pgn">
     <link rel="icon" type="image/pgn" href="/logo_32x32.pgn">   
-    <!--<link rel="manifest" href="/site.webmanifest">-->
-      
-    <script 
-    src="https://code.jquery.com/jquery-3.5.1.js"
-    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-    crossorigin="anonymous">
-    </script>
-    
-    <!-- lines below are copied from Bootstrap CDN -->
+    <!--<link rel="manifest" href="/site.webmanifest">--
+         
+    <!-- lines below are copied from Bootstrap CDN --
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -26,7 +20,27 @@
     
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Turbo Guide Sligo|Contact</title>
+</head>-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatibile" content="IE=edge,chrome=1"/>
+    
+    <!--favicons-->
+    <link rel="apple-touch-icon" sizes="160x160" href="/logo_160x160.pgn">
+    <link rel="icon" type="image/pgn" href="/logo_16x16.pgn">
+    <link rel="icon" type="image/pgn" href="/logo_32x32.pgn">
+       
+    <!-- lines below are copied from Bootstrap CDN -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">   
+             
+    <title>Turbo Guide Sligo| Home</title>
 </head>
+
 <body>
     <header></header>
 
@@ -76,6 +90,94 @@
         </div>
     </section>
 
-    <footer></footer>
+    <!-- orginal code is in "Rosie Odenkrik exercise - tutor materials" -->
+    <footer class="bottom-container justify-content-center">
+        <div>
+            <div class="social-links">
+                <a class="icon social-links" href= "https://facebook.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-facebook"></i>
+                </a>
+                <a class="icon social-links" href= "https://instagram.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-instagram"></i>
+                </a>
+                <a class="icon social-links" href= "https://youtube.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-youtube"></i>
+                </a>
+                <a class="icon social-links" href= "https://pinterest.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-pinterest"></i>
+                </a>
+            </div>
+            <div>
+                <p id="f-design">@ MRS 2021 all rights reserved</p>
+            </div>
+
+        </div>
+        <!--<div class="col-sm-4">
+            <p class=" inline-block">
+                Download tips for trips.
+                <a href="assets/bonus/trip-tips.pdf" target="_blank" class="trip-tips">
+                    <i class="fa fa-download" aria-hidden="true">
+                        <span class="sr-only"> Download file.</span>
+                    </i>
+                </a>
+            </p>
+        </div>-->
+               
+    </footer>
+    
+    
+    <!--link from https://code.jquery.com/-->  
+    <script 
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous">
+    </script>
+    
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    
+    <!--this link is required for zoom effect-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+     
+    <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbPbb9bzbVrjy5Wk0vbUBHsTjX52Jxr6g&callback=initMap"></script>
+    
+    <script src="/assets/js/maps.js"></script>
+    
+ 
 </body>
+
+   <!--<!-- orginal code is in "Rosie Odenkrik exercise - tutor materials" --
+    <footer class="bottom-container justify-content-center">
+        <div>
+            <div class="social-links">
+                <a class="icon social-links" href= "https://facebook.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-facebook"></i>
+                </a>
+                <a class="icon social-links" href= "https://instagram.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-instagram"></i>
+                </a>
+                <a class="icon social-links" href= "https://youtube.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-youtube"></i>
+                </a>
+                <a class="icon social-links" href= "https://pinterest.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-pinterest"></i>
+                </a>
+            </div>
+            <div>
+                <p id="f-design">@ MRS 2021 all rights reserved</p>
+            </div>
+
+        </div>
+        <!--<div class="col-sm-4">
+            <p class=" inline-block">
+                Download tips for trips.
+                <a href="assets/bonus/trip-tips.pdf" target="_blank" class="trip-tips">
+                    <i class="fa fa-download" aria-hidden="true">
+                        <span class="sr-only"> Download file.</span>
+                    </i>
+                </a>
+            </p>
+        </div>--
+               
+    </footer>--
+    <script 
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous">
+    </script>
+    <script src="/assets/js/maps.js"></script>
+</body>-->
 </html>

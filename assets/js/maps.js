@@ -1,3 +1,5 @@
+let map;
+
 //initialize my map (Sligo)
 
 const town = { lat:54.2697 , lng:-8.4694 }
@@ -7,37 +9,6 @@ function initMap() {
         center: town,
         zoom: 8,
     });
-
-// Add a marker at the center of the map.
-    addMarker(town, map);
-
-
-// This event listener calls addMarker() when the map is clicked.
-
-  google.maps.event.addListener(map, "click", (event) => {
-    addMarker(event.town, map);
-  });
- 
-}   
-
-// zoom the map  
-
-//https://developers.google.com/maps/documentation/javascript/examples/event-simple#maps_event_simple-javascript
-
-const marker = new google.maps.Marker({
-    position: town,
-    map,
-    title: "Click to zoom",
-});
-
-
-// Create an array of alphabetical characters used to label the markers (markers appear when the user clicks on the map)
-
-//https://developers.google.com/maps/documentation/javascript/examples/marker-labels
-
-const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-let labelIndex = 0;
-
 
 // create an array with places in and nearby Sligo
 
@@ -95,6 +66,31 @@ const locations = [
     },
 ];
 
+// This event listener calls addMarker() when the map is clicked.
+
+  google.maps.event.addListener(map, "click", (event) => {
+    addMarker(event.town, map);
+  });
+ 
+}   
+
+// zoom the map  
+
+//https://developers.google.com/maps/documentation/javascript/examples/event-simple#maps_event_simple-javascript
+
+const marker = new google.maps.Marker({
+    position: town,
+    map,
+    title: "Click to zoom",
+});
+
+
+// Create an array of alphabetical characters used to label the markers (markers appear when the user clicks on the map)
+
+//https://developers.google.com/maps/documentation/javascript/examples/marker-labels
+
+const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let labelIndex = 0;
 
 // Add markers to the map.
 
