@@ -6,6 +6,7 @@
     border:0;
     margin: 0;
     padding:0;
+ 
 }
 
 html {   
@@ -23,7 +24,7 @@ html {
 } 
 
 body{
-   background-color: #f5f3f5; 
+   background-color: #f5f3f5;
    font-family: "Open Sans", sans-serif; 
     
 }
@@ -99,7 +100,7 @@ nav ul li {
     padding: 20px 15px;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     display: inline-block;
     color:  #e580a4;
@@ -107,12 +108,12 @@ nav ul li a{
     /*margin-left:15px;*/ 
 }  
 
-a{
+a {
     /*margin-left:15px;*/
     color:#e580a4;
 }
 
-a:hover{
+a:hover {
     color: #f5f3f5;
       
 }
@@ -162,20 +163,19 @@ i far.fa-envelope::before{
 
 }
 /* source: https://www.w3schools.com/howto/howto_css_hero_image.asp*/
-.hero-text{
+
+.hero-text {
     color: #f5f3f5;
     text-align: center;
     position: absolute;
     top: 77%;
-    left: 38%;  
-   
+    left: 38%;    
 }
 
-
-.component {
-  /* designed to work in default box-sizing */
+/* designed to work in default box-sizing */
   /*-----https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ -----*/
-  
+
+  .component { 
   box-sizing: content-box;
 }
 
@@ -206,7 +206,22 @@ i far.fa-envelope::before{
 #f-design{
     text-align: center;   
 }
+/*-----------------------------contact form*/
 
+/*.email-address{
+
+}
+
+/*.visitor-name,
+.visitor-message{
+
+}
+
+.email-button{
+
+}*/
+
+/*-----------------------------this is for nav bar (togle btn)
 /*.toggle-btn{
     display:none;
     position: fixed;
