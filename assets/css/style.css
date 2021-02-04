@@ -86,7 +86,7 @@ the orginal code is taken from : https://www.youtube.com/watch?v=bIlqqzI4ByE&t=2
 
 
 nav{
-    box-sizing: content-box;
+    /*box-sizing: content-box;*/
     float: right;
 }
 
@@ -208,16 +208,55 @@ i far.fa-envelope::before{
 }
 /*-----------------------------contact form*/
 
-/*.email-address{
+/*----------------navbar*/
 
+.decoration{
+    list-style: none;
 }
 
-/*.visitor-name,
+/*nav{
+    /*box-sizing: content-box;
+    float: right;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;  
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: inline-block;
+    color:  #e580a4;
+    font-weight: 600;
+    /*margin-left:15px; 
+}  
+
+a {
+    /*margin-left:15px;
+    color:#e580a4;
+}
+
+a:hover {
+    color: #f5f3f5;
+      
+}*/
+
+.email-address{
+    display:inline-flex;
+}
+
+.visitor-name,
 .visitor-message{
-
+    box-sizing: content-box;
 }
 
-.email-button{
+/*.email-button{
 
 }*/
 

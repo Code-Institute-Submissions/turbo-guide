@@ -22,31 +22,34 @@
 
 <body>
     
-    <header class="container">            
-        <div class="logo turbo-guide-logo"> 
-            <a class="navbar navbar-nav active"><img src="assets/img/logo_60x60.png"   height="60" title="turbo guide logo" alt="turbo guide logo"></a>
-                <nav>           
-                    <ul>
-                        <li>
-                            <a href="assets/index.html"><i class="fas fa-home"></i><span>Home</span></a>
-                        </li>
-                        <li>
-                            <a href="assets/places.html"><i class="far fa-compass"></i><span>Places</span></a>
-                        </li>
-                        <li>
-                            <a href="assets/contact.html"><i class="far fa-envelope"></i><span>Contact</span></a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <!--https://www.w3schools.com/howto/howto_css_icon_bar.asp-->
-                <div class="icon-bar">
-                    <a class="active" href="#"><i class="fas fa-home"></i></a>
-                    <a href="#"><i class="far fa-compas"></i></a>
-                    <a href="#"><i class="far fa-envelope"></i></a>
- 
+    <header>            
+        <!--<div class="logo turbo-guide-logo">-->
+            <!--nav logo--
+            https://getbootstrap.com/docs/3.3/components/-->
+            <nav class="navbar navbar-default">
+                <div class="container-fluid decoration">
+                    <div class="navbar-header decoration">
+                        <a class="navbar-brand" href="./index.html">
+                        <img src="./img/logo_60x60.png"   height="60" title="Turbo Guide Logo" alt="turbo guide logo">
+                        </a>
+                    </div>
+                    <!--https://www.w3schools.com/howto/howto_css_icon_bar.asp-->
+                    <div class="icon-bar">
+                        <ul>
+                            <li>
+                                <a class="active" href="./index.html"><i class="fas fa-home"></i><span>Home</span></a>
+                            </li>
+                            <li>
+                                <a href="#places-section"><i class="far fa-compass"></i><span>Places</span></a>
+                            </li>
+                            <li>
+                                <a href="./contact.html"><i class="far fa-envelope"></i><span>Contact</span></a>
+                            </li>
+                        </ul>
+                    </div>   
                 </div>
-        </div> 
+            </nav>
+        
     </header>
     
     <section>
@@ -55,7 +58,7 @@
                 <div>
                     <!--video/photo/-->
                     <div class="#" role="#">          
-                    <a class=""><img class ="logo-img" src="assets/img/logo_180x180.png" height="180" title="Turbo Guide Logo" alt="Turbo Guide Logo"></a>
+                    <a class=""><img class ="logo-img" src="./img/logo_180x180.png" height="180" title="Turbo Guide Logo" alt="Turbo Guide Logo"></a>
                  </div> 
                  
                 <!--orginal code is available on https://getbootstrap.com/docs/4.0/components/forms/-->
