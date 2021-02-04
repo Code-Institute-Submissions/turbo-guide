@@ -1,4 +1,9 @@
+//google maps
+
 let map;
+
+const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let labelIndex = 0;
 
 //initialize my map (Sligo)
 
@@ -11,37 +16,29 @@ function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
         center: sligo,
         zoom: 8
-    
     });
 
-// zoom the map  
-
-//https://developers.google.com/maps/documentation/javascript/examples/event-simple#maps_event_simple-javascript
-
-const sligoTownMarker = new google.maps.Marker({
+    // The marker, positioned at Sligo
+    const sligoTownMarker = new google.maps.Marker({
     position: sligo,
-    map,
-    title: "Click to zoom",
-});
+    map,  
+    
+  }); 
 
-    // create an array with places in and nearby Sligo
-
-    // https://developers.google.com/maps/documentation/javascript/examples/infowindow-simple#maps_infowindow_simple-javascript
+      
+// create an array with places in and nearby Sligo
 
     const locations = [
 
         // Beaches
 
         //Rosses Point
-
         {
             lat: 54.306250,
             lng: -8.567500,
             "name": "Rosses Point",
             "information": "#"
-        },
-
-  
+        },  
 
         //Strandhill
         {
@@ -88,10 +85,70 @@ const sligoTownMarker = new google.maps.Marker({
         },
     ];
 
-    // This event listener calls addMarker() when the map is clicked.
+    //individual markers 
+    //I took an idea to create this array in that way from ryanjbm and customise it for my project. Icons are taken form: https://mapicons.mapsmarker.com/
+    
+    const markersArray = "assets/img/";
+        const marker = {
+            marker1:{
+                name:"surfing", 
+                icon: markersArray + "surfing"
+            },
+            marker2:{
+                name:"abbey", 
+                icon: markersArray + "ruins-2"
+            },
+             marker3:{
+                name:"sligoTownMarker", 
+                icon: markersArray + "smallcity"
+            },
+             marker4:{
+                name:"yeats", 
+                icon: markersArray + "art-museum-2"
+            },
+             marker5:{
+                name:"lisadell", 
+                icon: markersArray + "palace-2"
+            },
+             marker6:{
+                name:"rosses", 
+                icon: markersArray + "shore-2"
+            },
+             marker7:{
+                name:"mullaghamore", 
+                icon: markersArray + "restaurant"
+            },
+        }
+        
+// Adds a marker to the map and push to the array.
+//https://developers.google.com/maps/documentation/javascript/examples/marker-remove
+
+function addMarker(location) {
+    const marker = new google.maps.Marker({
+        position: location,
+        map: map,
+    });
+    
+    markers.push(marker);
+}
+
+// Sets the map on all markers in the array.
+
+function setMapOnAll(map) {
+    for (let i = 0; i < markers.length; i++) {
+        markers[i].setMap(map);
+    }
+}
+
+// Removes the markers from the map, but keeps them in the array.
+function clearMarkers() {
+    setMapOnAll(null);
+}
+    
+// This event listener calls addMarker() when the map is clicked.
 
     google.maps.event.addListener(map, "click", (event) => {
-        addMarker(event.town, map);
+       addMarker(event.town, map);
     });
 
 }
@@ -100,8 +157,7 @@ const sligoTownMarker = new google.maps.Marker({
 
 //https://developers.google.com/maps/documentation/javascript/examples/marker-labels
 
-const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-let labelIndex = 0;
+
 
 // Add markers to the map.
 
@@ -119,29 +175,7 @@ const markers = locations.map((location, i) => {
     imagePath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
 });*/
 
-// Adds a marker to the map and push to the array.
-//https://developers.google.com/maps/documentation/javascript/examples/marker-remove
 
-function addMarker(location) {
-    const marker = new google.maps.Marker({
-        position: location,
-        map: map,
-    });
-    markers.push(marker);
-}
-
-// Sets the map on all markers in the array.
-
-function setMapOnAll(map) {
-    for (let i = 0; i < markers.length; i++) {
-        markers[i].setMap(map);
-    }
-}
-
-// Removes the markers from the map, but keeps them in the array.
-function clearMarkers() {
-    setMapOnAll(null);
-}
 
 // Shows any markers currently in the array.
 function showMarkers() {
