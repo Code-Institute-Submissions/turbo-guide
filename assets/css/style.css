@@ -197,10 +197,12 @@ i far.fa-envelope::before{
 }
 #map {
 
-    height: 400px;
+    /*height: 400px;
     width: 90%;
     margin: auto;
-    margin-bottom: auto;
+    margin-bottom: auto;*/
+    height: 500px;
+    width: 500px;
 }
 
 #f-design{

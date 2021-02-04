@@ -58,9 +58,29 @@
     </section>
 
     <!--map section-->
-    
+    <center>
     <div id="map" class="bg-color-map"></div> 
+    </center>
+    <script>
+        var map;
+        var infoObj =[],
+        var sligo = {
+            lat: 54.2697,
+            lng: -8.4694
+        }
+
+        window.onload =function (){
+        initMap();
+    };
     
+    function initMap(){
+        map = new google.maps.Map(document.getElementById ("map"),{
+            center: sligo,
+            zoom: 8
+        });
+
+    }   
+    </script>
     <!--places  section-->
      <section classs="places">
         <div class="container place-on-map">
