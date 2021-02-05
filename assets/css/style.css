@@ -29,7 +29,6 @@ body{
     
 }
 
-
 header,
 footer{
     background-color: #578368;
@@ -136,9 +135,9 @@ i far.fa-envelope::before{
 .jumbotron{
     border: 0;
     padding:0;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center ;   
+    /*margin-right: auto;
+    margin-left: auto;*/
+    text-align: center;   
 }
 
 .container{
@@ -197,12 +196,11 @@ i far.fa-envelope::before{
 }
 #map {
 
-    /*height: 400px;
+    height: 400px;
     width: 90%;
     margin: auto;
-    margin-bottom: auto;*/
-    height: 500px;
-    width: 500px;
+    margin-bottom: auto;
+    
 }
 
 #f-design{

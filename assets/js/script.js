@@ -1,60 +1,42 @@
-var map;
+let map;
 
 var infoObj = [],
 
     const sligo = {
-        lat: 54.2697,
-        lng: -8.4694
-    },
+            lat: 54.2697,
+            lng: -8.4694
+        },
 
-//individual markers 
-//I took an idea to create this array in that way from ryanjbm and customise it for my project, but I customise it much more with tutorial https://www.youtube.com/watch?v=Xptz0GQ2DO4&t=356s  Icons are taken form: https://mapicons.mapsmarker.com/
+        //individual markers 
+        //I took an idea to create this array in that way from ryanjbm and customise it for my project. I needed customise it much more with tutorial:  https://www.youtube.com/watch?v=Xptz0GQ2DO4&t=356s  Icons are taken form: https://mapicons.mapsmarker.com/
 
-var markersArray = "assets/img/";
-var marker = {
+    
+var markersArray = {
     surfing: {
-        //name:"surfing", 
-        //markersArray + "surfing"
         icon: "./img/surfing.png"
     },
 
     ruins: {
-        //"name": "Sligo Abbey",
-        //name:"abbey",
-        //markersArray + "ruins-2" 
         icon: "./img/ruins-2.png"
     },
     smallcity: {
-        //name:"Sligo", 
-        //markersArray + "smallcity"
         icon: "./img/smallcity.png"
 
     },
 
     museum: {
-        //"name": "Yeats Building",
-        //name:"yeats", 
-        //arkersArray +m "art-museum-2"
         icon: "./img/art-museum-2.png"
     },
 
     palace: {
-        //"name": "Lisadell House and Gardens",
-        //name:"lisadell",
-        //markersArray + "palace-2" 
         icon: "./img/palace-2.png"
 
     },
     shore: {
-        //name:"Rosses Point",
-        //name: "rosses", 
-        //markersArray + "shore-2"
         icon: "./img/surfing.png"
     },
 
     restaurant: {
-        //name:"Mullaghamore", 
-        //markersArray + "restaurant"
         icon: "./img/restaurant.png"
     },
 };
@@ -66,7 +48,6 @@ const locations = [
     // Beaches
     //Rosses Point
     {
-
         LatLng: [{
             lat: 54.306250,
             lng: -8.567500,
@@ -172,28 +153,5 @@ function initMap() {
     addMarkerInfo();
 
 }
-
-// The marker, positioned at Sligo
-//const sligo = new google.maps.Marker({
-//position: sligo,
-//map,
-//});  
-
-//}
-
-
-// setup window for some informations about place
-//const infoWindow = new google.maps.infoWindow({
-//content: contentString,
-// maxwidth:400
-//});
-
-// add markers
-//function addMarker(locations) {
-// var pins = new google.maps.Marker({
-//  position: locations.position,
-
-// });
-
-//pins.push(marker);
-//}
+/* call the map*/
+myMap();
