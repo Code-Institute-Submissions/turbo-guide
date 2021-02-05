@@ -80,7 +80,8 @@ h3{
     font-size: 24px;  
 }
 
-/* -------------------navigation bar with logo image
+/* -------------------------------navigation bar with logo image
+
 the orginal code is taken from : https://www.youtube.com/watch?v=bIlqqzI4ByE&t=281s ---*/
 
 
@@ -174,9 +175,15 @@ i far.fa-envelope::before{
 /* designed to work in default box-sizing */
   /*-----https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ -----*/
 
-  .component { 
+.component { 
   box-sizing: content-box;
 }
+.selector{
+    display: flex;
+    gap: 1em;
+}
+/*----------------------------------------places section*/
+
 
 .social-links{
            

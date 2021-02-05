@@ -2,48 +2,64 @@ let map;
 
 var infoObj = [],
 
-    const sligo = {
-            lat: 54.2697,
-            lng: -8.4694
-        },
+const sligo = {
+    lat: 54.2697,
+    lng: -8.4694
+    },
 
         //individual markers 
         //I took an idea to create this array in that way from ryanjbm and customise it for my project. I needed customise it much more with tutorial:  https://www.youtube.com/watch?v=Xptz0GQ2DO4&t=356s  Icons are taken form: https://mapicons.mapsmarker.com/
 
     
-var markersArray = {
-    surfing: {
+var markersArray = [
+    { 
+        surfing: {
         icon: "./img/surfing.png"
+        }
     },
 
-    ruins: {
+    {
+        ruins: {
         icon: "./img/ruins-2.png"
+        }
     },
-    smallcity: {
+    
+    {
+        smallcity: {
         icon: "./img/smallcity.png"
-
+        }
     },
 
-    museum: {
+    {
+        museum: {
         icon: "./img/art-museum-2.png"
+        }
     },
+    
+    {
 
-    palace: {
+        palace: {
         icon: "./img/palace-2.png"
-
-    },
-    shore: {
-        icon: "./img/surfing.png"
+        }
     },
 
-    restaurant: {
+    {
+        shore: {
+        icon: "./img/shore.png"
+        }
+    },
+
+    {
+        restaurant: {
         icon: "./img/restaurant.png"
-    },
-};
+        }
+    }];
+
+
 
 // create an array with places in and nearby Sligo
 
-const locations = [
+var locations = [
 
     // Beaches
     //Rosses Point
@@ -128,6 +144,7 @@ const locations = [
     },
 ];
 
+//display window with map
 window.onload = function() {
     initMap();
 };
@@ -141,6 +158,23 @@ function addMarkerInfo() {
             map: map
         });
 
+        const infowindow = new google.maps.InfoWindow({
+            content: contentString,
+        });
+
+        marker.addListner("click", function(){
+            closeOtherInfo,
+            infowindow.open(map.marker),
+            infoObj [0] = infowindow
+        });
+    }
+
+//clear out previous information   
+function closeOtherInfo(){
+    if (infoObj.length>0){
+    infoObj [0].set ("marker", null);
+    infoObj [0].close();
+    infoObj [0].length = 0;
     }
 }
 
@@ -154,4 +188,4 @@ function initMap() {
 
 }
 /* call the map*/
-myMap();
+myMap()};

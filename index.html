@@ -27,12 +27,12 @@
                 <nav>           
                     <ul>
                         <li class="item">
-                            <a class="nav-link" ref="assets/index.html">
+                            <a class="nav-link" href="../index.html">
                                 <i class="fas fa-home"></i>
                                 <span>Home</span></a>
                         </li>
                         <li class="item">
-                            <a class="nav-link" href="#section-places">
+                            <a class="nav-link" href="../section-places">
                                 <i class="far fa-compass"></i>
                                 <span>Places</span></a>
                         </li>
@@ -58,32 +58,13 @@
     </section>
 
     <!--map section-->
-    <center>
-    <div id="map" class="bg-color-map"></div> 
-    </center>
-    <script>
-        var map;
-        var infoObj =[],
-        var sligo = {
-            lat: 54.2697,
-            lng: -8.4694
-        }
-
-        window.onload =function (){
-        initMap();
-    };
     
-    function initMap(){
-        map = new google.maps.Map(document.getElementById ("map"),{
-            center: sligo,
-            zoom: 8
-        });
-
-    }   
-    </script>
+    <div id="map" class="bg-color-map"></div> 
+    
+   
     <!--places  section-->
-     <section classs="places">
-        <div class="container place-on-map">
+     <section>
+        <div class="container selector place-on-map">
             <div class="row places">
                 <div class="sm-4 md-6">
                     <h1>Beaches</h1>
@@ -98,7 +79,7 @@
                         <p>This is location has been named as one of the best places to surf in Europe. It is worth noting that swimming is forbidden at Strandhill beach due to very strong sea currents. </p>
                     </div>
                 </div>          
-            <div sm-4 md-6 >
+            <div class="sm-4 md-6" >
                 <h1>Town attractions</h1>
                     <div class="place-text">
                     <img src="#" alt="">
@@ -111,7 +92,7 @@
                         <p>There is a permanent exhibition on the life and works of W.B.Yeats and Yeats Art Gallery presents changing exhibitions of art, sculpture, crafts etc.</p>
                     </div>
             </div>
-            <div sm-4 md-6 >
+            <div class="sm-4 md-6" >
                 <h1>Nearby attractions</h1>
                     <div class="place-text">
                     <img src="#" alt="">
