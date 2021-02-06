@@ -3,7 +3,7 @@ let map;
 const sligo = {
         lat: 54.2697,
         lng: -8.4694
-    },
+    };
 
     function initMap() {
         map = new google.maps.Map(document.getElementById("map"), {
@@ -194,7 +194,7 @@ function addMarkerInfo() {
         div.innerHTML = '<img src="' + icon + '"> ' + name;
         legend.appendChild(div);
     }
-    map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
+    map.controls[google.maps.ControlPosition.LEFT_TOP].push(legend);
 }
 
 

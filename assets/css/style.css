@@ -60,7 +60,8 @@ p{
 
 h1,
 h2,
-h3{
+h3,
+h4{
     font-family: 'Kaushan Script', cursive;
     font-weight: 400;
 }
@@ -80,24 +81,12 @@ h3{
     font-size: 24px;  
 }
 
+h4{
+    font-size: 12px;
+}
+/* -------------------------------navigation bar with logo image*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* -------------------------------navigation bar with logo image
-
-the orginal code is taken from : https://www.youtube.com/watch?v=bIlqqzI4ByE&t=281s ---*/
+/*the orginal code is taken from : https://www.youtube.com/watch?v=bIlqqzI4ByE&t=281s ---*/
 
 
 nav{
@@ -207,64 +196,51 @@ i far.fa-envelope::before{
     
 }
 
-/*------------------------ the map*/
+/*------------------------ the map section*/
 
 /*div#map{
     min-height: 360px;
-} ------*/
+}*/
+
+#map,
+#legend{
+    width: 90%;
+    margin: auto;
+    margin-bottom: auto; 
+}
 
 #map {
 
     height: 400px;
-    width: 90%;
+    /*width: 90%;
     margin: auto;
-    margin-bottom: auto;
+    margin-bottom: auto;*/
     
 }
 
-#f-design{
+#legend {
+    background: #f5f3f5;
+    border: 2px solid #1f3b2c;
+    font-family: "Open Sans", sans-serif;
+    margin: 10px;
+    padding: 10px;
+}
+ 
+#legend h3 {
+  margin-top: 0;
+}
+
+#legend img {
+  vertical-align: middle;
+}
+
+/*#f-design{
     text-align: center;   
-}
-/*-----------------------------contact form*/
-
-/*----------------navbar*/
-
-.decoration{
-    list-style: none;
-}
-
-/*nav{
-    /*box-sizing: content-box;
-    float: right;
-}
-
-nav ul{
-    display: flex;
-    list-style: none;  
-}
-
-nav ul li {
-    display: inline-block;
-    padding: 20px 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    display: inline-block;
-    color:  #e580a4;
-    font-weight: 600;
-    /*margin-left:15px; 
-}  
-
-a {
-    /*margin-left:15px;
-    color:#e580a4;
-}
-
-a:hover {
-    color: #f5f3f5;
-      
 }*/
+
+/*-----------------------------contact section*/
+
+ 
 
 .email-address{
     display:inline-flex;
@@ -275,9 +251,6 @@ a:hover {
     box-sizing: content-box;
 }
 
-/*.email-button{
-
-}*/
 
 /*-----------------------------this is for nav bar (togle btn)
 /*.toggle-btn{
