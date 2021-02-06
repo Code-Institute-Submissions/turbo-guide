@@ -27,29 +27,32 @@
                 <nav>           
                     <ul>
                         <li class="item">
-                            <a class="nav-link" href="index.html">
-                                <i class="fas fa-home"></i>
+                            <a class="nav-link" href="#home">
+                                <i class="fas fa-home" aria-hidden="true"></i>
                                 <span>Home</span></a>
                         </li>
                         <li class="item">
+                            <a class="nav-link" href="#map">
+                                <i class="far fa-map" aria-hidden="true"></i>
+                                <span>Map</span></a>
+                        </li>
+                        <li class="item">
                             <a class="nav-link" href="#places">
-                                <i class="far fa-compass"></i>
+                                <i class="far fa-compass" aria-hidden="true"></i>
                                 <span>Places</span></a>
                         </li>
                         <li class="item">
-                            <a class="nav-link" href="contact.html">
-                                <i class="far fa-envelope"></i>
+                            <a class="nav-link" href="#contact">
+                                <i class="far fa-envelope" aria-hidden="true"></i>
                                 <span>Contact</span></a>
                         </li>
                     </ul>
                 </nav>
         </div>
     </header> 
-   
-   
-    <!-- <section class="last-section"></section>-->
-    
-    <section>
+
+    <!--home section-->
+    <section id="home">
         <div class=" jumbotron">
             <div class="container hero-image">
                 <h2 class= " title hero-text">Sligo - your next destination!</h2>
@@ -58,7 +61,6 @@
     </section>
 
     <!--map section-->
-    
     <div id="map"></div> 
     
    
@@ -107,10 +109,59 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section >
+    
+    
+    <!--contact section-->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <!--video/photo/-->
+                    <div class="#" role="#">          
+                    <a class=""><img class ="logo-img" src="./img/logo_180x180.png" height="180" title="Turbo Guide Logo" alt="Turbo Guide Logo"></a>
+                 </div> 
+                 
+                <!--orginal code is available on https://getbootstrap.com/docs/4.0/components/forms/-->
+                
+                <!--contact form-->
+                <form>
+                    <div class="form-group row">
+                        <div class="col-md-6 mb-3">
+                            <label for="email-address">Email address</label>
+                            <input type="email" class="form-control" id="email-address" placeholder="name@example.com">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-6 mb-3">
+                            <label for="visitor-name">Name</label>
+                            <input type="name" class="form-control" id="visitor-name" placeholder="name">
+                        </div>  
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-6 mb-3"></div>
+                            <label for="select-trip">Select please.</label>
+                             <select class="form-control" id="select-trip">
+                                <option>trip for two</option>
+                                <option>family trip</option>
+                                <option>other</option>
+                            </select>
+                        </div>
+                    <div class="form-group">
+                        <label for="visitor-message">your message</label>
+                        <textarea class="form-control" id="visitor-message" rows="3"></textarea>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary email-button " type="submit">Submit form</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </section>  
 
-    <!-- orginal code is in "Rosie Odenkrik exercise - tutor materials" -->
     <footer class="bottom-container justify-content-center">
+
         <div>
             <div class="social-links">
                 <a class="icon social-links" href= "https://facebook.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-facebook"></i>

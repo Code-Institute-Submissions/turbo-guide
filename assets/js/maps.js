@@ -1,64 +1,66 @@
+let map;
+
 const sligo = {
         lat: 54.2697,
         lng: -8.4694
     },
 
-function sligoMap() {  
-    let map = new google.maps.Map(document.getElementById("map"), {
-    center: sligo,
-    zoom: 8
-    });
+    function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+            center: sligo,
+            zoom: 8
+        });
 
-    addMarkerInfo()
-    
-};
+        addMarkerInfo()
 
-    // array with places   
-    const markersArray = [
+    };
 
-        {
-            surfing: {
-                icon: "./img/surfing.png"
-            }
-        },
+// array with places   
+const markersArray = [
 
-        {
-            ruins: {
-                icon: "./img/ruins-2.png"
-            }
-        },
-
-        {
-            smallcity: {
-                icon: "./img/smallcity.png"
-            }
-        },
-
-        {
-            museum: {
-                icon: "./img/art-museum-2.png"
-            }
-        },
-
-        {
-
-            palace: {
-                icon: "./img/palace-2.png"
-            }
-        },
-
-        {
-            shore: {
-                icon: "./img/shore.png"
-            }
-        },
-
-        {
-            restaurant: {
-                icon: "./img/restaurant.png"
-            }
+    {
+        surfing: {
+            icon: "./img/surfing.png"
         }
-    ];
+    },
+
+    {
+        ruins: {
+            icon: "./img/ruins-2.png"
+        }
+    },
+
+    {
+        smallcity: {
+            icon: "./img/smallcity.png"
+        }
+    },
+
+    {
+        museum: {
+            icon: "./img/art-museum-2.png"
+        }
+    },
+
+    {
+
+        palace: {
+            icon: "./img/palace-2.png"
+        }
+    },
+
+    {
+        shore: {
+            icon: "./img/shore.png"
+        }
+    },
+
+    {
+        restaurant: {
+            icon: "./img/restaurant.png"
+        }
+    }
+];
 
 
 
@@ -80,7 +82,7 @@ const locations = [
 
     //Strandhill
     {
-        coordinates:{
+        coordinates: {
             lat: 54.306250,
             lng: -8.567500,
         },
@@ -99,7 +101,7 @@ const locations = [
         },
         type: "smallcity",
         placeName: "Sligo",
-        
+
     },
 
     //Sligo Abbey
@@ -128,7 +130,7 @@ const locations = [
 
     //Lisadell House and Gardens 
     {
-        coordinates:{
+        coordinates: {
             lat: 54.34645,
             lng: -8.58279,
         },
@@ -154,7 +156,7 @@ var infoObj = [];
 
 function addMarkerInfo() {
     for (var i = 0; i < locations.length; i++) {
-        var contentString = `<h3> ${'locations[i].placeName'}</h3>`+ `<p> ${'locations[i].information'}</p>`;
+        var contentString = `<h3> ${'locations[i].placeName'}</h3>` + `<p> ${'locations[i].information'}</p>`;
         const marker = new google.maps.Marker({
             position: locations[i].coordinates[0],
             icon: icons[markersArray[i].type].icon,
@@ -181,7 +183,20 @@ function addMarkerInfo() {
             infoObj[0].length = 0;
         }
     }
-};
-    
-/* call the map*/
+
+    const legend = document.getElementById("legend");
+
+    for (const key in icons) {
+        const type = icons[key];
+        const name = type.name;
+        const icon = type.icon;
+        const div = document.createElement("div");
+        div.innerHTML = '<img src="' + icon + '"> ' + name;
+        legend.appendChild(div);
+    }
+    map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
+}
+
+
+// call the map*
 myMap();
