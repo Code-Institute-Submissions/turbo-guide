@@ -80,6 +80,21 @@ h3{
     font-size: 24px;  
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* -------------------------------navigation bar with logo image
 
 the orginal code is taken from : https://www.youtube.com/watch?v=bIlqqzI4ByE&t=281s ---*/
@@ -198,9 +213,6 @@ i far.fa-envelope::before{
     min-height: 360px;
 } ------*/
 
-.bg-color-map{
-    color:#578368;
-}
 #map {
 
     height: 400px;

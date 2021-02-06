@@ -1,65 +1,64 @@
-let map;
+var infoObj = [];
 
-var infoObj = [],
+//const sligo = {
+       // lat: 54.2697,
+       // lng: -8.4694
+   // },
 
-const sligo = {
-    lat: 54.2697,
-    lng: -8.4694
-    },
+    //individual markers 
+    //I took an idea to create this array in that way from ryanjbm and customise it for my project. I needed customise it much more with tutorial:  https://www.youtube.com/watch?v=Xptz0GQ2DO4&t=356s  Icons are taken form: https://mapicons.mapsmarker.com/
 
-        //individual markers 
-        //I took an idea to create this array in that way from ryanjbm and customise it for my project. I needed customise it much more with tutorial:  https://www.youtube.com/watch?v=Xptz0GQ2DO4&t=356s  Icons are taken form: https://mapicons.mapsmarker.com/
+    const markersArray = [
 
-    
-var markersArray = [
-    { 
-        surfing: {
-        icon: "./img/surfing.png"
+        {
+            surfing: {
+                icon: "./img/surfing.png"
+            }
+        },
+
+        {
+            ruins: {
+                icon: "./img/ruins-2.png"
+            }
+        },
+
+        {
+            smallcity: {
+                icon: "./img/smallcity.png"
+            }
+        },
+
+        {
+            museum: {
+                icon: "./img/art-museum-2.png"
+            }
+        },
+
+        {
+
+            palace: {
+                icon: "./img/palace-2.png"
+            }
+        },
+
+        {
+            shore: {
+                icon: "./img/shore.png"
+            }
+        },
+
+        {
+            restaurant: {
+                icon: "./img/restaurant.png"
+            }
         }
-    },
-
-    {
-        ruins: {
-        icon: "./img/ruins-2.png"
-        }
-    },
-    
-    {
-        smallcity: {
-        icon: "./img/smallcity.png"
-        }
-    },
-
-    {
-        museum: {
-        icon: "./img/art-museum-2.png"
-        }
-    },
-    
-    {
-
-        palace: {
-        icon: "./img/palace-2.png"
-        }
-    },
-
-    {
-        shore: {
-        icon: "./img/shore.png"
-        }
-    },
-
-    {
-        restaurant: {
-        icon: "./img/restaurant.png"
-        }
-    }];
+    ];
 
 
 
 // create an array with places in and nearby Sligo
 
-var locations = [
+const locations = [
 
     // Beaches
     //Rosses Point
@@ -144,6 +143,18 @@ var locations = [
     },
 ];
 
+
+//function initMap() {  
+let map = new google.maps.Map(document.getElementById("map"), {
+    //center: sligo,
+    center: {lat:54.2697,lng:-8.4694},
+    zoom: 8
+});
+
+addMarkerInfo();
+
+
+
 //display window with map
 window.onload = function() {
     initMap();
@@ -152,6 +163,8 @@ window.onload = function() {
 // Create markers.
 function addMarkerInfo() {
     for (var i = 0; i < locations.length; i++) {
+        var contentString = `<h3> ${'locations[i].placeName'}</h3>`;
+        //"<h3>" + "locations[i].placeName" + "</h3>"
         const marker = new google.maps.Marker({
             position: locations[i].LatLng[0],
             icon: icons[markersArray[i].type].icon,
@@ -162,30 +175,31 @@ function addMarkerInfo() {
             content: contentString,
         });
 
-        marker.addListner("click", function(){
-            closeOtherInfo,
-            infowindow.open(map.marker),
-            infoObj [0] = infowindow
+        marker.addListner("click", function() {
+            closeOtherInfo();
+            infowindow.open(map.marker);
+            infoObj[0] = infowindow;
         });
     }
 
-//clear out previous information   
-function closeOtherInfo(){
-    if (infoObj.length>0){
-    infoObj [0].set ("marker", null);
-    infoObj [0].close();
-    infoObj [0].length = 0;
+    //clear out previous information   
+    function closeOtherInfo() {
+        if (infoObj.length > 0) {
+            infoObj[0].set("marker", null);
+            infoObj[0].close();
+            infoObj[0].length = 0;
+        }
     }
-}
 
-function initMap() {
-    map = new google.maps.Map(document.getElementById("map"), {
-        center: sligo,
-        zoom: 8
-    });
+    //till here it looks ok 
+    //function initMap() {
+    // map = new google.maps.Map(document.getElementById("map"), {
+    //  center: sligo,
+    //  zoom: 8
+    //  });
 
-    addMarkerInfo();
+    // addMarkerInfo();
 
 }
 /* call the map*/
-myMap()};
+myMap();
