@@ -40,7 +40,7 @@ footer{
 }
 
 header{
-    position: relative;      
+    position: sticky;      
 }
 
 footer{
@@ -82,51 +82,54 @@ h3{
 }
 
 h4{
-    font-size: 12px;
-}
-/* -------------------------------navigation bar with logo image*/
-
-/*the orginal code is taken from : https://www.youtube.com/watch?v=bIlqqzI4ByE&t=281s ---*/
-
-
-nav{
-    /*box-sizing: content-box;*/
-    float: right;
+    font-size: 18px;
 }
 
-nav ul{
-    display: flex;
-    list-style: none;  
+/*-----------------------------------------nav with icons source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_navbar_icon and https://stackoverflow.com/questions/17197961/positioning-of-logo-and-navbar-inside-header/17198464 */
+
+header ul{
+    float:right;
+    /*padding: 0;
+    margin: 0;*/
 }
 
-nav ul li {
-    display: inline-block;
-    padding: 20px 15px;
+header ul li{
+    display:inline-block;
+    /*float:left; */
+    margin-top: 30px;
+    font-size: 24px;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 300;
+    ;
+    
 }
 
-nav ul li a {
+ a {
     text-decoration: none;
     display: inline-block;
     color:  #e580a4;
     font-weight: 600;
-    /*margin-left:15px;*/ 
+    
 }  
-
 a {
-    /*margin-left:15px;*/
+    
     color:#e580a4;
 }
 
 a:hover {
-    color: #f5f3f5;
+    color: #1f3b2c;
       
 }
+ 
+@media screen and (max-width: 500px) {
+  .nav a {
+    float: none;
+    display: block;
+  }
+}
 
-/*i fas.fa-home::before,
-i far.fa-compas::before
-i far.fa-envelope::before{
-    margin-bottom: 20px;
-}*/
+/*-------------------------logo image*/
+
 
 .logo-img {
     border-radius: 5rem;
@@ -140,8 +143,8 @@ i far.fa-envelope::before{
 .jumbotron{
     border: 0;
     padding:0;
-    /*margin-right: auto;
-    margin-left: auto;*/
+    margin-right: auto;
+    margin-left: auto;
     text-align: center;   
 }
 
@@ -149,6 +152,7 @@ i far.fa-envelope::before{
    /* margin:10px;*/
     padding-left:0;
     padding-right:0;
+    position: 
 }
 
 .hero-image{
@@ -159,7 +163,7 @@ i far.fa-envelope::before{
     background-repeat: no-repeat;
     box-sizing: content-box;
     display: inline-flex;
-    height: 300px;
+    height: 400px;
     margin: 0;
     position: relative;
     width: 100%;
@@ -189,12 +193,12 @@ i far.fa-envelope::before{
 /*----------------------------------------places section*/
 
 
-.social-links{
+/*.social-links{
            
     color:#e580a4;
     padding: 20px;   
     
-}
+}*/
 
 /*------------------------ the map section*/
 
@@ -206,7 +210,8 @@ i far.fa-envelope::before{
 #legend{
     width: 90%;
     margin: auto;
-    margin-bottom: auto; 
+    margin-bottom: auto;
+    
 }
 
 #map {
