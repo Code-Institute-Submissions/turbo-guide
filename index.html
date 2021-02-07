@@ -21,27 +21,34 @@
 
 <body>
 
-    <header class="page-header sticky-top"> 
-        <!--<div class="header" role="banner">-->         
-            
-            <a class="logo"><img class ="logo-img" src="assets/img/logo_60x60.png" height="60" title="turbo guide logo" alt="turbo guide logo"></a>
-                
-                <ul>
-                    <li>
-                        <a class=" active nav-link" href="#home"><i class="fas fa-home" aria-hidden="true"></i><span >Home</span></a>
-                    </li>          
-                    <li>
-                        <a class="nav-link" href="#map"><i class="far fa-map" aria-hidden="true"></i><span class="icons">Map</span></a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#places"><i class="far fa-compass" aria-hidden="true"></i><span >Places</span></a>
-                    </li>
-                    
-                    <li>
-                        <a class="nav-link" href="#contact"><i class="far fa-envelope" aria-hidden="true"></i><span>Contact</span></a>
-                    </li>   
-                </ul>
-            <!--</div>-->
+     <header class="page-header sticky-top"> 
+        <div class="header" role="banner">          
+            <a class=""><img class ="logo-img" src="assets/img/logo_60x60.png" height="60" title="turbo guide logo" alt="turbo guide logo"></a>
+                <nav>           
+                    <ul>
+                        <li class="item">
+                            <a class="nav-link" href="#home">
+                                <i class="fas fa-home" aria-hidden="true"></i>
+                                <span>Home</span></a>
+                        </li>
+                        <li class="item">
+                            <a class="nav-link" href="#map">
+                                <i class="far fa-map" aria-hidden="true"></i>
+                                <span>Map</span></a>
+                        </li>
+                        <li class="item">
+                            <a class="nav-link" href="#places">
+                                <i class="far fa-compass" aria-hidden="true"></i>
+                                <span>Places</span></a>
+                        </li>
+                        <li class="item">
+                            <a class="nav-link" href="#contact">
+                                <i class="far fa-envelope" aria-hidden="true"></i>
+                                <span>Contact</span></a>
+                        </li>
+                    </ul>
+                </nav>
+        </div>
     </header> 
 
     <!--home section-->
@@ -54,51 +61,55 @@
     </section>
 
     <!--map section-->
-    <div id="map"></div> 
-        <div id="legend"><h4>Legend</h4></div>
+    <div class="container">
+        <div class="container">
+            <div class="row">
+                <h1>Sligo map</h1>
+            </div>
+        </div>
+        <div id="map">
+            <div id="legend">
+                <h4>Legend</h4>
+            </div>
+        </div> 
+    </div>
 
-    
-    
-   
+
     <!--places section-->
      <section id="places">
-        <div class="container selector place-on-map">
-            <div class="row places">
-                <div class="sm-4 md-6">
-                    <h1>Beaches</h1>
+        <div class="container">
+            <div class="row ">
+                <div class="col sm-12 md-6">
+                    <h1 class ="text-center">Beaches</h1>
                     <div class="place-text">
-                        <img src="#" alt="">
                         <h3>Rosses Point</h3>
-                        <p>This picturesque village is situated at the entrance to Sligo Harbour from Sligo Bay. Home to the Sligo Yacht Club, the annual West of Ireland Championship hosted by the County Sligo Golf Club and several Blue Flag strands which are safe for swimming. Another great event held annually is The Rosses Point Shanty Festival which happens around mid June with its profits going to the RNLI (Royal National Lifeboat Institution). With plenty of places to stay and dine, Rosses Point is bound to be a great destination for trips of any length. </p>
+                        <p>This picturesque village is situated at the entrance to Sligo Harbour from Sligo Bay. </p>
+                        <p>Home to the Sligo Yacht Club, the annual West of Ireland Championship hosted by the County Sligo Golf Club and several Blue Flag strands which are safe for swimming.</p>
+                        <p>Another great event held annually is The Rosses Point Shanty Festival which happens around mid June with its profits going to the RNLI (Royal National Lifeboat Institution). With plenty of places to stay and dine, Rosses Point is bound to be a great destination for trips of any length. </p>
                     </div>
                     <div class="place-text">
-                        <img src="#" alt="">
                         <h3>Strandhill</h3>
                         <p> This coastal town in County Sligo is a great place for surfing, but unfortunately it is not safe for swimming. However, there are still plenty of things to do like taking a walk on the beach or going to one of the nearby pubs, restaurants or cafes. Another great way to spend time here would be to visit The Strandhill People’s Market that takes place at Hangar 1 at Sligo Airport. The Market happens every Sunday from 11am to 4pm and offers an array of local crafts, foods, textiles and live music. </p>
                     </div>
                 </div>          
-            <div class="sm-4 md-6" >
-                <h1>Town attractions</h1>
+            <div class="col sm-9 md-6" >
+                <h1 class="text-center">Town attractions</h1>
                     <div class="place-text">
-                    <img src="#" alt="">
                     <h3>Sligo Abbey</h3>
                     <p>This Dominican convent founded in 1253 was built in the Romanesque style. The beautiful extensive ruins of mainly the church and the cloister ramain for tourists to visit. The abbey contains a well-preserved cloister, a great wealth of carvings (as well as Gothic and Renaissance tomb sculpture) and the only sculptured fifteenth-century high altar to survive in an Irish monastic church. </p>
                     </div>
                     <div class="place-text">
-                        <img src="#" alt="">
                         <h3>Yeats Building</h3>
                         <p>This beautiful 19th century red brick building is home of the Yeats Society Sligo. It is the headquarters of the Yeats International Summer Festivals and houses the Yeats Society Library, the Sligo Art Gallery, and a photographic collection of Yeats and his family. This is a great place to visit and find out more about Yeats’ life and his work.</p>
                     </div>
             </div>
-            <div class="sm-4 md-6" >
-                <h1>Nearby attractions</h1>
+            <div class="col sm-12 md-6" >
+                <h1 class ="text-center">Nearby attractions</h1>
                     <div class="place-text">
-                    <img src="#" alt="">
                     <h3>Lisadell House and Gardens</h3>
                     <p>This majestic place is situated on the shores of Sligo Bay. Surrounded by the natural beauty of the Atlantic Ocean, woodland and mountains, Lissadell House and Gardens has also historic and literary associations, as it was the childhood home of Constance Markievicz, her sister Eva Gore-Booth and her brother Josslyn Gore-Booth. </p>
                     </div>
                     <div class="place-text">
-                        <img src="#" alt="">
                         <h3>Mullaghmore</h3>
                         <p>This holiday destination is located one the Mullaghmore peninsula in County Sligo, Ireland. Its skyline is dominated by Ben Bulben mountain and the Atlantic Ocean. Here, you can stroll along the beautiful white sandy beach or go into the water for a swim or surfing session. This is Ireland’s ultimate big wave destination so no matter the reason for your trip the incredible views are always guaranteed.  </p>
                     </div>
@@ -110,32 +121,34 @@
     
     <!--contact section-->
     <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div>
-                    <!--video/photo/-->
-                    <div class="#" role="#">          
-                    <a class=""><img class ="logo-img" src="./img/logo_180x180.png" height="180" title="Turbo Guide Logo" alt="Turbo Guide Logo"></a>
-                 </div> 
-                 
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row place-text"> 
+                    <h4>Do you have any questions?</h4>
+                    <p>Pleace do not hestiate to contact with us directly</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">                
                 <!--orginal code is available on https://getbootstrap.com/docs/4.0/components/forms/-->
                 
                 <!--contact form-->
-                <form>
+
+                    <form>
                     <div class="form-group row">
-                        <div class="col-md-6 mb-3">
+                        <div class="col md-12">
                             <label for="email-address">Email address</label>
                             <input type="email" class="form-control" id="email-address" placeholder="name@example.com">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <div class="col-md-6 mb-3">
+                        <div class="col md-12">
                             <label for="visitor-name">Name</label>
-                            <input type="name" class="form-control" id="visitor-name" placeholder="name">
+                            <input type="name" class="form-control" id="name" placeholder="Name">
                         </div>  
                     </div>
                     <div class="form-group">
-                        <div class="col-md-6 mb-3"></div>
+                        <div class="col md-12"></div>
                             <label for="select-trip">Select please.</label>
                              <select class="form-control" id="select-trip">
                                 <option>trip for two</option>
@@ -150,13 +163,13 @@
                     <div>
                         <button class="btn btn-primary email-button " type="submit">Submit form</button>
                     </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
     </section>  
 
-    <footer class="bottom-container justify-content-center">
+   <footer class="bottom-container justify-content-center">
 
         <div>
             <div class="social-links">
@@ -172,19 +185,7 @@
             <div>
                 <p id="f-design">@ MRS 2021 all rights reserved</p>
             </div>
-
         </div>
-        <!--<div class="col-sm-4">
-            <p class=" inline-block">
-                Download tips for trips.
-                <a href="assets/bonus/trip-tips.pdf" target="_blank" class="trip-tips">
-                    <i class="fa fa-download" aria-hidden="true">
-                        <span class="sr-only"> Download file.</span>
-                    </i>
-                </a>
-            </p>
-        </div>-->
-               
     </footer>
     
     
@@ -206,7 +207,7 @@
     
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbPbb9bzbVrjy5Wk0vbUBHsTjX52Jxr6g&callback=initMap"></script>
     
-    <script src="assets/js/maps.js"></script>
+    <script src="assets/js/scriptmaps.js"></script>
     
  
 </body>

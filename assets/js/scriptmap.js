@@ -1,21 +1,74 @@
-let map;
+// Initialize and add the map
 
-const sligo = {
+function initMap() {
+    // The location of Sligo
+    const townSligo = {
         lat: 54.2697,
         lng: -8.4694
     };
 
-function initMap() {
-    map = new google.maps.Map(document.getElementById("map"), {
-            center: sligo,
-            zoom: 8
+    // The map, centered at Sligo
+    const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 11,
+        center: townSligo,
+        icon: {
+            url: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
+        }
+
     });
 
-    addMarkerInfo()
+    // The marker, positioned at Sligo
+    const marker = new google.maps.Marker({
+        position: townSligo,
+        map: map,
+    });
 
-};
+    // Create an array of alphabetical characters used to label the markers.
+    const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-// array with icons   
+    // Add some markers to the map, but it does't use the Google Maps API.
+
+
+    const markers = locations.map((location, i) => {
+        return new google.maps.Marker({
+            position: location,
+            label: labels[i % labels.length],
+        });
+    });
+    // Add a marker clusterer to manage the markers.
+    new MarkerClusterer(map, markers, {
+        imagePath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+    });
+
+   
+const locations = [{
+        lat: 54.306250,
+        lng: -8.567500
+    },
+    {
+        lat: 54.306250,
+        lng: -8.567500
+    },
+    {
+        lat: 54.306250,
+        lng: -8.567500
+    },
+    {
+        lat: 54.27376,
+        lng: -8.47213
+    },
+    {
+        lat: 54.34645,
+        lng: -8.58279
+    },
+    {
+        lat: 54.46555,
+        lng: -8.45219
+    }
+
+];
+
+// array with places icons   
 const markersArray = [
 
     {
@@ -62,11 +115,9 @@ const markersArray = [
     }
 ];
 
-//
+// this is an array with places in and nearby Sligo
 
-// create an array with places in and nearby Sligo
-
-const locations = [
+const locationsArray = [
 
     // Beaches
     //Rosses Point
@@ -150,53 +201,3 @@ const locations = [
         information: "Small fishing village with a superb, large (3km) sandy beach. Mullaghmore is also a base for licensed angling/passanger boats for charter."
     },
 ];
-
-var infoObj = [];
-
-
-function addMarkerInfo() {
-    for (var i = 0; i < locations.length; i++) {
-        var contentString = `<h3> ${'locations[i].placeName'}</h3>` + `<p> ${'locations[i].information'}</p>`;
-        const marker = new google.maps.Marker({
-            position: locations[i].coordinates[0],
-            icon: icons[markersArray[i].type].icon,
-            map: map,
-            animation: google.maps.Animation.DROP
-        });
-
-        const infowindow = new google.maps.InfoWindow({
-            content: contentString,
-        });
-
-        marker.addListner("click", function() {
-            closeOtherInfo();
-            infowindow.open(map.marker);
-            infoObj[0] = infowindow;
-        });
-    }
-
-    //clear out previous information   
-    function closeOtherInfo() {
-        if (infoObj.length > 0) {
-            infoObj[0].set("marker", null);
-            infoObj[0].close();
-            infoObj[0].length = 0;
-        }
-    }
-
-    const legend = document.getElementById("legend");
-
-    for (const key in icons) {
-        const type = icons[key];
-        const name = type.name;
-        const icon = type.icon;
-        const div = document.createElement("div");
-        div.innerHTML = '<img src="' + icon + '"> ' + name;
-        legend.appendChild(div);
-    }
-    map.controls[google.maps.ControlPosition.LEFT_TOP].push(legend);
-}
-
-
-// call the map*
-initMap();

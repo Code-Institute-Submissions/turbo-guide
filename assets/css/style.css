@@ -43,6 +43,10 @@ header{
     position: sticky;      
 }
 
+section{
+    height: 100%;
+}
+
 footer{
     bottom:0;
     /*display:inline-flex;*/
@@ -85,17 +89,57 @@ h4{
     font-size: 18px;
 }
 
-/*-----------------------------------------nav with icons source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_navbar_icon and https://stackoverflow.com/questions/17197961/positioning-of-logo-and-navbar-inside-header/17198464 */
+/*-----------------------------------------nav with icons source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_navbar_icon and https://stackoverflow.com/questions/17197961/positioning-of-logo-and-navbar-inside-header/17198464  */
 
-header ul{
+nav{
+    /*box-sizing: content-box;*/
+    float: right;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;  
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px 15px;
+}
+
+nav ul li a {
+    color:  black;
+    display: inline-block;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    font-weight: 600;
+    /*min-width: 450px;*/
+    text-decoration: none; 
+     
+}  
+
+a {
+    /*margin-left:15px;*/
+    color:#e580a4;
+
+    text-decoration: none;
+    display: inline-block;
+    
+    font-weight: 600;
+}
+
+a:hover {
+    color: #f5f3f5;
+      
+}
+/*header ul{
     float:right;
     /*padding: 0;
-    margin: 0;*/
+    margin: 0;*
 }
 
 header ul li{
     display:inline-block;
-    /*float:left; */
+    /*float:left; 
     margin-top: 30px;
     font-size: 24px;
     font-family: 'Kaushan Script', cursive;
@@ -143,17 +187,18 @@ a:hover {
 .jumbotron{
     border: 0;
     padding:0;
-    margin-right: auto;
-    margin-left: auto;
+    /*margin-right: auto;
+    margin-left: auto;*/
     text-align: center;   
 }
 
-.container{
-   /* margin:10px;*/
+/*.container{
+   /* margin:10px;
+
     padding-left:0;
     padding-right:0;
-    position: 
-}
+     
+}*/
 
 .hero-image{
     
@@ -179,8 +224,8 @@ a:hover {
     top: 77%;
     left: 38%;    
 }
+/*----------------------------------------places section*/
 
-/* designed to work in default box-sizing */
   /*-----https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ -----*/
 
 .component { 
@@ -190,15 +235,6 @@ a:hover {
     display: flex;
     gap: 1em;
 }
-/*----------------------------------------places section*/
-
-
-/*.social-links{
-           
-    color:#e580a4;
-    padding: 20px;   
-    
-}*/
 
 /*------------------------ the map section*/
 
@@ -206,21 +242,11 @@ a:hover {
     min-height: 360px;
 }*/
 
-#map,
-#legend{
-    width: 90%;
+#map{
+    width: 100%;
     margin: auto;
     margin-bottom: auto;
-    
-}
-
-#map {
-
-    height: 400px;
-    /*width: 90%;
-    margin: auto;
-    margin-bottom: auto;*/
-    
+    height: 400px;   
 }
 
 #legend {
@@ -239,13 +265,9 @@ a:hover {
   vertical-align: middle;
 }
 
-/*#f-design{
-    text-align: center;   
-}*/
 
 /*-----------------------------contact section*/
 
- 
 
 .email-address{
     display:inline-flex;
@@ -254,6 +276,21 @@ a:hover {
 .visitor-name,
 .visitor-message{
     box-sizing: content-box;
+}
+
+
+/*---------------------------------footer section*/
+
+social-links{
+           
+    color:black;
+    padding: 20px;
+    margin-top:15px;   
+    
+}
+
+#f-design{
+    text-align: center
 }
 
 
