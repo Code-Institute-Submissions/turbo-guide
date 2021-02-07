@@ -1,27 +1,24 @@
 let map;
 
 const sligo = {
-        lat: 54.2697,
-        lng: -8.4694
-    };
-
-function initMap() {
-    map = new google.maps.Map(document.getElementById("map"), {
-            center: sligo,
-            zoom: 8
-    });
-
-    addMarkerInfo()
-
+    lat: 54.2697,
+    lng: -8.4694
 };
 
-// array with icons   
-const markersArray = [
+function initMap() {
 
-    {
-        surfing: {
+    map = new google.maps.Map(document.getElementById("map"), {
+        center: sligo,
+        zoom: 8
+    });
+    
+        addMarkerInfo()
+
+        // array with icons   
+        const markersArray = [{
+                surfing: {
             icon: "./img/surfing.png"
-        }
+            }
     },
 
     {
@@ -102,11 +99,13 @@ const locations = [
         type: "smallcity",
         placeName: "Sligo",
 
-    },
+    }
+],
 
     //Sligo Abbey
     {
-        coordinates: {
+        coordinates:
+        {
             lat: 54.27087,
             lng: -8.47002,
         },
@@ -149,7 +148,7 @@ const locations = [
         placeName: "Mullaghmore",
         information: "Small fishing village with a superb, large (3km) sandy beach. Mullaghmore is also a base for licensed angling/passanger boats for charter."
     },
-];
+]
 
 var infoObj = [];
 
@@ -173,7 +172,7 @@ function addMarkerInfo() {
             infowindow.open(map.marker);
             infoObj[0] = infowindow;
         });
-    }
+    };
 
     //clear out previous information   
     function closeOtherInfo() {
@@ -187,16 +186,12 @@ function addMarkerInfo() {
     const legend = document.getElementById("legend");
 
     for (const key in icons) {
-        const type = icons[key];
-        const name = type.name;
-        const icon = type.icon;
-        const div = document.createElement("div");
-        div.innerHTML = '<img src="' + icon + '"> ' + name;
-        legend.appendChild(div);
-    }
+    const type = icons[key];
+    const name = type.name;
+    const icon = type.icon;
+    const div = document.createElement("div");
+    div.innerHTML = '<img src="' + icon + '"> ' + name;
+    legend.appendChild(div);
+}
     map.controls[google.maps.ControlPosition.LEFT_TOP].push(legend);
 }
-
-
-// call the map*
-initMap();

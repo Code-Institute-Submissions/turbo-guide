@@ -238,6 +238,11 @@ a:hover {
 
 /*------------------------ the map section*/
 
+
+/* sources for map comes from tutotals:https://www.youtube.com/watch?v=oVr6unKZbg4 and https://www.youtube.com/watch?v=Xptz0GQ2DO4&t=190s
+
+https://developers.google.com/maps/documentation/javascript/coordinates
+
 /*div#map{
     min-height: 360px;
 }*/
@@ -251,10 +256,11 @@ a:hover {
 
 #legend {
     background: #f5f3f5;
-    border: 2px solid #1f3b2c;
+    border: 1px solid #1f3b2c;
     font-family: "Open Sans", sans-serif;
     margin: 10px;
     padding: 10px;
+    width: auto;
 }
  
 #legend h3 {
