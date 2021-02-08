@@ -67,7 +67,6 @@ Website's first time visitors could want:
 
 # Design
 
-
 ## Wireframes
 
 Are available here:
@@ -127,35 +126,66 @@ I would also like to create a carousel gallery with those places. Upon clicking 
 
 **Gitpod** is an Integrated Development Enviroment (IDE) which was used to create project. 
 
-**Git** will be used to version control.
+**Git** was used to version control.
 
-**Github Pages** will be used to present created page.
+**Github Pages** was used to present created page.
 
-**Bootstrap** will be used for styling webpage.
+**Bootstrap** was used for styling webpage.
 
-**Fontawesome** will be used to increse user experience by adding, expected by users, icons.
+**Fontawesome** was used to increse user experience by adding, expected by users, icons.
 
-**Paint** will be used to resize images.
+**Paint**  and **Canva** where used to resize images.
 
 [FreeLogoDesign](https://www.freelogodesign.org) was used to create logo
 
 # Testing
 
+In order to ensure the site works as intended, I made manual tests on phones, tablets and desktops, using Chrome, Firefox, Internet Explorer, Edge. I also ran tests using dev tools,JShint, CodeBeautify, W3V CSS and HTML validator.
+
+    Links are working properly and open expected sections.
+
+    Footer icons such as Facebook, Instagram and Pinterest provide exacly to the showed places and open in new windows. 
+
 # Deployment
 
+To deploy this page to GitHub Pages from its GitHub repository, the following steps were taken:
+
+1. Log into GitHub.
+2. From the list of repositories on the screen, select madatoo/discover-with-me
+3. From the menu items near the top of the page, select Settings.
+4. Scroll down to the GitHub Pages section.
+5. Under Source click the drop-down menu labelled None and select Master Branch
+6. On selecting Master Branch the page is automatically refreshed, the website
+   is now deployed.
+7. Scroll back down to the GitHub Pages section to retrieve the link to the 
+   deployed website.
+
+Run this project locally (clone this project into Gitpod) you will need:
+
+* a Github account. Create a Github account here
+* use the browser with extention for gitpod Then follow these steps:
+
+1. Install the Gitpod Browser Extentions for your browser
+2. After installation, restart the browser
+3. Log into Gitpod with your gitpod account.
+4. Navigate to the Project GitHub repository
+5. Click the green "Gitpod" button in the top right corner of the respository
+6. This will trigger a new gitpod workspace to be created from the code in 
+   github where you can work locally.
+
+
 # Credits
+To create this project I used Google Maps Platform, Bootstap and w3schools,  [Kevin Powell](https://www.youtube.com/user/KepowOb), [Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA) If a source is not mentioned above, then additional information about an original code, which was changed according to my website's needs, is mentioned in other files.
 
 ## Code
-
+[Bryce St. Pierre](https://www.youtube.com/channel/UClTmDivmNxjuH74_Y6MuJ3w)websites and their tutorials. I also used Slack, Stack Overflow, Tutors CI. 
 
 ## Content
-
+This was written by me after researching information about the places mentioned on the website.
 
 ## Media
+Photos are from my own stock, except for the photos of the Yeats Building and the Lissadell House and Gardens which are from Google Images.
 
 # Acknowledgements
 
-I want to thank you: 
-**Brian Macharia** (my Mentor, which provide me by this project) 
-**Jim Lynx** (my friend from course, which is the first instance after Slack Community;) 
-**Scot** from Tutors Support for his help with my terminal:)
+I want to thank my Mentor, who has helped me with this project, the Tutors Team,who have helped me with the technical issues and my family who have supported me throughout the course of this project :) 
