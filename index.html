@@ -1,218 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatibile" content="IE=edge,chrome=1"/>
-    
-    <!--favicons-->
-    <link rel="apple-touch-icon" sizes="160x160" href="/logo_160x160.png">
-    <link rel="icon" type="image/png" href="/logo_16x16.png">
-    <link rel="icon" type="image/png" href="/logo_32x32.png">
-       
-    <!-- lines below are copied from Bootstrap CDN -->
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">   
-             
-    <title>Turbo Guide Sligo| Home</title>
-</head>
-
-<body>
-
-     <header class="page-header sticky-top">
-        <div class="container-fluid">
-            <nav class="header" role="baner">
-                <a class="active" href="#home"><img class ="logo-img" src="assets/img/logo_60x60.png" height="60" title="turbo guide logo" alt="website logo with compas and name turbo guide sligo"></a>
-                <ul>
-                    <li class="item" id="item">
-                        <a class="nav-link" href="#home"><span>Home</span></a>
-                    </li>
-                    <li class="item">
-                        <a class="nav-link" href="#map"><span>Map</span></a>
-                    </li>
-                    <li class="item">
-                        <a class="nav-link" href="#places">         <span>Places</span></a>
-                    </li>
-                    <li class="item">
-                        <a class="nav-link" href="#contact">
-                        <span>Contact</span></a>
-                    </li>
-                </ul>
-                <button class="hamburger" id="hamburgr">
-                    <i class="fas fa-bars"></i>
-                </button>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+      <meta http-equiv="X-UA-Compatibile" content="IE=edge,chrome=1"/>
+      <!--favicons-->
+      <link rel="apple-touch-icon" sizes="160x160" href="/logo_160x160.png">
+      <link rel="icon" type="image/png" href="/logo_16x16.png">
+      <link rel="icon" type="image/png" href="/logo_32x32.png">
+      <!-- lines below are copied from Bootstrap CDN -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <title>Turbo Guide Sligo| Home</title>
+   </head>
+   <body>
+      <header class="page-header sticky-top">
+         <div class="container-fluid">
+            <nav class="header">
+               <a class="active" href="#home"><img class ="logo-img" src="assets/img/logo_60x60.png" height="60" title="turbo guide logo" alt="website logo with compas and name turbo guide sligo"></a>
+               <ul>
+                  <li class="item" id="item">
+                     <a class="nav-link" href="#home"><span>Home</span></a>
+                  </li>
+                  <li class="item">
+                     <a class="nav-link" href="#maps"><span>Map</span></a>
+                  </li>
+                  <li class="item">
+                     <a class="nav-link" href="#places">         <span>Places</span></a>
+                  </li>
+                  <li class="item">
+                     <a class="nav-link" href="#contact">
+                     <span>Contact</span></a>
+                  </li>
+               </ul>
+               <button class="hamburger" id="hamburgr">
+               <i class="fas fa-bars"></i>
+               </button>
             </nav>
-        </div>
-    </header> 
-
-    <!--home section-->
-    <section id="home">
-        <div class=" jumbotron hero-image">
+         </div>
+      </header>
+      <!--home section-->
+      <section id="home">
+         <div class=" jumbotron hero-image">
             <h2 class= "title hero-text">Sligo - your next destination!</h2>
             <div class="button">
-                <a class="btn home-section-button" href="#places" role="button" rel="nofollow noopener"><h4>Read more</h4></a>
+               <a class="btn home-section-button" href="#places" role="button" rel="nofollow noopener">
+                  <h4>Read more</h4>
+               </a>
             </div>
-        </div> 
-    </section>
-
-    <!--map section-->
-    <div class="container">
-        <div class="container">
+         </div>
+      </section>
+      <!--map section-->
+      <section id="maps">
+         <div class="container">
             <div class="row">
-                <h1>Sligo map</h1>
+               <h1>Sligo map</h1>
             </div>
-        </div>
+         </div>
          <div class="row mb-2">
             <div class="col">
-                <input class="form-control" id="serch" type="text" placeholder= "Enter place">
+               <input class="form-control" id="serch" type="text" placeholder= "Enter place">
             </div>
-        </div>
-        <div id="map">
+         </div>
+         <div id="map">
             <div id="legend">
-                <h4>Legend</h4>
+               <h4>Legend</h4>
             </div>
-        </div> 
-    </div>
-
-
-    <!--places section-->
-     <section id="places">
-        <div class="container">
-            <div class="row ">
-                <div class="col sm-12 md-6">
-                    <h1 class ="text-center">Beaches</h1>
-                    <div class="place-text">
-                        <h3>Rosses Point</h3>
-                        <p>This picturesque village is situated at the entrance to Sligo Harbour from Sligo Bay. </p>
-                        <p>Home to the Sligo Yacht Club, the annual West of Ireland Championship hosted by the County Sligo Golf Club and several Blue Flag strands which are safe for swimming.</p>
-                        <p>Another great event held annually is The Rosses Point Shanty Festival which happens around mid June with its profits going to the RNLI (Royal National Lifeboat Institution). With plenty of places to stay and dine, Rosses Point is bound to be a great destination for trips of any length. </p>
-                    </div>
-                    <div class="place-text">
-                        <h3>Strandhill</h3>
-                        <p> This coastal town in County Sligo is a great place for surfing, but unfortunately it is not safe for swimming. However, there are still plenty of things to do like taking a walk on the beach or going to one of the nearby pubs, restaurants or cafes. Another great way to spend time here would be to visit The Strandhill People’s Market that takes place at Hangar 1 at Sligo Airport. The Market happens every Sunday from 11am to 4pm and offers an array of local crafts, foods, textiles and live music. </p>
-                    </div>
-                </div>          
-            <div class="col sm-9 md-6" >
-                <h1 class="text-center">Town attractions</h1>
-                    <div class="place-text">
-                    <h3>Sligo Abbey</h3>
-                    <p>This Dominican convent founded in 1253 was built in the Romanesque style. The beautiful extensive ruins of mainly the church and the cloister ramain for tourists to visit. The abbey contains a well-preserved cloister, a great wealth of carvings (as well as Gothic and Renaissance tomb sculpture) and the only sculptured fifteenth-century high altar to survive in an Irish monastic church. </p>
-                    </div>
-                    <div class="place-text">
-                        <h3>Yeats Building</h3>
-                        <p>This beautiful 19th century red brick building is home of the Yeats Society Sligo. It is the headquarters of the Yeats International Summer Festivals and houses the Yeats Society Library, the Sligo Art Gallery, and a photographic collection of Yeats and his family. This is a great place to visit and find out more about Yeats’ life and his work.</p>
-                    </div>
+         </div>
+      </section>
+      <!--places section-->
+      <!--beaches-->
+      <section id="places">
+         <div>
+            <h1 class ="text-center">Beaches</h1>
+         </div>
+         <section class="sligo-places">
+            <!--Rosses Point-->    
+            <div class="split">
+               <div class="place-text">
+                  <h3>Rosses Point</h3>
+                  <p>This picturesque village is situated at the entrance to Sligo Harbour from Sligo Bay. </p>
+                  <p>Home to the Sligo Yacht Club, the annual West of Ireland Championship hosted by the County Sligo Golf Club and several Blue Flag strands which are safe for swimming.</p>
+                  <p>Another great event held annually is The Rosses Point Shanty Festival which happens around mid June with its profits going to the RNLI (Royal National Lifeboat Institution). With plenty of places to stay and dine, Rosses Point is bound to be a great destination for trips of any length.</p>
+               </div>
+               <div>                          
+                  <img class="places-images" src="../img/sligo.jpg" alt="Rosses Point shore">
+               </div>
             </div>
-            <div class="col sm-12 md-6" >
-                <h1 class ="text-center">Nearby attractions</h1>
-                    <div class="place-text">
-                    <h3>Lisadell House and Gardens</h3>
-                    <p>This majestic place is situated on the shores of Sligo Bay. Surrounded by the natural beauty of the Atlantic Ocean, woodland and mountains, Lissadell House and Gardens has also historic and literary associations, as it was the childhood home of Constance Markievicz, her sister Eva Gore-Booth and her brother Josslyn Gore-Booth. </p>
-                    </div>
-                    <div class="place-text">
-                        <h3>Mullaghmore</h3>
-                        <p>This holiday destination is located one the Mullaghmore peninsula in County Sligo, Ireland. Its skyline is dominated by Ben Bulben mountain and the Atlantic Ocean. Here, you can stroll along the beautiful white sandy beach or go into the water for a swim or surfing session. This is Ireland’s ultimate big wave destination so no matter the reason for your trip the incredible views are always guaranteed.  </p>
-                    </div>
-                </div>
+         </section>
+         <section class="sligo places">
+            <!--Strandhill-->
+            <div class="split">
+               <div>
+                  <img class="places-images" src="../img/strandhill.jpg" alt="Standhill beach">
+               </div>
+               <div class="place-text">
+                  <h3>Strandhill</h3>
+                  <p> This coastal town in County Sligo is a great place for surfing, but unfortunately it is not safe for swimming.However, there are still plenty of things to do like taking a walk on the beach or going to one of the nearby pubs,restaurants or cafes.</p>
+                  <p>Another great way to spend time here would be to visit The Strandhill People’s Market that takes place at Hangar 1 at Sligo Airport. The Market happens every Sunday from 11am to 4pm and offers an array of local crafts, foods, textiles and live music.</p>
+               </div>
             </div>
-        </div>
-    </section >
-    
-    
-    <!--contact section-->
-    <section class="last-section" id="contact">
-        <div class="container-fluid">
+         </section>
+         <!--town attractions-->      
+         <section class="sligo-places">
+            <div>
+               <h1 class="text-center">Town attractions</h1>
+            </div>
+            <!--Sligo Abbey-->
+            <div class="split">
+               <div class="place-text">
+                  <h3>Sligo Abbey</h3>
+                  <p>This Dominican convent founded in 1253 was built in the Romanesque style. The beautiful extensive ruins of mainly the church and the cloister ramain for tourists to visit. </p>
+                  <p> abbey contains a well-preserved cloister, a great wealth of carvings (as well as Gothic and Renaissance tomb sculpture) and the only sculptured fifteenth-century high altar to survive in an Irish monastic church. </p>
+               </div>
+               <div>
+                  <img class="places-images" src="../img/abbey.img" alt="Abbey ruins">
+               </div>
+            </div>
+         </section>
+         <section class="sligo places">
+            <div class="split">
+               <!--Yeats Building-->
+               <div>
+                  <img class="places-images" src="../img/yeats_building.png" alt="Yeats Building Sligo Town">
+               </div>
+               <div class="place-text">
+                  <h3>Yeats Building</h3>
+                  <p>This beautiful 19th century red brick building is home of the Yeats Society Sligo.</p>
+                  <p>It is the headquarters of the Yeats International Summer Festivals and houses the Yeats Society Library, the Sligo Art Gallery, and a photographic collection of Yeats and his family. This is a great place to visit and find out more about Yeats’ life and his work.</p>
+               </div>
+            </div>
+         </section>
+         <!--nearby attractions-->
+         <section class="sligo-places">
+            <div class="place-text">
+               <h1>Nearby attractions</h1>
+            </div>
+            <!--Lisadell House and Gardens-->
+            <div class="split">
+               <div class="place-text">
+                  <h3>Lisadell House and Gardens</h3>
+                  <p>This majestic place is situated on the shores of Sligo Bay.</p>
+                  <p>Surrounded by the natural beauty of the Atlantic Ocean, woodland and mountains, Lissadell House and Gardens has also historic and literary associations, as it was the childhood home of Constance Markievicz, her sister Eva Gore-Booth and her brother Josslyn Gore-Booth. </p>
+               </div>
+               <div>
+                  <img class="places-images" src="../img/lissadell" alt="Lissadell House and Gardens">
+               </div>
+            </div>
+         </section>
+         <section>
+            <!--Mullaghmore-->
+            <div class="split">
+               <div class="place-text">
+                  <h3>Mullaghmore</h3>
+                  <p>This holiday destination is located one the Mullaghmore peninsula in County Sligo, Ireland. </p>
+                  <p>Its skyline is dominated by Ben Bulben mountain and the Atlantic Ocean.
+                     Here, you can stroll along the beautiful white sandy beach or go into the water for a swim or surfing session.
+                  </p>
+                  <p>This is Ireland’s ultimate big wave destination so no matter the reason for your trip the incredible views are always guaranteed.  </p>
+               </div>
+            </div>
+         </section>
+      </section >
+      <!--contact section-->
+      <section class="last-section" id="contact">
+         <div class="container-fluid">
             <div class="container">
-                <div class="row place-text"> 
-                    <h4>Do you have any questions?</h4>
-                    <p>Pleace do not hestiate to contact with us directly</p>
-                </div>
+               <div class="row place-text">
+                  <h4>Do you have any questions?</h4>
+                  <p>Pleace do not hestiate to contact with us directly</p>
+               </div>
             </div>
             <div class="container">
-                <div class="row">                
-                <!--orginal code is available on https://getbootstrap.com/docs/4.0/components/forms/-->
-                
-                <!--contact form-->
-
-                    <form>
-                    <div class="form-group row">
+               <div class="row">
+                  <!--orginal code is available on https://getbootstrap.com/docs/4.0/components/forms/-->
+                  <!--contact form-->
+                  <form>
+                     <div class="form-group row">
                         <div class="col md-12">
-                            <label for="email-address">Email address</label>
-                            <input type="email" class="form-control" id="email-address" placeholder="name@example.com">
+                           <label for="email-address">Email address</label>
+                           <input type="email" class="form-control" id="email-address" placeholder="name@example.com">
                         </div>
-                    </div>
-                    <div class="form-group row">
+                     </div>
+                     <div class="form-group row">
                         <div class="col md-12">
-                            <label for="visitor-name">Name</label>
-                            <input type="name" class="form-control" id="name" placeholder="Name">
-                        </div>  
-                    </div>
-                    <div class="form-group">
+                           <label for="visitor-name">Name</label>
+                           <input type="name" class="form-control" id="name" placeholder="Name">
+                        </div>
+                     </div>
+                     <div class="form-group">
                         <div class="col md-12"></div>
-                            <label for="select-trip">Select please.</label>
-                             <select class="form-control" id="select-trip">
-                                <option>trip for two</option>
-                                <option>family trip</option>
-                                <option>other</option>
-                            </select>
-                        </div>
-                    <div class="form-group">
+                        <label for="select-trip">Select please.</label>
+                        <select class="form-control" id="select-trip">
+                           <option>trip for two</option>
+                           <option>family trip</option>
+                           <option>other</option>
+                        </select>
+                     </div>
+                     <div class="form-group">
                         <label for="visitor-message">your message</label>
                         <textarea class="form-control" id="visitor-message" rows="3"></textarea>
-                    </div>
-                    <div>
+                     </div>
+                     <div>
                         <button class="btn btn-primary email-button " type="submit">Submit form</button>
-                    </div>
-                    </form>
-                </div>
+                     </div>
+                  </form>
+               </div>
             </div>
-        </div>
-    </section>  
-
-   <footer class="bottom-container justify-content-center">
-
-        <div>
+         </div>
+      </section>
+      <footer class="bottom-container justify-content-center">
+         <div>
             <div class="social-links">
-                <a class="icon social-links" href= "https://facebook.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-facebook"></i>
-                </a>
-                <a class="icon social-links" href= "https://instagram.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-instagram"></i>
-                </a>
-                <a class="icon social-links" href= "https://youtube.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-youtube"></i>
-                </a>
-                <a class="icon social-links" href= "https://pinterest.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-pinterest"></i>
-                </a>
+               <a class="icon social-links" href= "https://facebook.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-facebook"></i>
+               </a>
+               <a class="icon social-links" href= "https://instagram.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-instagram"></i>
+               </a>
+               <a class="icon social-links" href= "https://youtube.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-youtube"></i>
+               </a>
+               <a class="icon social-links" href= "https://pinterest.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-pinterest"></i>
+               </a>
             </div>
             <div>
-                <p id="f-design">@ MRS 2021 all rights reserved</p>
+               <p id="f-design">@ MRS 2021 all rights reserved</p>
             </div>
-        </div>
-    </footer>
-    
-    
-    <!--link from https://code.jquery.com/-->  
-    
-    <script 
-    src="https://code.jquery.com/jquery-3.5.1.js"
-    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-    crossorigin="anonymous">
-    </script>
-    
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    
-    <!--this link is required for zoom effect-->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    
-     
-    <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
-    
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbPbb9bzbVrjy5Wk0vbUBHsTjX52Jxr6g&callback=initMap"></script>
-    
-    <script src="assets/js/maps.js"></script>
-    <script src="assets/js/script.js"></script>
-    
- 
-</body>
-
+         </div>
+      </footer>
+      <!--link from https://code.jquery.com/-->  
+      <script 
+         src="https://code.jquery.com/jquery-3.5.1.js"
+         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+         crossorigin="anonymous"></script>
+      <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+      <!--this link is required for zoom effect-->
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+      <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbPbb9bzbVrjy5Wk0vbUBHsTjX52Jxr6g&callback=initMap"></script>
+      <script src="assets/js/maps.js"></script>
+      <script src="assets/js/script.js"></script>
+   </body>
 </html>
