@@ -21,28 +21,29 @@
 
 <body>
 
-     <header class="page-header sticky-top"> 
-        <div class="header" role="banner">          
-            <a class="nav-link active" href="#home"><img class ="logo-img" src="assets/img/logo_60x60.png" height="60" title="turbo guide logo" alt="website logo with compas and name turbo guide sligo"></a>
-            <div>
-                <nav>           
-                    <ul>
-                        <li class="item">
-                            <a class="nav-link" href="#home"><span>Home</span></a>
-                        </li>
-                        <li class="item">
-                            <a class="nav-link" href="#map"><span>Map</span></a>
-                        </li>
-                        <li class="item">
-                            <a class="nav-link" href="#places">         <span>Places</span></a>
-                        </li>
-                        <li class="item">
-                            <a class="nav-link" href="#contact">
-                            <span>Contact</span></a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+     <header class="page-header sticky-top">
+        <div class="container-fluid">
+            <nav class="header" role="baner">
+                <a class="active" href="#home"><img class ="logo-img" src="assets/img/logo_60x60.png" height="60" title="turbo guide logo" alt="website logo with compas and name turbo guide sligo"></a>
+                <ul>
+                    <li class="item" id="item">
+                        <a class="nav-link" href="#home"><span>Home</span></a>
+                    </li>
+                    <li class="item">
+                        <a class="nav-link" href="#map"><span>Map</span></a>
+                    </li>
+                    <li class="item">
+                        <a class="nav-link" href="#places">         <span>Places</span></a>
+                    </li>
+                    <li class="item">
+                        <a class="nav-link" href="#contact">
+                        <span>Contact</span></a>
+                    </li>
+                </ul>
+                <button class="hamburger" id="hamburgr">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
         </div>
     </header> 
 
@@ -121,7 +122,7 @@
     
     
     <!--contact section-->
-    <section id="contact">
+    <section class="last-section" id="contact">
         <div class="container-fluid">
             <div class="container">
                 <div class="row place-text"> 
@@ -209,6 +210,7 @@
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbPbb9bzbVrjy5Wk0vbUBHsTjX52Jxr6g&callback=initMap"></script>
     
     <script src="assets/js/maps.js"></script>
+    <script src="assets/js/script.js"></script>
     
  
 </body>

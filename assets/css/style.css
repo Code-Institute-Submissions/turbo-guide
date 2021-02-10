@@ -23,7 +23,7 @@ body{
 header,
 footer{
     background-color: #578368;
-    color: #e580a4;
+    /*color: #e580a4;*/
     display: inline-flex;
     height: 100px;
     width:100%; 
@@ -81,101 +81,86 @@ h3{
 h4{
     font-size: 18px;
 }
+/*----------------------------------------------------home section */
+/*----------------navigation bar with logo and hamburger menu*/
 
-/*-----------------------------------------nav with icons source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_navbar_icon and https://stackoverflow.com/questions/17197961/positioning-of-logo-and-navbar-inside-header/17198464  */
+/*---nav with icons source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_navbar_icon and https://stackoverflow.com/questions/17197961/positioning-of-logo-and-navbar-inside-header/17198464 and tutorial:https://www.youtube.com/watch?v=ydZc17rlR5E */
+
+nav,
+nav ul{
+    display: flex;
+}
 
 nav{
-    /*box-sizing: content-box;*/
-    float: right;
+    
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em;
 }
 
 nav ul{
-    display: flex;
-    list-style: none;  
+    list-style: none;
+    padding: 0;  
 }
 
-nav ul li {
-    display: inline-block;
-    padding: 20px 15px;
-}
-
-nav ul li a {
+nav ul li a{
+    
     color:  black;
     display: inline-block;
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
     font-weight: 600;
-    /*min-width: 450px;*/
-    text-decoration: none; 
+    text-decoration: none;
+    padding: 10px 15px; 
      
-}  
+}
 
-a {
-    /*margin-left:15px;*/
-    color:#e580a4;
-
-    text-decoration: none;
-    display: inline-block;
+.hamburger{
     
-    font-weight: 600;
+    background-color: transparent;
+    border:0;
+    color:#f5f3f5;
+    cursor:pointer;
+    display:none;
+    font-size: 2em;
 }
 
-a:hover {
-    color: #f5f3f5;
-      
-}
-/*header ul{
-    float:right;
-    /*padding: 0;
-    margin: 0;*
+.hamburger:focus{
+    outline:none;
 }
 
-header ul li{
-    display:inline-block;
-    /*float:left; 
-    margin-top: 30px;
-    font-size: 24px;
-    font-family: 'Kaushan Script', cursive;
-    font-weight: 300;
-    ;
-    
-}
+@media screen and (max-width: 767px){
+    nav ul{
+        display:none;
+    }
 
- a {
-    text-decoration: none;
-    display: inline-block;
-    color:  #e580a4;
-    font-weight: 600;
-    
-}  
-a {
-    
-    color:#e580a4;
-}
+    nav ul :show{
+        display: flex;
+    }
 
-a:hover {
-    color: #1f3b2c;
-      
-}
- 
-@media screen and (max-width: 500px) {
-  .nav a {
-    float: none;
-    display: block;
-  }
+    .hamburger{
+        display: block;
+    }
+
+    .page-header{
+        width: 70%;
+    }
+
+
 }
 
 /*----------------------------------logo image*/
 
-
 .logo-img {
     border-radius: 5rem;
     border-style: none;
-    margin:20px 5px 20px 30px;
-    vertical-align:center;  
+    margin:0.25em 5px 1em 30px;
+    vertical-align: center;
+
+
 }
-/*----------------------------------home section*/
-/*---------------------hero image */
+/*-----------------------------------hero image */
 /* source: https://www.w3schools.com/howto/howto_css_hero_image.asp*/
 
 .hero-image{
@@ -202,14 +187,14 @@ a:hover {
 /*--------------------see more button*/
 
 .home-section-button{
-    background-color: #1f3b2c;
-    border-radius: 0.5em;
+    background-color:#1f3b2c;
+    border-radius: 0.75em;
     color:#f5f3f5;
-    /*display: inline-block;*/
-    margin:1.5em;
-    padding:1.25em;
+    margin:0.75em;
+    padding:0.5em;
     position: relative;
     left:10em;
+    line-height: normal;
     text-align: center;
     text-decoration:none;
     top:20em;
@@ -219,13 +204,9 @@ a:hover {
 
 .home-section-button:hover{
     background-color: #f5f3f5;
+    }
 
 }
-
-
-
-
-
 
 /*----------------------------------------places section*/
 
@@ -289,12 +270,22 @@ https://developers.google.com/maps/documentation/javascript/coordinates
 
 
 /*---------------------------------footer section*/
+a {
+    /*color:#e580a4;*/
+    display: inline-block;
+    font-weight: 600;
+    height: 100px;
+    text-decoration: none;
+}
 
-social-links{
-           
+a:hover {
+    color: #f5f3f5;     
+}
+
+.social-links{      
     color:black;
     padding: 20px;
-    margin-top:15px;   
+    /*margin-top:15px; */  
     
 }
 
