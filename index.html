@@ -15,9 +15,9 @@
       <link rel="stylesheet" href="assets/css/style.css">
       <title>Turbo Guide Sligo| Home</title>
    </head>
+   
    <body>
-
-    
+  
     <header class="page-header sticky-top">
         <!--navbar-->
         <!--source class and  https://getbootstrap.com/docs/4.0/components/navbar/-->
@@ -51,34 +51,39 @@
     <section id="home">
         <div class=" jumbotron hero-image">
             <h2 class= "title hero-text">Sligo - your next destination!</h2>
-            <div class="button">
-               <a class="btn" href="#places" role="button" rel="nofollow noopener">
-                <h4>Read more</h4>
-               </a>
+            <div>
+                <button class="btn">
+                <a class="home-section-button" href="#places" rel="nofollow noopener"><h4>Read more</h4></a></button>
             </div>
          </div>
     </section>
-    
+   
     <!--map section-->
     <section id="maps">
         <div class="container">
-            <div class="row">
-               <h1>Sligo map</h1>
+            <div>
+                <h1 class="text-center">Sligo map</h1>
             </div>
-        </div>
-        <div class="row mb-2">
+            </div>
+                <div id="map">
+
+                    
+        <!--<div class="row mb-2">
             <div class="col">
                 <input class="form-control" id="serch" type="text" placeholder= "Enter place">
             </div>
             </div>
             <div id="map">
             <div id="legend">
-               <h4>Legend</h4>
-            </div>
+                <h4>Legend</h4>
+            </div>-->
         </div>
+    
+        
     </section>
     
     <!--places section-->
+    <article>
       <!--beaches-->
       <section id="places">
 
@@ -93,9 +98,10 @@
                   <p>This picturesque village is situated at the entrance to Sligo Harbour from Sligo Bay. </p>
                   <p>Home to the Sligo Yacht Club, the annual West of Ireland Championship hosted by the County Sligo Golf Club and several Blue Flag strands which are safe for swimming.</p>
                   <p>Another great event held annually is The Rosses Point Shanty Festival which happens around mid June with its profits going to the RNLI (Royal National Lifeboat Institution). With plenty of places to stay and dine, Rosses Point is bound to be a great destination for trips of any length.</p>
-               </div>
+                  
+               </div> 
                <div>                          
-                  <img class="places-images" src="../img/Sligo.jpg" alt="Rosses Point shore">
+                  <img class="places-images" src="assets/img/Sligo.jpg" alt="Rosses Point shore">
                </div>
             </div>
          </section>
@@ -103,7 +109,7 @@
             <!--Strandhill-->
             <div class="split">
                <div>
-                  <img class="places-images" src="../img/strandhill.jpg" alt="Standhill beach">
+                  <img class="places-images" src="assets/img/strandhill.jpg" alt="Standhill beach">
                </div>
                <div class="place-text">
                   <h3>Strandhill</h3>
@@ -125,7 +131,7 @@
                   <p> abbey contains a well-preserved cloister, a great wealth of carvings (as well as Gothic and Renaissance tomb sculpture) and the only sculptured fifteenth-century high altar to survive in an Irish monastic church. </p>
                </div>
                <div>
-                  <img class="places-images" src="../img/abbey.png" alt="Abbey ruins">
+                  <img class="places-images" src="assets/img/abbey.png" alt="Abbey ruins">
                </div>
             </div>
          </section>
@@ -133,7 +139,7 @@
             <div class="split">
                <!--Yeats Building-->
                <div>
-                  <img class="places-images" src="../img/yeats_building.png" alt="Yeats Building Sligo Town">
+                  <img class="places-images" src="img/yeats_building.png" alt="Yeats Building Sligo Town">
                </div>
                <div class="place-text">
                   <h3>Yeats Building</h3>
@@ -145,7 +151,7 @@
          <!--nearby attractions-->
          <section class="sligo-places">
             <div class="place-text">
-               <h1>Nearby attractions</h1>
+               <h1 class="text-center">Nearby attractions</h1>
             </div>
             <!--Lisadell House and Gardens-->
             <div class="split">
@@ -155,7 +161,7 @@
                   <p>Surrounded by the natural beauty of the Atlantic Ocean, woodland and mountains, Lissadell House and Gardens has also historic and literary associations, as it was the childhood home of Constance Markievicz, her sister Eva Gore-Booth and her brother Josslyn Gore-Booth. </p>
                </div>
                <div>
-                  <img class="places-images" src="../img/lissadell.png" alt="Lissadell House and Gardens">
+                  <img class="places-images" src="assets/img/lissadell.png" alt="Lissadell House and Gardens">
                </div>
             </div>
          </section>
@@ -171,11 +177,12 @@
                   <p>This is Ireland’s ultimate big wave destination so no matter the reason for your trip the incredible views are always guaranteed.  </p>
                </div>
                <div>
-                  <img class="places-images" src="../img/mullaghmore.png" alt="Mullaghmore">
+                  <img class="places-images" src="assets/img/mullaghmore.png" alt="Mullaghmore">
                </div>
             </div>
          </section>
       </section >
+    </article>  
       <!--contact section-->
       <section class="last-section" id="contact">
          <div class="container-fluid">
@@ -241,7 +248,7 @@
         </div>
     </footer>
     
-    
+
     <script src="https://code.jquery.com/jquery-3.5.1.js"
     integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
     crossorigin="anonymous">

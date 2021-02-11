@@ -4,12 +4,18 @@
 
 *{
     border:0;
-    margin: 0;
+    margin:0;
     padding:0;
 }
 
+*::before,
+*::after,
+html{
+    box-sizing:border-box;
+}
+
 html {   
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     min-height: 100%;
     position:relative;
 }
@@ -17,13 +23,12 @@ html {
 body{
    background-color: #f5f3f5;
    font-family: "Open Sans", sans-serif; 
-    
+   line-height: 1.6; 
 }
 
 header,
 footer{
     background-color: #578368;
-    /*color: #e580a4;*/
     display: inline-flex;
     height: 100px;
     width:100%; 
@@ -34,9 +39,9 @@ header{
     position: sticky;      
 }
 
-section{
+/*section{
     height: 100%;
-}
+}*/
 
 footer{
     bottom:0;
@@ -45,6 +50,7 @@ footer{
     left:0;
     position: absolute;  
 }
+
 
 h1,
 h2,
@@ -58,12 +64,14 @@ h2,
 h3,
 h4{
     font-family: 'Kaushan Script', cursive;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 h1 {  
     font-size: 56px;
     letter-spacing: 2px;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
     
 }
 
@@ -81,6 +89,7 @@ h3{
 h4{
     font-size: 18px;
 }
+
 /*----------------------------------------------------home section */
 /*----------------navigation bar with logo and hamburger menu*/
 
@@ -116,6 +125,176 @@ nav ul li a{
      
 }
 
+/*----------------------------------logo image*/
+
+.logo-img {
+    border-radius: 5rem;
+    border-style: none;
+    margin:0.25em 5px 1em 30px;
+    vertical-align: center;
+}
+
+
+
+/*-----------------------------------hero image */
+/* source: https://www.w3schools.com/howto/howto_css_hero_image.asp  */
+
+.hero-image {
+    
+    background-image: url("../img/bridge.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: content-box;
+    display: flex;
+    height: 400px;
+    margin: 0;
+    position: relative;
+    width: 100%;
+}
+
+.hero-text {
+    color: #f5f3f5;
+    left: 38%; 
+    text-align: center;
+    top: 70%;
+    position: relative;         
+}
+/*-------------------------"see more" button*/
+
+.home-section-button{
+    background-color:#578368;
+    border-radius: 0.75em;
+    color:#f5f3f5;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    position: relative;
+    left:5em;
+    line-height: normal;
+    text-align: center;
+    text-decoration:none;
+    top:22em;
+    width: 18em;
+    
+}
+
+.home-section-button:hover{
+    background-color: #f5f3f5;
+    color:#1f3b2c;
+    text-decoration: none;
+    }
+
+
+
+    
+
+/*-------------------------------- the map section*/
+
+
+/* sources for map comes from tutotals:https://www.youtube.com/watch?v=oVr6unKZbg4 and https://www.youtube.com/watch?v=Xptz0GQ2DO4&t=190s
+
+https://developers.google.com/maps/documentation/javascript/coordinates
+
+/*div#map{
+    min-height: 360px;
+}*/
+#map,
+#legend{
+    width: 90%;
+
+}
+
+#map{
+    /*width: 90%;*/
+    margin: auto;
+    margin-bottom: auto;
+    height: 400px;   
+}
+
+#legend {
+    background: #f5f3f5;
+    border: 1px solid #1f3b2c;
+    font-family: "Open Sans", sans-serif;
+    margin: 10px;
+    padding: 10px;
+    width: auto;
+}
+ 
+#legend h3 {
+  margin-top:0.5em;
+}
+
+#legend img {
+  vertical-align: middle;
+
+}
+
+/*----------------------------------------places section*/
+
+/*-----https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ -----*/
+
+
+.place-text { 
+  /*box-sizing: border-box;*/
+  font-weight: 400;
+  font-size:1.25em;
+  text-align: justify;
+}
+
+.places-images{
+    border-radius: 5em;
+    border-style: none;
+    box-sizing:border-box;
+    display:block;
+    max-width:100%;
+    margin:0.25em 5px 1em 30px;
+}
+
+.selector{
+    display: flex;
+    gap: 1em;
+}
+
+
+
+
+/*-----------------------------contact section*/
+
+
+.email-address{
+    display:inline-flex;
+}
+
+.visitor-name,
+.visitor-message{
+    box-sizing: content-box;
+}
+
+
+/*---------------------------------footer section*/
+a {
+    /*color:#e580a4;*/
+    display: inline-block;
+    font-weight: 600;
+    /*height: 100px;*/
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f5f3f5;     
+}
+
+.social-links{      
+    color:black;
+    padding: 20px;
+    /*margin-top:15px; */  
+    
+}
+
+#f-design{
+    text-align: center;
+}
+
 /*.hamburger{
     
     background-color: transparent;
@@ -146,181 +325,5 @@ nav ul li a{
     .page-header{
         width: 70%;
     }
-
-
 }*/
 
-/*----------------------------------logo image*/
-
-.logo-img {
-    border-radius: 5rem;
-    border-style: none;
-    margin:0.25em 5px 1em 30px;
-    vertical-align: center;
-
-
-}
-/*-----------------------------------hero image */
-/* source: https://www.w3schools.com/howto/howto_css_hero_image.asp*/
-
-.hero-image{
-    
-    background-image: url("../img/bridge.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-sizing: content-box;
-    display: flex;
-    height: 400px;
-    margin: 0;
-    position: relative;
-    width: 100%;
-}
-
-.hero-text {
-    color: #f5f3f5;
-    left: 38%; 
-    text-align: center;
-    top: 70%;
-    position: relative;         
-}
-/*--------------------see more button*/
-
-.home-section-button{
-    background-color:#1f3b2c;
-    border-radius: 0.75em;
-    color:#f5f3f5;
-    margin:0.75em;
-    padding:0.5em;
-    position: relative;
-    left:10em;
-    line-height: normal;
-    text-align: center;
-    text-decoration:none;
-    top:20em;
-    width: 18em;
-    
-}
-
-.home-section-button:hover{
-    background-color: #f5f3f5;
-    }
-
-}
-
-/*----------------------------------------places section*/
-
-  /*-----https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ -----*/
-
-.component { 
-  box-sizing: content-box;
-}
-.selector{
-    display: flex;
-    gap: 1em;
-}
-
-/*------------------------ the map section*/
-
-
-/* sources for map comes from tutotals:https://www.youtube.com/watch?v=oVr6unKZbg4 and https://www.youtube.com/watch?v=Xptz0GQ2DO4&t=190s
-
-https://developers.google.com/maps/documentation/javascript/coordinates
-
-/*div#map{
-    min-height: 360px;
-}*/
-
-#map{
-    width: 100%;
-    margin: auto;
-    margin-bottom: auto;
-    height: 400px;   
-}
-
-#legend {
-    background: #f5f3f5;
-    border: 1px solid #1f3b2c;
-    font-family: "Open Sans", sans-serif;
-    margin: 10px;
-    padding: 10px;
-    width: auto;
-}
- 
-#legend h3 {
-  margin-top: 0;
-}
-
-#legend img {
-  vertical-align: middle;
-}
-
-
-/*-----------------------------contact section*/
-
-
-.email-address{
-    display:inline-flex;
-}
-
-.visitor-name,
-.visitor-message{
-    box-sizing: content-box;
-}
-
-
-/*---------------------------------footer section*/
-a {
-    /*color:#e580a4;*/
-    display: inline-block;
-    font-weight: 600;
-    height: 100px;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #f5f3f5;     
-}
-
-.social-links{      
-    color:black;
-    padding: 20px;
-    /*margin-top:15px; */  
-    
-}
-
-#f-design{
-    text-align: center
-}
-
-
-/*-----------------------------this is for nav bar (togle btn)
-/*.toggle-btn{
-    display:none;
-    position: fixed;
-    height: 80px;
-    right: 50px;
-    top: 18px;
-    width: 60px;
-}
-
-.toggle-btn span{
-    background-color:#e580a4;
-    display:inline-block;
-    height: 2px;
-    margin-bottom: 5px;
-    width: 100%;
-}*/
-
-/*@media (max-width: 991px){
-    .toggle-btn {
-        display: block;
-    }
-
-    nav{
-        border-top: 1px solid #e580a4;
-        display: none;
-        padding-top: 20px;
-        margin-top: 30px;
-    }
-}*/
