@@ -11,101 +11,95 @@ function initMap() {
         center: sligo,
         zoom: 8
     });
-    
-        addMarkerInfo()
 
-        // array with icons   
-        const markersArray = [{
-                surfing: {
-            icon: "./img/surfing.png"
+    addMarkerInfo()
+
+    // array with icons   
+    const markersArray = [
+                
+        {surfing: 
+            {
+                icon: "./img/surfing.png"
             }
-    },
+            },
 
-    {
-        ruins: {
-            icon: "./img/ruins-2.png"
-        }
-    },
-
-    {
-        smallcity: {
-            icon: "./img/smallcity.png"
-        }
-    },
-
-    {
-        museum: {
-            icon: "./img/art-museum-2.png"
-        }
-    },
-
-    {
-
-        palace: {
-            icon: "./img/palace-2.png"
-        }
-    },
-
-    {
-        shore: {
-            icon: "./img/shore.png"
-        }
-    },
-
-    {
-        restaurant: {
-            icon: "./img/restaurant.png"
-        }
-    }
-];
-
-//
+            {
+                ruins: {
+                    icon: "./img/ruins-2.png"
+                }
+            },
+            {
+                smallcity: {
+                    icon: "./img/smallcity.png"
+                }
+            },
+            {
+                museum: {
+                    icon: "./img/art-museum-2.png"
+                }
+            },
+            {
+                palace: {
+                    icon: "./img/palace-2.png"
+                }
+            },
+            {
+                shore: {
+                    icon: "./img/shore.png"
+                }
+            },
+            {
+                restaurant: {
+                    icon: "./img/restaurant.png"
+                }
+            }
+    ];
 
 // create an array with places in and nearby Sligo
 
 const locations = [
 
-    // Beaches
-    //Rosses Point
-    {
-        coordinates: {
-            lat: 54.306250,
-            lng: -8.567500,
+        // Beaches
+        //Rosses Point
+        {
+            coordinates: {
+                lat: 54.306250,
+                lng: -8.567500,
+            },
+            type: "shore",
+            placeName: "Rosses Point",
+            information: "This is one of my favourite places on the coast. I love this old seafaring village that has a seaside resort with a 18-hole championship golf course. If you like sailing you can hire a fully equipped boat and enjoy your day at the sea."
         },
-        type: "shore",
-        placeName: "Rosses Point",
-        information: "This is one of my favourite places on the coast. I love this old seafaring village that has a seaside resort with a 18-hole championship golf course. If you like sailing you can hire a fully equipped boat and enjoy your day at the sea."
-    },
 
-    //Strandhill
-    {
-        coordinates: {
-            lat: 54.306250,
-            lng: -8.567500,
+        //Strandhill
+        {
+            coordinates: {
+                lat: 54.306250,
+                lng: -8.567500,
+            },
+            type: "surfing",
+            placeName: "Strandhill",
+            information: "This is location has been named as one of the best places to surf in Europe. It is worth noting that swimming is forbidden at Strandhill beach due to very strong sea currents."
         },
-        type: "surfing",
-        placeName: "Strandhill",
-        information: "This is location has been named as one of the best places to surf in Europe. It is worth noting that swimming is forbidden at Strandhill beach due to very strong sea currents."
-    },
 
-    // Town attractions
+        // Town attractions
 
-    //Sligo Town
-    {
-        coordinates: {
-            lat: 54.2697,
-            lng: -8.4694,
-        },
-        type: "smallcity",
-        placeName: "Sligo",
+        //Sligo Town
+        {
+            coordinates: {
+                lat: 54.2697,
+                lng: -8.4694,
+            },
+            type: "smallcity",
+            placeName: "Sligo",
+            information:
 
-    }
-],
+        }
+    ],
 
     //Sligo Abbey
     {
-        coordinates:
-        {
+        coordinates: {
             lat: 54.27087,
             lng: -8.47002,
         },
@@ -186,12 +180,12 @@ function addMarkerInfo() {
     const legend = document.getElementById("legend");
 
     for (const key in icons) {
-    const type = icons[key];
-    const name = type.name;
-    const icon = type.icon;
-    const div = document.createElement("div");
-    div.innerHTML = '<img src="' + icon + '"> ' + name;
-    legend.appendChild(div);
-}
+        const type = icons[key];
+        const name = type.name;
+        const icon = type.icon;
+        const div = document.createElement("div");
+        div.innerHTML = '<img src="' + icon + '"> ' + name;
+        legend.appendChild(div);
+    }
     map.controls[google.maps.ControlPosition.LEFT_TOP].push(legend);
 }

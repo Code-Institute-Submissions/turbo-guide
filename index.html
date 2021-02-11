@@ -16,63 +16,72 @@
       <title>Turbo Guide Sligo| Home</title>
    </head>
    <body>
-      <header class="page-header sticky-top">
-         <div class="container-fluid">
-            <nav class="header">
-               <a class="active" href="#home"><img class ="logo-img" src="assets/img/logo_60x60.png" height="60" title="turbo guide logo" alt="website logo with compas and name turbo guide sligo"></a>
-               <ul>
-                  <li class="item" id="item">
-                     <a class="nav-link" href="#home"><span>Home</span></a>
-                  </li>
-                  <li class="item">
-                     <a class="nav-link" href="#maps"><span>Map</span></a>
-                  </li>
-                  <li class="item">
-                     <a class="nav-link" href="#places">         <span>Places</span></a>
-                  </li>
-                  <li class="item">
-                     <a class="nav-link" href="#contact">
-                     <span>Contact</span></a>
-                  </li>
-               </ul>
-               <button class="hamburger" id="hamburgr">
-               <i class="fas fa-bars"></i>
-               </button>
-            </nav>
-         </div>
-      </header>
-      <!--home section-->
-      <section id="home">
-         <div class=" jumbotron hero-image">
+
+    
+    <header class="page-header sticky-top">
+        <!--navbar-->
+        <!--source class and  https://getbootstrap.com/docs/4.0/components/navbar/-->
+        
+        <nav class="navbar navbar-expand-sm fixed-top page-header">
+            <a class="active navbar-brand" href="#home"><img class ="logo-img" src="assets/img/logo_60x60.png" height="60" title="turbo guide logo" alt="website logo with compas and name turbo guide sligo"></a>
+            
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span></button>
+            
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item mr-2 active">
+                        <a class="nav-link" href="#home"><span>Home</span></a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link" href="#maps"><span>Map</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link mr-2" href="#places"> <span>Places</span></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#contact"><span>Contact</span></a>
+                    </li>
+                </ul>
+            </div>   
+        </nav>
+    </header>
+      
+    <!--home section-->
+    <section id="home">
+        <div class=" jumbotron hero-image">
             <h2 class= "title hero-text">Sligo - your next destination!</h2>
             <div class="button">
-               <a class="btn home-section-button" href="#places" role="button" rel="nofollow noopener">
-                  <h4>Read more</h4>
+               <a class="btn" href="#places" role="button" rel="nofollow noopener">
+                <h4>Read more</h4>
                </a>
             </div>
          </div>
-      </section>
-      <!--map section-->
-      <section id="maps">
-         <div class="container">
+    </section>
+    
+    <!--map section-->
+    <section id="maps">
+        <div class="container">
             <div class="row">
                <h1>Sligo map</h1>
             </div>
-         </div>
-         <div class="row mb-2">
+        </div>
+        <div class="row mb-2">
             <div class="col">
-               <input class="form-control" id="serch" type="text" placeholder= "Enter place">
+                <input class="form-control" id="serch" type="text" placeholder= "Enter place">
             </div>
-         </div>
-         <div id="map">
+            </div>
+            <div id="map">
             <div id="legend">
                <h4>Legend</h4>
             </div>
-         </div>
-      </section>
-      <!--places section-->
+        </div>
+    </section>
+    
+    <!--places section-->
       <!--beaches-->
       <section id="places">
+
          <div>
             <h1 class ="text-center">Beaches</h1>
          </div>
@@ -86,7 +95,7 @@
                   <p>Another great event held annually is The Rosses Point Shanty Festival which happens around mid June with its profits going to the RNLI (Royal National Lifeboat Institution). With plenty of places to stay and dine, Rosses Point is bound to be a great destination for trips of any length.</p>
                </div>
                <div>                          
-                  <img class="places-images" src="../img/sligo.jpg" alt="Rosses Point shore">
+                  <img class="places-images" src="../img/Sligo.jpg" alt="Rosses Point shore">
                </div>
             </div>
          </section>
@@ -116,7 +125,7 @@
                   <p> abbey contains a well-preserved cloister, a great wealth of carvings (as well as Gothic and Renaissance tomb sculpture) and the only sculptured fifteenth-century high altar to survive in an Irish monastic church. </p>
                </div>
                <div>
-                  <img class="places-images" src="../img/abbey.img" alt="Abbey ruins">
+                  <img class="places-images" src="../img/abbey.png" alt="Abbey ruins">
                </div>
             </div>
          </section>
@@ -146,7 +155,7 @@
                   <p>Surrounded by the natural beauty of the Atlantic Ocean, woodland and mountains, Lissadell House and Gardens has also historic and literary associations, as it was the childhood home of Constance Markievicz, her sister Eva Gore-Booth and her brother Josslyn Gore-Booth. </p>
                </div>
                <div>
-                  <img class="places-images" src="../img/lissadell" alt="Lissadell House and Gardens">
+                  <img class="places-images" src="../img/lissadell.png" alt="Lissadell House and Gardens">
                </div>
             </div>
          </section>
@@ -160,6 +169,9 @@
                      Here, you can stroll along the beautiful white sandy beach or go into the water for a swim or surfing session.
                   </p>
                   <p>This is Ireland’s ultimate big wave destination so no matter the reason for your trip the incredible views are always guaranteed.  </p>
+               </div>
+               <div>
+                  <img class="places-images" src="../img/mullaghmore.png" alt="Mullaghmore">
                </div>
             </div>
          </section>
@@ -226,19 +238,31 @@
             <div>
                <p id="f-design">@ MRS 2021 all rights reserved</p>
             </div>
-         </div>
-      </footer>
-      <!--link from https://code.jquery.com/-->  
-      <script 
-         src="https://code.jquery.com/jquery-3.5.1.js"
-         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-         crossorigin="anonymous"></script>
-      <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-      <!--this link is required for zoom effect-->
-      <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-      <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
-      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbPbb9bzbVrjy5Wk0vbUBHsTjX52Jxr6g&callback=initMap"></script>
-      <script src="assets/js/maps.js"></script>
-      <script src="assets/js/script.js"></script>
-   </body>
+        </div>
+    </footer>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous">
+    </script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      
+    <!--<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>-->
+
+    <!--this link is required for zoom effect--
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>--
+    <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>-->
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbPbb9bzbVrjy5Wk0vbUBHsTjX52Jxr6g&callback=initMap&libraries=&v=weekly"></script>
+    <script src="assets/js/maps.js"></script>
+    <script src="assets/js/scriptmap.js"></script>
+    </body>
 </html>
