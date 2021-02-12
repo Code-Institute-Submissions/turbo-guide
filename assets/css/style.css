@@ -51,12 +51,17 @@ footer{
     position: absolute;  
 }
 
-
 h1,
 h2,
 h3,
 p{
     color:#1f3b2c;  
+}
+
+h2,
+h3,
+p{
+    margin-bottom:1em;
 }
 
 h1,
@@ -72,14 +77,12 @@ h1 {
     letter-spacing: 2px;
     margin-bottom: 0.5em;
     margin-top: 0.5em;
-    
 }
 
 h2{
     font-size: 46px;
     font-weight: 600;
     letter-spacing: 1px;
-
 }
 
 h3{  
@@ -131,10 +134,9 @@ nav ul li a{
     border-radius: 5rem;
     border-style: none;
     margin:0.25em 5px 1em 30px;
-    vertical-align: center;
+    /*vertical-align: center;*/
+    align-items: center;
 }
-
-
 
 /*-----------------------------------hero image */
 /* source: https://www.w3schools.com/howto/howto_css_hero_image.asp  */
@@ -184,10 +186,6 @@ nav ul li a{
     text-decoration: none;
     }
 
-
-
-    
-
 /*-------------------------------- the map section*/
 
 
@@ -201,7 +199,6 @@ https://developers.google.com/maps/documentation/javascript/coordinates
 #map,
 #legend{
     width: 90%;
-
 }
 
 #map{
@@ -233,6 +230,11 @@ https://developers.google.com/maps/documentation/javascript/coordinates
 
 /*-----https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ -----*/
 
+.places{
+    padding:3rem 0;
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+}
 
 .place-text { 
   /*box-sizing: border-box;*/
@@ -255,11 +257,13 @@ https://developers.google.com/maps/documentation/javascript/coordinates
     gap: 1em;
 }
 
-
+.split{
+    display:flex;
+    flex-direction: column;
+}
 
 
 /*-----------------------------contact section*/
-
 
 .email-address{
     display:inline-flex;
@@ -269,7 +273,6 @@ https://developers.google.com/maps/documentation/javascript/coordinates
 .visitor-message{
     box-sizing: content-box;
 }
-
 
 /*---------------------------------footer section*/
 a {
