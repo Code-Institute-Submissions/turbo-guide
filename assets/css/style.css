@@ -2,11 +2,12 @@
 
 /*------------------global*/
 
-*{
-    border:0;
-    margin:0;
-    padding:0;
+* {
+	border: 0;
+	margin: 0;
+	padding: 0;
 }
+
 
 /**::before,
 *::after,
@@ -14,131 +15,132 @@ html{
     box-sizing:border-box;
 }*/
 
+
 /*html {   
     /*box-sizing: border-box;
     min-height: 100%;
     position:relative;
 }*/
 
-body{
-   background-color: #f5f3f5;
-   font-family: "Open Sans", sans-serif; 
-   line-height: 1.6; 
+body {
+	background-color: #f5f3f5;
+	font-family: "Open Sans", sans-serif;
+	line-height: 1.6;
 }
 
 header,
-footer{
-    background-color: #578368;
-    display: inline-flex;
-    height: 100px;
-    width:100%; 
-    
+footer {
+	background-color: #578368;
+	display: inline-flex;
+	height: 100px;
+	width: 100%;
 }
 
-header{
-    position: sticky;      
+header {
+	position: sticky;
 }
+
 
 /*section{
     height: 100%;
 }*/
 
-footer{
-    bottom:0;
-    /*display:inline-flex;*/
-    font-weight: 400;
-    left:0;
-    position:absolute;  
+footer {
+	bottom: 0;
+	/*display:inline-flex;*/
+	font-weight: 400;
+	left: 0;
+	position: absolute;
 }
 
 h1,
 h2,
 h3,
-p{
-    color:#1f3b2c;  
+p {
+	color: #1f3b2c;
 }
 
 h2,
-h3
-{
-    margin-bottom:1em;
+h3 {
+	margin-bottom: 1em;
 }
 
 h1,
 h2,
 h3,
-h4{
-    font-family: 'Kaushan Script', cursive;
-    font-weight: 500;
+h4 {
+	font-family: 'Kaushan Script', cursive;
+	font-weight: 500;
 }
 
-h1 {  
-    font-size: 46px;
-    letter-spacing: 1px;
-    margin-bottom: 0.5em;
-    margin-top: 0.5em;
+h1 {
+	font-size: 46px;
+	letter-spacing: 1px;
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
 }
 
-h2{
-    font-size: 56px;
-    font-weight: 600;
-    letter-spacing: 2px;
+h2 {
+	font-size: 56px;
+	font-weight: 600;
+	letter-spacing: 2px;
 }
 
-h3{  
-    font-size: 24px;  
+h3 {
+	font-size: 24px;
 }
 
-h4{
-    font-size: 18px;
+h4 {
+	font-size: 18px;
 }
 
 
 /*----------------------------------------------------home section */
+
+
 /*----------------navigation bar with logo and hamburger menu*/
+
 
 /*---nav with icons source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_navbar_icon and https://stackoverflow.com/questions/17197961/positioning-of-logo-and-navbar-inside-header/17198464 and tutorial:https://www.youtube.com/watch?v=ydZc17rlR5E */
 
 nav,
-nav ul{
-    display: flex;
+nav ul {
+	display: flex;
 }
 
 nav ul li a,
-a{
-    color: black;
+a {
+	color: black;
 }
 
-nav{
-    
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1em;
+nav {
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 1em;
 }
 
-nav ul{
-    list-style: none;
-    padding: 0;  
+nav ul {
+	list-style: none;
+	padding: 0;
 }
 
-nav ul li a{
-    
-    /*color:  black;*/
-    display: inline-block;
-    font-family: 'Kaushan Script', cursive;
-    font-size: 24px;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 10px 15px; 
-     
+nav ul li a {
+	/*color:  black;*/
+	display: inline-block;
+	font-family: 'Kaushan Script', cursive;
+	font-size: 24px;
+	font-weight: 600;
+	text-decoration: none;
+	padding: 10px 15px;
 }
 
-a{
-    /*color:black;*/
-    margin:0.25em 30px 1em 5px;
-    font-size:16px;
+a {
+	/*color:black;*/
+	margin: 0.25em 30px 1em 5px;
+	font-size: 16px;
 }
+
 
 /*.page-header{
     overflow:hidden;
@@ -154,64 +156,67 @@ a{
 }*/
 
 
-
 /*----------------------------------logo image*/
 
 .logo-img {
-    border-radius: 5rem;
-    border-style: none;
-    margin:0.25em 5px 1em 30px;
-    /*vertical-align: center;*/
-    align-items: center;
+	border-radius: 5rem;
+	border-style: none;
+	margin: 0.25em 5px 1em 30px;
+	/*vertical-align: center;*/
+	align-items: center;
 }
 
+
 /*-----------------------------------hero image */
+
+
 /* source: https://www.w3schools.com/howto/howto_css_hero_image.asp  */
 
 .hero-image {
-    
-    background-image: url("../img/bridge.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-sizing: content-box;
-    display: flex;
-    height: 400px;
-    margin: 0;
-    position: relative;
-    width: 100%;
+	background-image: url("../img/bridge.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-sizing: content-box;
+	display: flex;
+	height: 400px;
+	margin: 0;
+	position: relative;
+	width: 100%;
 }
 
 .hero-text {
-    color: #f5f3f5;
-    left: 38%; 
-    text-align: center;
-    top: 70%;
-    position: relative;         
+	color: #f5f3f5;
+	left: 38%;
+	text-align: center;
+	top: 70%;
+	position: relative;
 }
+
+
 /*-------------------------"see more" button*/
 
-.home-section-button{
-    background-color:#578368;
-    border-radius: 0.75em;
-    color:#f5f3f5;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    position: relative;
-    left:5em;
-    line-height: normal;
-    text-align: center;
-    text-decoration:none;
-    top:22em;
-    width: 18em;
-    
+.home-section-button {
+	background-color: #578368;
+	border-radius: 0.75em;
+	color: #f5f3f5;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	position: relative;
+	left: 5em;
+	line-height: normal;
+	text-align: center;
+	text-decoration: none;
+	top: 22em;
+	width: 18em;
 }
 
-.home-section-button:hover{
-    background-color: #f5f3f5;
-    color:#1f3b2c;
-    text-decoration: none;
-    }
+.home-section-button:hover {
+	background-color: #f5f3f5;
+	color: #1f3b2c;
+	text-decoration: none;
+}
+
 
 /*@media (max-width:991px){
     .home-section-button,
@@ -252,6 +257,7 @@ a{
     }
 }*/
 
+
 /*-------------------------------- the map section*/
 
 
@@ -264,16 +270,17 @@ https://developers.google.com/maps/documentation/javascript/coordinates
 }*/
 
 #map,
-#legend{
-    width: 90%;
+#legend {
+	width: 90%;
 }
 
-#map{
-    width: 100%;
-    margin: auto;
-    margin-bottom: auto;
-    height: 400px;   
+#map {
+	width: 100%;
+	margin: auto;
+	margin-bottom: auto;
+	height: 400px;
 }
+
 
 /*#legend {
     background: #f5f3f5;
@@ -293,51 +300,60 @@ https://developers.google.com/maps/documentation/javascript/coordinates
 
 }*/
 
+
 /*----------------------------------------places section*/
+
 
 /*-----https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ -----*/
 
-.places{
-    padding:3rem 0;
-    margin-inline: auto;
-    width: min(90%, 70.5rem);
+.places {
+	padding: 3rem 0;
+	margin-inline: auto;
+	width: min(90%, 70.5rem);
 }
 
-.place-text { 
-  /*box-sizing: border-box;*/
-  font-weight: 400;
-  font-size:1.25em;
-  text-align: justify;
+.place-text {
+	/*box-sizing: border-box;*/
+	font-weight: 400;
+	font-size: 1.25em;
+	text-align: justify;
 }
 
-.places-images{
-    border-radius: 5em;
-    border-style: none;
-    box-sizing:border-box;
-    display:block;
-    max-width:100%;
-    margin:0.25em 5px 1em 30px;
+.places-images {
+	border-radius: 5em;
+	border-style: none;
+	box-sizing: border-box;
+	display: block;
+	max-width: 100%;
+	margin: 0.25em 5px 1em 30px;
 }
 
-.selector{
-    display: flex;
-    gap: 1em;
+.selector {
+	display: flex;
+	gap: 1em;
 }
 
-.split{
-    display:flex;
-    flex-direction: column;
+.split {
+	display: flex;
+	flex-direction: column;
 }
 
 
 /*-----------------------------contact section*/
-.msg{
-    height: max-content;
-    width: 70%;
+
+.msg {
+	height: max-content;
+	width: 70%;
 }
-.choice{
-    text-align: left;
-}
+
+.choice,
+.name {
+    font-family: 'Kaushan Script', cursive;
+	font-weight: 500;
+    }
+
+
+
 /*.email-address{
     display:inline-flex;
 }
@@ -347,42 +363,38 @@ https://developers.google.com/maps/documentation/javascript/coordinates
     box-sizing: content-box;
 }*/
 
+
 /*---------------------------------footer section*/
+
+
 /*---------------sticky footer*/
 
-body{
-    margin:0;
-    padding:0;
+body {
+	margin: 0;
+	padding: 0;
 }
 
-html{
-    position:relative;
-    min-height: 100%;
+html {
+	position: relative;
+	min-height: 100%;
 }
-footer{
-    
+
+footer {
     margin-bottom: 100px;
-    
-}
-a {
-
-    display: inline-block;
-    font-weight: 600;
-    /*height: 100px;*/
-    text-decoration: none;
+    display:inline-flex;
 }
 
 a:hover {
-    color: #f5f3f5;     
+	color: #f5f3f5;
 }
 
-.social-links{      
-    color:black;
-    padding: 20px;
-    /*margin-top:15px; */     
+.social-links {
+	color: black;
+	padding: 20px;
+	/*margin-top:15px; */
 }
 
-#footer-design{
-    padding-bottom: 0;
-    text-align: center;
+#footer-design {
+	padding-bottom: 0;
+	text-align: center;
 }
