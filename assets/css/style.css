@@ -8,17 +8,17 @@
     padding:0;
 }
 
-*::before,
+/**::before,
 *::after,
 html{
     box-sizing:border-box;
-}
+}*/
 
-html {   
-    /*box-sizing: border-box;*/
+/*html {   
+    /*box-sizing: border-box;
     min-height: 100%;
     position:relative;
-}
+}*/
 
 body{
    background-color: #f5f3f5;
@@ -48,7 +48,7 @@ footer{
     /*display:inline-flex;*/
     font-weight: 400;
     left:0;
-    position: sticky;  
+    position:absolute;  
 }
 
 h1,
@@ -59,8 +59,8 @@ p{
 }
 
 h2,
-h3,
-p{
+h3
+{
     margin-bottom:1em;
 }
 
@@ -93,6 +93,7 @@ h4{
     font-size: 18px;
 }
 
+
 /*----------------------------------------------------home section */
 /*----------------navigation bar with logo and hamburger menu*/
 
@@ -101,6 +102,11 @@ h4{
 nav,
 nav ul{
     display: flex;
+}
+
+nav ul li a,
+a{
+    color: black;
 }
 
 nav{
@@ -118,7 +124,7 @@ nav ul{
 
 nav ul li a{
     
-    color:  black;
+    /*color:  black;*/
     display: inline-block;
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
@@ -127,6 +133,27 @@ nav ul li a{
     padding: 10px 15px; 
      
 }
+
+a{
+    /*color:black;*/
+    margin:0.25em 30px 1em 5px;
+    font-size:16px;
+}
+
+/*.page-header{
+    overflow:hidden;
+    position:relative;
+}
+
+.page-header #sectionLinks{
+    display:none;
+}
+
+.page-header a.icon{
+    float:right;
+}*/
+
+
 
 /*----------------------------------logo image*/
 
@@ -186,6 +213,45 @@ nav ul li a{
     text-decoration: none;
     }
 
+/*@media (max-width:991px){
+    .home-section-button,
+    .home-section-button:hover{
+        display:none;
+    }
+
+    h1 { 
+        font-size: 30px;
+        letter-spacing: 1px;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+        text-align: left;
+
+}
+
+@media (max-width:695px){
+    .home-section-button,
+    .home-section-button:hover{
+        display:none;
+    }
+
+
+    h1 { 
+        font-size: 24px;
+        letter-spacing: 1px;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+        text-align: left;
+        }
+}
+
+@media (max-width:547px){
+    .home-section-button,
+    .home-section-button:hover,
+    h1{
+        display:none;
+    }
+}*/
+
 /*-------------------------------- the map section*/
 
 
@@ -196,6 +262,7 @@ https://developers.google.com/maps/documentation/javascript/coordinates
 /*div#map{
     min-height: 360px;
 }*/
+
 #map,
 #legend{
     width: 90%;
@@ -281,8 +348,24 @@ https://developers.google.com/maps/documentation/javascript/coordinates
 }*/
 
 /*---------------------------------footer section*/
+/*---------------sticky footer*/
+
+body{
+    margin:0;
+    padding:0;
+}
+
+html{
+    position:relative;
+    min-height: 100%;
+}
+footer{
+    
+    margin-bottom: 100px;
+    
+}
 a {
-    /*color:#e580a4;*/
+
     display: inline-block;
     font-weight: 600;
     /*height: 100px;*/
@@ -296,43 +379,10 @@ a:hover {
 .social-links{      
     color:black;
     padding: 20px;
-    /*margin-top:15px; */  
-    
+    /*margin-top:15px; */     
 }
 
-#f-design{
+#footer-design{
+    padding-bottom: 0;
     text-align: center;
 }
-
-/*.hamburger{
-    
-    background-color: transparent;
-    border:0;
-    color:#f5f3f5;
-    cursor:pointer;
-    display:none;
-    font-size: 2em;
-}
-
-.hamburger:focus{
-    outline:none;
-}
-
-@media screen and (max-width: 767px){
-    nav ul{
-        display:none;
-    }
-
-    nav ul :show{
-        display: flex;
-    }
-
-    .hamburger{
-        display: block;
-    }
-
-    .page-header{
-        width: 70%;
-    }
-}*/
-

@@ -26,12 +26,12 @@
         <!--source class and  https://getbootstrap.com/docs/4.0/components/navbar/-->
         
         <nav class="navbar navbar-expand-sm fixed-top page-header">
-            <a class="active navbar-brand" href="#home"><img class ="logo-img" src="assets/img/logo_60x60.png" height="60" title="turbo guide logo" alt="website logo with compas and name turbo guide sligo"></a>
+            <a class="active navbar-brand" href="#home"><img class ="logo-img" src="assets/img/logo_60x60.png" height="60" title="turbo guide logo" alt="website logo with compas and name Turbo Guide Sligo"></a>
             
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#sectionLinks" aria-controls="sectionLinks" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span></button>
             
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="collapse navbar-collapse" id="sectionLinks">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item mr-2 active">
                         <a class="nav-link" href="#home"><span>Home</span></a>
@@ -46,13 +46,16 @@
                     <a class="nav-link" href="#contact"><span>Contact</span></a>
                     </li>
                 </ul>
+                <a href="javascript:void(0);" class="icon nav-item" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>   
         </nav>
     </header>
       
     <!--home section-->
     <section id="home">
-        <div class=" jumbotron hero-image">
+        <div class="jumbotron hero-image">
             <h1 class= "title hero-text">Sligo - your next destination!</h1>
             <div>
                 <button class="btn">
@@ -183,6 +186,10 @@
       </section >
     </article>  
     <!--contact section-->
+    
+    <!--orginal code is available on https://getbootstrap.com/docs/4.0/components/forms/ and https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar_hor -->
+    
+    <!--contact form-->
     <section class="last-section" id="contact">
         <div class="container-fluid">
             <div class="container">
@@ -193,8 +200,7 @@
                     <p>Pleace do not hestiate to contact with us directly</p>
                </div>
             </div>
-                <!--orginal code is available on https://getbootstrap.com/docs/4.0/components/forms/-->
-                  <!--contact form-->
+               
             <div class="container text-center msg">
                 <form>
                     <div class="form-group col md-12">
@@ -212,27 +218,27 @@
                         </select>
                     </div>
                     <div class="form-group col md-12">
-                        <textarea class="form-control col md-12" rows="4" id="yourMessage" placeholder="Your message" required></textarea>
+                        <textarea class="form-control col md-12" rows="3" id="yourMessage" placeholder="Your message" required></textarea>
                     </div>
                     <div>
                         <button type="submit" class="btn home-section-button" data-toggle="modal" data-target="#messageModal">Submit</button>
                     </div>
                 </form>
             </div>
-            <div>
+            <div class="text-center place-text">
                 <h3>See recomended places.</h3>
-            </div>
                 <div class="button_cont text-center">
                     <a class="home-section-button" href="#map" rel="nofollow noopener">See our map</a>
                 </div>
-            </div>    
+            </div>
+        </div>   
     </section>
                   
                   
                         
                     
-      <footer class="bottom-container justify-content-center">
-         <div>
+    <footer class="bottom-container justify-content-center">
+        <div>
             <div class="social-links">
                <a class="icon social-links" href= "https://facebook.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-facebook"></i>
                </a>
@@ -244,11 +250,20 @@
                </a>
             </div>
             <div>
-               <p id="f-design">@ MRS 2021 all rights reserved</p>
+               <p id="footer-design">@ MRS 2021 all rights reserved</p>
             </div>
         </div>
     </footer>
-    
+    <script>
+    function myFunction() {
+        var x = document.getElementById("sectonsLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+        x.style.display = "block";
+        }
+    }
+</script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"
     integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
