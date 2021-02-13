@@ -48,7 +48,7 @@ footer{
     /*display:inline-flex;*/
     font-weight: 400;
     left:0;
-    position: absolute;  
+    position: sticky;  
 }
 
 h1,
@@ -73,16 +73,16 @@ h4{
 }
 
 h1 {  
-    font-size: 56px;
-    letter-spacing: 2px;
+    font-size: 46px;
+    letter-spacing: 1px;
     margin-bottom: 0.5em;
     margin-top: 0.5em;
 }
 
 h2{
-    font-size: 46px;
+    font-size: 56px;
     font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 h3{  
@@ -202,13 +202,13 @@ https://developers.google.com/maps/documentation/javascript/coordinates
 }
 
 #map{
-    /*width: 90%;*/
+    width: 100%;
     margin: auto;
     margin-bottom: auto;
     height: 400px;   
 }
 
-#legend {
+/*#legend {
     background: #f5f3f5;
     border: 1px solid #1f3b2c;
     font-family: "Open Sans", sans-serif;
@@ -224,7 +224,7 @@ https://developers.google.com/maps/documentation/javascript/coordinates
 #legend img {
   vertical-align: middle;
 
-}
+}*/
 
 /*----------------------------------------places section*/
 
@@ -264,15 +264,21 @@ https://developers.google.com/maps/documentation/javascript/coordinates
 
 
 /*-----------------------------contact section*/
-
-.email-address{
+.msg{
+    height: max-content;
+    width: 70%;
+}
+.choice{
+    text-align: left;
+}
+/*.email-address{
     display:inline-flex;
 }
 
 .visitor-name,
 .visitor-message{
     box-sizing: content-box;
-}
+}*/
 
 /*---------------------------------footer section*/
 a {

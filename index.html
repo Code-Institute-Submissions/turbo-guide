@@ -13,6 +13,9 @@
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="assets/css/style.css">
+      
+      <!--https://jsfiddle.net/api/post/library/pure/-->
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
       <title>Turbo Guide Sligo| Home</title>
    </head>
    
@@ -50,7 +53,7 @@
     <!--home section-->
     <section id="home">
         <div class=" jumbotron hero-image">
-            <h2 class= "title hero-text">Sligo - your next destination!</h2>
+            <h1 class= "title hero-text">Sligo - your next destination!</h1>
             <div>
                 <button class="btn">
                 <a class="home-section-button" href="#places" rel="nofollow noopener"><h4>Read more</h4></a></button>
@@ -62,7 +65,7 @@
     <section id="maps">
         <div class="container">
             <div>
-                <h1 class="text-center">Sligo map</h1>
+                <h2 class="text-center">Sligo map</h2>
             </div>
             <div id="map"></div>
         </div>
@@ -101,7 +104,7 @@
                </div>
             </div>
          </section>
-         <section class="sligo places">
+         <section class="sligo-places">
             <!--Strandhill-->
             <div class="split">
                <div>
@@ -131,7 +134,7 @@
                </div>
             </div>
          </section>
-         <section class="sligo places">
+         <section class="sligo-places">
             <div class="split">
                <!--Yeats Building-->
                <div>
@@ -179,53 +182,55 @@
          </section>
       </section >
     </article>  
-      <!--contact section-->
-      <section class="last-section" id="contact">
-         <div class="container-fluid">
+    <!--contact section-->
+    <section class="last-section" id="contact">
+        <div class="container-fluid">
             <div class="container">
-               <div class="row place-text">
-                  <h3>>Do you have any questions?</h3>
-                  <p>Pleace do not hestiate to contact with us directly</p>
+                <div class=" text-center place-text">
+                    <h3>Do you have any questions?</h3>
+                </div>
+                <div class="text-center place-text">
+                    <p>Pleace do not hestiate to contact with us directly</p>
                </div>
             </div>
-            <div class="container">
-               <div class="row">
-                  <!--orginal code is available on https://getbootstrap.com/docs/4.0/components/forms/-->
+                <!--orginal code is available on https://getbootstrap.com/docs/4.0/components/forms/-->
                   <!--contact form-->
-                  <form>
-                     <div class="form-group row">
-                        <div class="col md-12">
-                           <label for="email-address">Email address</label>
-                           <input type="email" class="form-control" id="email-address" placeholder="name@example.com">
-                        </div>
-                     </div>
-                     <div class="form-group row">
-                        <div class="col md-12">
-                           <label for="visitor-name">Name</label>
-                           <input type="name" class="form-control" id="name" placeholder="Name">
-                        </div>
-                     </div>
-                     <div class="form-group">
-                        <div class="col md-12"></div>
-                        <label for="select-trip">Select please.</label>
+            <div class="container text-center msg">
+                <form>
+                    <div class="form-group col md-12">
+                        <input type="email" class="form-control" id="email-address" placeholder="Email" required>
+                    </div>
+                    <div class="form-group col md-12">
+                        <input type="name" class="form-control" id="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group col md-12">
+                        <label class="choice" for="select-trip ">Select trip.</label>
                         <select class="form-control" id="select-trip">
-                           <option>trip for two</option>
-                           <option>family trip</option>
-                           <option>other</option>
+                            <option>trip for two</option>
+                            <option>family trip</option>
+                            <option>other</option>
                         </select>
-                     </div>
-                     <div class="form-group">
-                        <label for="visitor-message">your message</label>
-                        <textarea class="form-control" id="visitor-message" rows="3"></textarea>
-                     </div>
-                     <div>
-                        <button class="btn btn-primary email-button " type="submit">Submit form</button>
-                     </div>
-                  </form>
-               </div>
+                    </div>
+                    <div class="form-group col md-12">
+                        <textarea class="form-control col md-12" rows="4" id="yourMessage" placeholder="Your message" required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn home-section-button" data-toggle="modal" data-target="#messageModal">Submit</button>
+                    </div>
+                </form>
             </div>
-         </div>
-      </section>
+            <div>
+                <h3>See recomended places.</h3>
+            </div>
+                <div class="button_cont text-center">
+                    <a class="home-section-button" href="#map" rel="nofollow noopener">See our map</a>
+                </div>
+            </div>    
+    </section>
+                  
+                  
+                        
+                    
       <footer class="bottom-container justify-content-center">
          <div>
             <div class="social-links">

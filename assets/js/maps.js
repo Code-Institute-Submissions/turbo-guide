@@ -17,41 +17,38 @@ function initMap() {
     // array with icons   
     const markersArray = [
                 
-        {surfing: 
-            {
+            {   name:"surfing",
                 icon: "./img/surfing.png"
-            }
-            },
+            },  
 
             {
-                ruins: {
-                    icon: "./img/ruins-2.png"
-                }
+                name:"ruins",
+                icon: "./img/ruins-2.png"
+                
             },
             {
-                smallcity: {
-                    icon: "./img/smallcity.png"
-                }
+                name:"smallcity",
+                icon: "./img/smallcity.png"
             },
             {
-                museum: {
-                    icon: "./img/art-museum-2.png"
-                }
+                name:"museum",
+                icon: "./img/art-museum-2.png"
+            
             },
             {
-                palace: {
-                    icon: "./img/palace-2.png"
-                }
+                name:palace,
+                icon: "./img/palace-2.png"
+            
             },
             {
-                shore: {
-                    icon: "./img/shore.png"
-                }
+                name:"shore",
+                icon: "./img/shore.png"
+        
             },
             {
-                restaurant: {
-                    icon: "./img/restaurant.png"
-                }
+                name:"restaurant",
+                icon: "./img/restaurant.png"
+                
             }
     ];
 
@@ -91,11 +88,11 @@ const locations = [
                 lng: -8.4694,
             },
             type: "smallcity",
-            placeName: "Sligo",
-            information:
+            placeName: "Sligo"
+            
 
-        }
-    ],
+        },
+    
 
     //Sligo Abbey
     {
