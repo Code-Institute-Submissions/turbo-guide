@@ -185,4 +185,4 @@ function addMarkerInfo() {
         legend.appendChild(div);
     }
     map.controls[google.maps.ControlPosition.LEFT_TOP].push(legend);
-}
+}}

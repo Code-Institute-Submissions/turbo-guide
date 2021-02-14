@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-      <meta http-equiv="X-UA-Compatibile" content="IE=edge,chrome=1"/>
-      <!--favicons-->
-      <link rel="apple-touch-icon" sizes="160x160" href="/logo_160x160.png">
-      <link rel="icon" type="image/png" href="/logo_16x16.png">
-      <link rel="icon" type="image/png" href="/logo_32x32.png">
-      <!-- lines below are copied from Bootstrap CDN -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="assets/css/style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatibile" content="IE=edge,chrome=1"/>
+        <!--favicons-->
+        <link rel="apple-touch-icon" sizes="160x160" href="/logo_160x160.png">
+        <link rel="icon" type="image/png" href="/logo_16x16.png">
+        <link rel="icon" type="image/png" href="/logo_32x32.png">
+        <!-- lines below are copied from Bootstrap CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
       
-      <!--https://jsfiddle.net/api/post/library/pure/-->
-      <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-      <title>Turbo Guide Sligo| Home</title>
-   </head>
+        <!--https://jsfiddle.net/api/post/library/pure/-->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <title>Turbo Guide Sligo| Home</title>
+    </head>
    
-   <body>
-  
+    <body>
+    
     <header class="page-header sticky-top">
         <!--navbar-->
         <!--source class and  https://getbootstrap.com/docs/4.0/components/navbar/-->
@@ -55,26 +55,31 @@
       
     <!--home section-->
     <section id="home">
-        <div class="jumbotron hero-image">
-            <h1 class= "title hero-text">Sligo - your next destination!</h1>
-            <div>
-                <button class="btn">
-                <a class="home-section-button" href="#places" rel="nofollow noopener"><h4>Read more</h4></a></button>
+        <div class="container-turbo">
+            <div class="jumbotron hero-image">
+                <h1 class= "title hero-text">Sligo - your next destination!</h1>
             </div>
-         </div>
+            <div>
+                <button class="btn home-section-button">
+                <a href="#places" rel="nofollow noopener">Read more</a></button>
+            </div>
+        </div>    
     </section>
-   
+    
     <!--map section-->
+    
     <section id="maps">
-        <div class="container">
-            <div>
-                <h2 class="text-center">Sligo map</h2>
+        <div class="container-turbo">
+            <div class="container">
+                <div>
+                    <h2 class="text-center">Sligo map</h2>
+                </div>
+                <div id="map"></div>
             </div>
-            <div id="map"></div>
         </div>
     </section>
                  
-        <!--<div class="row mb-2">
+    <!--<div class="row mb-2">
             <div class="col">
                 <input class="form-control" id="serch" type="text" placeholder= "Enter place">
             </div>
@@ -84,142 +89,174 @@
                 <h4>Legend</h4>
             </div>-->
    
-    
     <!--places section-->
-
-      <!--beaches-->
-      <section class ="places" id="places">
-
-         <div>
-            <h2 class ="text-center">Beaches</h2>
-         </div>
-         <section class="sligo-places">
-            <!--Rosses Point-->    
-            <div class="split">
-               <div class="place-text">
-                  <h3>Rosses Point</h3>
-                  <p>This picturesque village is situated at the entrance to Sligo Harbour from Sligo Bay. </p>
-                  <p>Home to the Sligo Yacht Club, the annual West of Ireland Championship hosted by the County Sligo Golf Club and several Blue Flag strands which are safe for swimming.</p>
-                  <p>Another great event held annually is The Rosses Point Shanty Festival which happens around mid June with its profits going to the RNLI (Royal National Lifeboat Institution). With plenty of places to stay and dine, Rosses Point is bound to be a great destination for trips of any length.</p>
-               </div> 
-               <div>                          
-                  <img class="places-images" src="assets/img/Sligo.jpg" alt="Rosses Point shore">
-               </div>
-            </div>
-         </section>
-         <section class="sligo-places">
-            <!--Strandhill-->
-            <div class="split">
-               <div>
-                  <img class="places-images" src="assets/img/strandhill.jpg" alt="Standhill beach">
-               </div>
-               <div class="place-text">
-                  <h3>Strandhill</h3>
-                  <p> This coastal town in County Sligo is a great place for surfing, but unfortunately it is not safe for swimming.However, there are still plenty of things to do like taking a walk on the beach or going to one of the nearby pubs,restaurants or cafes.</p>
-                  <p>Another great way to spend time here would be to visit The Strandhill People’s Market that takes place at Hangar 1 at Sligo Airport. The Market happens every Sunday from 11am to 4pm and offers an array of local crafts, foods, textiles and live music.</p>
-               </div>
-            </div>
-         </section>
-         <!--town attractions-->      
-         <section class="sligo-places">
+    <div class="container">
+        <!--beaches-->
+        <section class ="places" id="places">
+            <div class="container">
             <div>
-               <h2 class="text-center">Town attractions</h2>
+                <h2 class ="text-center">Beaches</h2>
             </div>
-            <!--Sligo Abbey-->
-            <div class="split">
-               <div class="place-text">
-                  <h3>Sligo Abbey</h3>
-                  <p>This Dominican convent founded in 1253 was built in the Romanesque style. The beautiful extensive ruins of mainly the church and the cloister ramain for tourists to visit. </p>
-                  <p> abbey contains a well-preserved cloister, a great wealth of carvings (as well as Gothic and Renaissance tomb sculpture) and the only sculptured fifteenth-century high altar to survive in an Irish monastic church. </p>
-               </div>
-               <div>
-                  <img class="places-images" src="assets/img/abbey.png" alt="Abbey ruins">
-               </div>
+            
+            <section class="sligo-places">
+                <div class="container">
+                    <!--Rosses Point-->    
+                    <div class="split">
+                        <div class="place-text">
+                            <h3>Rosses Point</h3>
+                            <p>This picturesque village is situated at the entrance to Sligo Harbour from Sligo Bay. </p>
+                            <p>Home to the Sligo Yacht Club, the annual West of Ireland Championship hosted by the County Sligo Golf Club and several Blue Flag strands which are safe for swimming.</p>
+                            <p>Another great event held annually is The Rosses Point Shanty Festival which happens around mid June with its profits going to the RNLI (Royal National Lifeboat Institution). With plenty of places to stay and dine, Rosses Point is bound to be a great destination for trips of any length.</p>
+                        </div> 
+                    <div>                          
+                        <img class="places-images" src="assets/img/Sligo.jpg" alt="Rosses Point shore">
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <section class="sligo-places">
+                <div class="container">
+                    <!--Strandhill-->
+                    <div class="split">
+                        <div>
+                            <img class="places-images" src="assets/img/strandhill.jpg" alt="Standhill beach">
+                        </div>
+                        <div class="place-text">
+                            <h3>Strandhill</h3>
+                            <p> This coastal town in County Sligo is a great place for surfing, but unfortunately it is not safe for swimming.However, there are still plenty of things to do like taking a walk on the beach or going to one of the nearby pubs,restaurants or cafes.</p>
+                            <p>Another great way to spend time here would be to visit The Strandhill People’s Market that takes place at Hangar 1 at Sligo Airport. The Market happens every Sunday from 11am to 4pm and offers an array of local crafts, foods, textiles and live music.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
             </div>
-         </section>
-         <section class="sligo-places">
-            <div class="split">
-               <!--Yeats Building-->
-               <div>
-                  <img class="places-images" src="img/yeats.png" alt="Yeats Building Sligo Town">
-               </div>
-               <div class="place-text">
-                  <h3>Yeats Building</h3>
-                  <p>This beautiful 19th century red brick building is home of the Yeats Society Sligo.</p>
-                  <p>It is the headquarters of the Yeats International Summer Festivals and houses the Yeats Society Library, the Sligo Art Gallery, and a photographic collection of Yeats and his family. This is a great place to visit and find out more about Yeats’ life and his work.</p>
-               </div>
+        </section>
+    
+        <!--town attractions-->      
+        <section class="sligo-places">
+            <div class="container">
+            <div>
+                <h2 class="text-center">Town attractions</h2>
             </div>
-         </section>
-         <!--nearby attractions-->
-         <section class="sligo-places">
+
+            <section class="sligo-places">
+                <div class="container">
+                <!--Sligo Abbey-->
+                    <div class="split">
+                        <div class="place-text">
+                            <h3>Sligo Abbey</h3>
+                            <p>This Dominican convent founded in 1253 was built in the Romanesque style. The beautiful extensive ruins of mainly the church and the cloister ramain for tourists to visit. </p>
+                            <p> abbey contains a well-preserved cloister, a great wealth of carvings (as well as Gothic and Renaissance tomb sculpture) and the only sculptured fifteenth-century high altar to survive in an Irish monastic church. </p>
+                        </div>
+                        <div>
+                            <img class="places-images" src="assets/img/abbey.png" alt="Abbey ruins">
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="sligo-places">
+                <div class="container">
+                    <div class="split">
+                        <!--Yeats Building-->
+                        <div>
+                            <img class="places-images" src="img/yeats.png" alt="Yeats Building Sligo Town">
+                        </div>
+                            <div class="place-text">
+                                <h3>Yeats Building</h3>
+                                <p>This beautiful 19th century red brick building is home of the Yeats Society Sligo.</p>
+                                <p>It is the headquarters of the Yeats International Summer Festivals and houses the Yeats Society Library, the Sligo Art Gallery, and a photographic collection of Yeats and his family. This is a great place to visit and find out more about Yeats’ life and his work.</p>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            </div>       
+        </section>
+         
+        <!--nearby attractions-->
+        <section class="sligo-places">
+            <div class="container">
             <div class="place-text">
                <h2 class="text-center">Nearby attractions</h2>
             </div>
-            <!--Lisadell House and Gardens-->
-            <div class="split">
-               <div class="place-text">
-                  <h3>Lisadell House and Gardens</h3>
-                  <p>This majestic place is situated on the shores of Sligo Bay.</p>
-                  <p>Surrounded by the natural beauty of the Atlantic Ocean, woodland and mountains, Lissadell House and Gardens has also historic and literary associations, as it was the childhood home of Constance Markievicz, her sister Eva Gore-Booth and her brother Josslyn Gore-Booth. </p>
-               </div>
-               <div>
-                  <img class="places-images" src="assets/img/lissadell.png" alt="Lissadell House and Gardens">
-               </div>
-            </div>
-         </section>
-         <section>
-            <!--Mullaghmore-->
-            <div class="split">
-               <div class="place-text">
-                  <h3>Mullaghmore</h3>
-                  <p>This holiday destination is located one the Mullaghmore peninsula in County Sligo, Ireland. </p>
-                  <p>Its skyline is dominated by Ben Bulben mountain and the Atlantic Ocean.
-                     Here, you can stroll along the beautiful white sandy beach or go into the water for a swim or surfing session.
-                  </p>
-                  <p>This is Ireland’s ultimate big wave destination so no matter the reason for your trip the incredible views are always guaranteed.  </p>
-               </div>
-               <div>
-                  <img class="places-images" src="assets/img/mullaghmore.png" alt="Mullaghmore">
-               </div>
-            </div>
-         </section>
-      </section >
-     
-    <!--contact section-->
-    
-    <!--orginal code is available on https://getbootstrap.com/docs/4.0/components/forms/ and https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar_hor -->
-    
-    <!--contact form-->
-    <section class="last-section" id="contact">
-        <div class="container-fluid">
-            <div class="container">
-                <div class=" text-center place-text">
-                    <h3>Do you have any questions?</h3>
+            
+            <section class="sligo-places">
+                <div class="container">
+                    <!--Lisadell House and Gardens-->
+                    <div class="split">
+                        <div class="container">
+                            <div class="place-text">
+                                <h3>Lisadell House and Gardens</h3>
+                                <p>This majestic place is situated on the shores of Sligo Bay.</p>
+                                <p>Surrounded by the natural beauty of the Atlantic Ocean, woodland and mountains, Lissadell House and Gardens has also historic and literary associations, as it was the childhood home of Constance Markievicz, her sister Eva Gore-Booth and her brother Josslyn Gore-Booth. </p>
+                            </div>
+                        <div>
+                            <img class="places-images" src="assets/img/lissadell.png" alt="Lissadell House and Gardens">
+                        </div>
+                    </div>
                 </div>
-                <div class="text-center place-text">
-                    <p>Pleace do not hestiate to contact with us directly</p>
-               </div>
             </div>
+        </section>
+
+        <section class="sligo-places">
+                <div class="container">
+                <!--Mullaghmore-->
+                    <div class="split">
+                        <div class="container">
+                            <div class="place-text">
+                                <h3>Mullaghmore</h3>
+                                <p>This holiday destination is located one the Mullaghmore peninsula in County Sligo, Ireland. </p>
+                                <p>Its skyline is dominated by Ben Bulben mountain and the Atlantic Ocean.</p>
+                                <p>Here, you can stroll along the beautiful white sandy beach or go into the water for a swim or surfing session.</p>
+                                <p>This is Ireland’s ultimate big wave destination so no matter the reason for your trip the incredible views are always guaranteed.  </p>
+                            </div>
+                        <div>
+                            <img class="places-images" src="assets/img/mullaghmore.png" alt="Mullaghmore">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            </div>
+        </section>
+    </div>
+    
+<!--contact section-->
+    
+<!--orginal code is available on https://getbootstrap.com/docs/4.0/components/forms/ and https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar_hor -->
+    
+<!--contact form-->
+<section class="last-section" id="contact">
+    <div class="container-fluid">
+        <div class="container">
+            <div class=" text-center place-text">
+                <h3>Do you have any questions?</h3>
+            </div>
+            <div class="text-center place-text">
+                <p>Pleace do not hestiate to contact with us directly</p>
+            </div>
+        </div>
                
-            <div class="container text-center msg">
-                <form>
-                    <div class="form-group col md-12">
-                        <input type="email" class="form-control" id="email-address" placeholder="Email" required>
-                    </div>
-                    <div class="form-group col md-12">
-                        <label class="name">Name</label>
-                        <input type="name" class="form-control" id="name">
-                    </div>
-                    <div class="form-group col md-12">
-                        <label class="choice" for="select-trip ">Select trip.</label>
-                        <select class="form-control" id="select-trip">
-                            <option>trip for two</option>
-                            <option>family trip</option>
-                            <option>other</option>
-                        </select>
-                    </div>
-                    <div class="form-group col md-12">
-                        <textarea class="form-control col md-12" rows="3" id="yourMessage" placeholder="Your message" required></textarea>
+        <div class="container text-center msg">
+            <form>
+                <div class="form-group col md-12">
+                    <input type="email" class="form-control" id="email-address" placeholder="Email" required>
+                </div>
+                <div class="form-group col md-12">
+                    <label class="name">Name</label>
+                    <input type="name" class="form-control" id="name">
+                </div>
+                <div class="form-group col md-12">
+                    <label class="choice" for="select-trip ">Select trip.</label>
+                    <select class="form-control" id="select-trip">
+                        <option>trip for two</option>
+                        <option>family trip</option>
+                        <option>other</option>
+                    </select>
+                </div>
+                <div class="form-group col md-12">
+                    <textarea class="form-control col md-12" rows="3" id="yourMessage" placeholder="Your message" required></textarea>
                     </div>
                     <div>
                         <button type="submit" class="btn home-section-button" data-toggle="modal" data-target="#messageModal">Submit</button>
@@ -228,20 +265,18 @@
             </div>
             <div class="text-center place-text">
                 <h3>See recomended places.</h3>
-                <div class="button_cont text-center">
-                    <a class="home-section-button" href="#map" rel="nofollow noopener">See our map</a>
-                </div>
+            </div>
+            <div class="button_cont text-center home-section-button">
+                    <a href="#map" rel="nofollow noopener">See our map</a>
             </div>
         </div>   
     </section>
-                  
-                  
+                           
                         
-                    
-    <footer class="bottom-container justify-content-center">
-        <div>
-            <div class="social-links">
-               <a class="icon social-links" href= "https://facebook.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-facebook"></i>
+    <footer class="bottom-container">
+        <div >
+            <div class="social-links footer-design">
+                <a class="icon social-links" href= "https://facebook.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-facebook"></i>
                </a>
                <a class="icon social-links" href= "https://instagram.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-instagram"></i>
                </a>
@@ -255,6 +290,7 @@
             </div>
         </div>
     </footer>
+  
     <script>
     function myFunction() {
         var x = document.getElementById("sectonsLinks");
@@ -264,7 +300,7 @@
         x.style.display = "block";
         }
     }
-</script>
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"
     integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
