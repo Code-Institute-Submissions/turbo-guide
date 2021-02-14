@@ -4,56 +4,60 @@ const sligo = {
     lat: 54.2697,
     lng: -8.4694
 };
+// source: https://developers.google.com/maps/documentation/javascript/maptypes
 
 function initMap() {
 
     map = new google.maps.Map(document.getElementById("map"), {
         center: sligo,
-        zoom: 8
+        zoom: 9,
+        mapTypeId: "satellite",
+        //heading: 90,
+        //tilt: 45,
+
     });
+    //map.setTilt(45);
 
-    addMarkerInfo()
-
-    // array with icons   
-    const markersArray = [
+    const iconBase = "assets/img/";  
+   // array with icons   
+    const iconArray = [
                 
             {   name:"surfing",
-                icon: "./img/surfing.png"
+                icon: iconBase + "surfing.png"
             },  
 
             {
                 name:"ruins",
-                icon: "./img/ruins-2.png"
+                icon: iconBase +"ruins-2.png"
                 
             },
             {
                 name:"smallcity",
-                icon: "./img/smallcity.png"
+                icon: iconBase + "smallcity.png"
             },
             {
                 name:"museum",
-                icon: "./img/art-museum-2.png"
+                icon: iconBase + "art-museum-2.png"
             
             },
             {
                 name:palace,
-                icon: "./img/palace-2.png"
+                icon: iconBase + "palace-2.png"
             
             },
             {
                 name:"shore",
-                icon: "./img/shore.png"
+                icon: iconBase + "shore.png"
         
             },
             {
                 name:"restaurant",
-                icon: "./img/restaurant.png"
+                icon: iconBase + "restaurant.png"
                 
             }
     ];
 
 // create an array with places in and nearby Sligo
-
 const locations = [
 
         // Beaches
@@ -139,45 +143,20 @@ const locations = [
         placeName: "Mullaghmore",
         information: "Small fishing village with a superb, large (3km) sandy beach. Mullaghmore is also a base for licensed angling/passanger boats for charter."
     },
-]
+];
 
-var infoObj = [];
-
-
-function addMarkerInfo() {
-    for (var i = 0; i < locations.length; i++) {
-        var contentString = `<h3> ${'locations[i].placeName'}</h3>` + `<p> ${'locations[i].information'}</p>`;
-        const marker = new google.maps.Marker({
-            position: locations[i].coordinates[0],
-            icon: icons[markersArray[i].type].icon,
-            map: map,
-            animation: google.maps.Animation.DROP
-        });
-
-        const infowindow = new google.maps.InfoWindow({
-            content: contentString,
-        });
-
-        marker.addListner("click", function() {
-            closeOtherInfo();
-            infowindow.open(map.marker);
-            infoObj[0] = infowindow;
-        });
-    };
-
-    //clear out previous information   
-    function closeOtherInfo() {
-        if (infoObj.length > 0) {
-            infoObj[0].set("marker", null);
-            infoObj[0].close();
-            infoObj[0].length = 0;
-        }
-    }
+locations.forEach((location) => {
+    new google.maps.Marker({
+      position: location.coordinates,
+      icon: iconArray[location.type].icon,
+      map: map,
+    });
+  });
 
     const legend = document.getElementById("legend");
 
-    for (const key in icons) {
-        const type = icons[key];
+    for (const key in iconArray) {
+        const type = iconArray[key];
         const name = type.name;
         const icon = type.icon;
         const div = document.createElement("div");
@@ -185,4 +164,4 @@ function addMarkerInfo() {
         legend.appendChild(div);
     }
     map.controls[google.maps.ControlPosition.LEFT_TOP].push(legend);
-}}
+}

@@ -21,7 +21,7 @@
    
     <body>
     
-    <header class="page-header sticky-top">
+        <header class="page-header sticky-top">
         <!--navbar-->
         <!--source class and  https://getbootstrap.com/docs/4.0/components/navbar/-->
         
@@ -51,49 +51,36 @@
                 </a>
             </div>   
         </nav>
-    </header>
+        </header>
       
-    <!--home section-->
-    <section id="home">
+        <!--home section-->
+        <section id="home">
         <div class="container-turbo">
             <div class="jumbotron hero-image">
                 <h1 class= "title hero-text">Sligo - your next destination!</h1>
             </div>
-            <div>
-                <button class="btn home-section-button">
-                <a href="#places" rel="nofollow noopener">Read more</a></button>
-            </div>
-        </div>    
-    </section>
+                <button><a href="#places" rel="nofollow noopener">Read more</a></button>
+            </div>   
+        </section>
     
-    <!--map section-->
-    
-    <section id="maps">
-        <div class="container-turbo">
-            <div class="container">
-                <div>
-                    <h2 class="text-center">Sligo map</h2>
-                </div>
+        <!--map section-->
+        <!--source:https://developers.google.com/maps/documentation/javascript/adding-a-legend#maps_legend-javascript-->
+        
+        <section id="maps">
+            <div class="container-turbo">
+                <div><h2 class="text-center">Sligo map</h2></div>
                 <div id="map"></div>
-            </div>
-        </div>
-    </section>
+                <!--<div id="legend"><h3>Legend</h3></div>-->             
+            </div>  
+        </section>
                  
-    <!--<div class="row mb-2">
-            <div class="col">
-                <input class="form-control" id="serch" type="text" placeholder= "Enter place">
-            </div>
-            </div>
-            <div id="map">
-            <div id="legend">
-                <h4>Legend</h4>
-            </div>-->
+        
    
-    <!--places section-->
-    <div class="container">
-        <!--beaches-->
-        <section class ="places" id="places">
-            <div class="container">
+        <!--places section-->
+        <div class="container-turbo">
+            <!--beaches-->
+            <section class ="places" id="places">
+                <div class="container">
             <div>
                 <h2 class ="text-center">Beaches</h2>
             </div>
@@ -130,12 +117,12 @@
                     </div>
                 </div>
             </section>
-            </div>
-        </section>
+                </div>
+            </section>
     
-        <!--town attractions-->      
-        <section class="sligo-places">
-            <div class="container">
+            <!--town attractions-->      
+            <section class="sligo-places">
+                <div class="container">
             <div>
                 <h2 class="text-center">Town attractions</h2>
             </div>
@@ -171,17 +158,17 @@
                         </div>
                     </div>
             </section>
-            </div>       
-        </section>
+                </div>       
+            </section>
          
-        <!--nearby attractions-->
-        <section class="sligo-places">
-            <div class="container">
-            <div class="place-text">
-               <h2 class="text-center">Nearby attractions</h2>
-            </div>
-            
+            <!--nearby attractions-->
             <section class="sligo-places">
+                <div class="container">
+                    <div class="place-text">
+                        <h2 class="text-center">Nearby attractions</h2>
+                    </div>
+            
+                <section class="sligo-places">
                 <div class="container">
                     <!--Lisadell House and Gardens-->
                     <div class="split">
@@ -196,14 +183,14 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+                </div>
+                </section>
 
-        <section class="sligo-places">
-                <div class="container">
-                <!--Mullaghmore-->
-                    <div class="split">
-                        <div class="container">
+                <section class="sligo-places">
+                    <div class="container">
+                        <!--Mullaghmore-->
+                        <div class="split">
+                            <div class="container">
                             <div class="place-text">
                                 <h3>Mullaghmore</h3>
                                 <p>This holiday destination is located one the Mullaghmore peninsula in County Sligo, Ireland. </p>
@@ -216,47 +203,47 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-            </div>
-        </section>
-    </div>
-    
-<!--contact section-->
-    
-<!--orginal code is available on https://getbootstrap.com/docs/4.0/components/forms/ and https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar_hor -->
-    
-<!--contact form-->
-<section class="last-section" id="contact">
-    <div class="container-fluid">
-        <div class="container">
-            <div class=" text-center place-text">
-                <h3>Do you have any questions?</h3>
-            </div>
-            <div class="text-center place-text">
-                <p>Pleace do not hestiate to contact with us directly</p>
-            </div>
+                    </div>
+                </section>
+                </div>
+            </section>
         </div>
+    
+    <!--contact section-->
+    
+    <!--orginal code is available on https://getbootstrap.com/docs/4.0/components/forms/ and https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar_hor -->
+    
+    <!--contact form-->
+    <section class="last-section" id="contact">
+        <div class="container-fluid">
+            <div class="container">
+                <div class=" text-center place-text">
+                    <h3>Do you have any questions?</h3>
+                </div>
+                <div class="text-center place-text">
+                    <p>Pleace do not hestiate to contact with us directly</p>
+                </div>
+            </div>
                
-        <div class="container text-center msg">
-            <form>
-                <div class="form-group col md-12">
-                    <input type="email" class="form-control" id="email-address" placeholder="Email" required>
-                </div>
-                <div class="form-group col md-12">
-                    <label class="name">Name</label>
-                    <input type="name" class="form-control" id="name">
-                </div>
-                <div class="form-group col md-12">
-                    <label class="choice" for="select-trip ">Select trip.</label>
-                    <select class="form-control" id="select-trip">
-                        <option>trip for two</option>
-                        <option>family trip</option>
-                        <option>other</option>
-                    </select>
-                </div>
-                <div class="form-group col md-12">
-                    <textarea class="form-control col md-12" rows="3" id="yourMessage" placeholder="Your message" required></textarea>
+            <div class="container text-center msg">
+                <form>
+                    <div class="form-group col md-12">
+                        <input type="email" class="form-control" id="email-address" placeholder="Email" required>
+                    </div>
+                    <div class="form-group col md-12">
+                        <label class="name">Name</label>
+                        <input type="name" class="form-control" id="name">
+                    </div>
+                    <div class="form-group col md-12">
+                        <label class="choice" for="select-trip ">Select trip.</label>
+                        <select class="form-control" id="select-trip">
+                            <option>trip for two</option>
+                            <option>family trip</option>
+                            <option>other</option>
+                        </select>
+                    </div>
+                    <div class="form-group col md-12">
+                        <textarea class="form-control col md-12" rows="3" id="yourMessage" placeholder="Your message" required></textarea>
                     </div>
                     <div>
                         <button type="submit" class="btn home-section-button" data-toggle="modal" data-target="#messageModal">Submit</button>
@@ -271,23 +258,20 @@
             </div>
         </div>   
     </section>
-                           
-                        
+                                              
     <footer class="bottom-container">
-        <div >
-            <div class="social-links footer-design">
-                <a class="icon social-links" href= "https://facebook.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-facebook"></i>
-               </a>
-               <a class="icon social-links" href= "https://instagram.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-instagram"></i>
-               </a>
-               <a class="icon social-links" href= "https://youtube.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-youtube"></i>
-               </a>
-               <a class="icon social-links" href= "https://pinterest.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-pinterest"></i>
-               </a>
-            </div>
-            <div>
-               <p id="footer-design">@ MRS 2021 all rights reserved</p>
-            </div>
+        <div class="social-links footer-design">
+            <a class="icon social-links" href= "https://facebook.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-facebook"></i>
+            </a>
+            <a class="icon social-links" href= "https://instagram.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-instagram"></i>
+            </a>
+            <a class="icon social-links" href= "https://youtube.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-youtube"></i>
+            </a>
+            <a class="icon social-links" href= "https://pinterest.com/turboguide" target="blank" rel="noopener" ><i class="fa fa-pinterest"></i>
+            </a>
+        </div>
+        <div>
+            <p id="footer-design">@ MRS 2021 all rights reserved</p>
         </div>
     </footer>
   
@@ -322,7 +306,8 @@
     <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>-->
 
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbPbb9bzbVrjy5Wk0vbUBHsTjX52Jxr6g&callback=initMap&libraries=&v=weekly"></script>
-    <script src="assets/js/maps2.js"></script>
-    <script src="assets/js/scriptmap.js"></script>
+    
+    <script src="assets/js/maps.js"></script>
+    <!--<script src="assets/js/scriptmap.js"></script>-->
     </body>
 </html>

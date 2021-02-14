@@ -31,13 +31,15 @@ body {
 header,
 footer {
 	background-color: #578368;
-	display: inline-flex;
+	/*display: inline-flex;*/
 	height: 100px;
 	width: 100%;
 }
 
 header {
-	position: sticky;
+    display: inline-flex;
+    position: sticky;
+    
 }
 
 
@@ -285,7 +287,7 @@ https://developers.google.com/maps/documentation/javascript/coordinates
 }
 
 
-/*#legend {
+#legend {
     background: #f5f3f5;
     border: 1px solid #1f3b2c;
     font-family: "Open Sans", sans-serif;
@@ -301,7 +303,7 @@ https://developers.google.com/maps/documentation/javascript/coordinates
 #legend img {
   vertical-align: middle;
 
-}*/
+}
 
 
 /*----------------------------------------places section*/
@@ -369,7 +371,6 @@ https://developers.google.com/maps/documentation/javascript/coordinates
 
 /*---------------------------------footer section*/
 
-
 /*---------------sticky footer*/
 
 body {
@@ -380,12 +381,6 @@ body {
 html {
 	position: relative;
 	min-height: 100%;
-}
-
-footer {
-    position: static;
-    margin-bottom: 100px;
-    display:inline-block;
 }
 
 a:hover {
