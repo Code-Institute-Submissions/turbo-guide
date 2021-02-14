@@ -46,4 +46,3 @@ function addMarkerInfo() {
             infoObj[0].close();
             infoObj[0].length = 0;
         }
-    }

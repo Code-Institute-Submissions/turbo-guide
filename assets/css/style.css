@@ -210,9 +210,9 @@ a {
 	position: relative;
 	left: 5em;
 	line-height: normal;
-	text-align: center;
+	/*text-align: center;*/
 	text-decoration: none;
-	top: 22em;
+	/*top: 22em;*/
 	width: 18em;
 }
 

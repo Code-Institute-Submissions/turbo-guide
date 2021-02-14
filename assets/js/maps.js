@@ -153,9 +153,9 @@ locations.forEach((location) => {
     });
   });
 
-    const legend = document.getElementById("legend");
+  const legend = document.getElementById("legend");
 
-    for (const key in iconArray) {
+  for (const key in iconArray) {
         const type = iconArray[key];
         const name = type.name;
         const icon = type.icon;
@@ -165,3 +165,5 @@ locations.forEach((location) => {
     }
     map.controls[google.maps.ControlPosition.LEFT_TOP].push(legend);
 }
+
+
