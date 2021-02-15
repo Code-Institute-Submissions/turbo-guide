@@ -12,13 +12,13 @@ function initMap() {
         zoom: 8
     });
 
-
+    //display name and info about place and icon Drop to the map
     addMarkerInfo()
 
-var infoObj = [];
+    var infoObj = [];
 
 
-function addMarkerInfo() {
+    function addMarkerInfo() {
     for (var i = 0; i < locations.length; i++) {
         var contentString = `<h3> ${'locations[i].placeName'}</h3>` + `<p> ${'locations[i].information'}</p>`;
         const marker = new google.maps.Marker({
@@ -46,3 +46,4 @@ function addMarkerInfo() {
             infoObj[0].close();
             infoObj[0].length = 0;
         }
+    }

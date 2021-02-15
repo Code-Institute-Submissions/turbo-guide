@@ -12,14 +12,36 @@ function initMap() {
         center: sligo,
         zoom: 9,
         mapTypeId: "satellite",
-        //heading: 90,
-        //tilt: 45,
+        heading: 90,
+        tilt: 45,
 
     });
-    //map.setTilt(45);
+
+
+    // The marker, positioned at Sligo
+    const marker = new google.maps.Marker({
+        position: sligo,
+        map: map,
+    });
+}
+    map.setTilt(45);
+
+    // source: https://developers.google.com/maps/documentation/javascript/examples/aerial-rotation#all
+    
+    function rotate90() {
+        const heading = map.getHeading() || 0;
+        map.setHeading(heading + 90);
+        }
+    
+    function autoRotate() {
+        // Determine if we're showing aerial imagery.
+        if (map.getTilt() !== 0) {
+            window.setInterval(rotate90, 2000);
+            }
+        }
 
     const iconBase = "assets/img/";  
-   // array with icons   
+    // array with icons   
     const iconArray = [
                 
             {   name:"surfing",
@@ -164,6 +186,6 @@ locations.forEach((location) => {
         legend.appendChild(div);
     }
     map.controls[google.maps.ControlPosition.LEFT_TOP].push(legend);
-}
+
 
 
