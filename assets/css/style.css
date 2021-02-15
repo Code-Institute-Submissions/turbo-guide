@@ -316,9 +316,7 @@ https://developers.google.com/maps/documentation/javascript/coordinates
 
 #legend img {
   vertical-align: middle;
-
 }
-
 
 /*----------------------------------------places section*/
 
@@ -327,7 +325,7 @@ https://developers.google.com/maps/documentation/javascript/coordinates
 
 .places {
 	padding: 3rem 0;
-	margin-inline: auto;
+	margin:auto;
 	width: min(90%, 70.5rem);
 }
 
@@ -344,8 +342,8 @@ https://developers.google.com/maps/documentation/javascript/coordinates
 	box-sizing: border-box;
     display: block;
     max-width: 100%;
-    margin:0.5em;
-	/*margin: 0.25em 15px 1em 30px;*/
+    /*margin:0.5em;*/
+	margin: 0.25em 15px 1em 30px;
 }
 
 .selector {
@@ -357,7 +355,6 @@ https://developers.google.com/maps/documentation/javascript/coordinates
 	display: flex;
 	flex-direction: column;
 }
-
 
 /*-----------------------------contact section*/
 
@@ -371,8 +368,6 @@ https://developers.google.com/maps/documentation/javascript/coordinates
     font-family: 'Kaushan Script', cursive;
 	font-weight: 500;
     }
-
-
 
 /*.email-address{
     display:inline-flex;
@@ -404,7 +399,7 @@ a:hover {
 
 .social-links {
 	color: black;
-	padding: 20px;
+	padding: 15px;
 	/*margin-top:15px; */
 }
 
