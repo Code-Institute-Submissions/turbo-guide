@@ -5,7 +5,7 @@
 # Turbo Guide
 ## my favourite places in Ireland 
 
-[View webpage in Github Pages]()
+[View webpage in Github Pages](https://madatoo.github.io/turbo-guide/)
 
 This site is a work in progress and will be updated with new content.
 In the future, I want to connect both my projects, MS1 and MS2, into one.
@@ -140,11 +140,38 @@ I would also like to create a carousel gallery with those places. Upon clicking 
 
 # Testing
 
-In order to ensure the site works as intended, I made manual tests on phones, tablets and desktops, using Chrome, Firefox, Internet Explorer, Edge. I also ran tests using dev tools,JShint, CodeBeautify, W3V CSS and HTML validator.
+In order to ensure the site works as intended, I made manual tests on phones, tablets and desktops, using Chrome, Firefox, Internet Explorer, Edge. I also ran tests using dev tools, JShint, CodeBeautify, W3V CSS and HTML validator.
+1. Functionality
 
-    Links are working properly and open expected sections.
+    Links are working properly and open expected sections, however they should open on the top of each section (the main heading h2 not h3) so it is half-succes - for now. 
 
-    Footer icons such as Facebook, Instagram and Pinterest provide exacly to the showed places and open in new windows. 
+    Footer icons such as Facebook, Instagram and Pinterest provide exactly to the showed places and open in new windows. After my changes, which I made accidentally - the icons moved to wrong positions (should be in the middle of the footer and display the icons images).
+
+2. Browser Compatibility
+
+    The page is loading on different browsers, but now does not display a map. I see more small, but ugly mistakes, such as buttons, which appear in wrong places, just like the icons. After I  removed one line of code, all of the project started to look wrong. I am not happy, because I wanted to have a nice website, and this looks like I didn't finish it at all.
+
+3.Responsiveness
+
+    Good for me. The page is responsive, but I need to fix the hamburger menu, which is not visible on small devices and not working properly. The footer  - the same as above in (browser compatibility section).
+
+4. User Stories
+
+    As a user I am dissapointed in my map and buttons. The page does not look pretty at this stage. 
+
+    To solve all of these issues I was looking for some solutions online - on Stack Overflow, Slack and Student Support. Due to limited time for this project, I am glad that i at least made what I have now. For my circumstances, I think I've done a good job. I had to share a laptop with my daughter, who is a university student, because the motherboard in mine was broken. I have a personal laptop only since Friday afternoon. 
+    
+    I had trouble with the display map, because I restricted an API. Only when it wasn't done - the map appered on the screen. I also had trouble to see how my work looks like during the weekend (it was visible for Student Support but not on my laptop) - on both browsers (Chrome, Firefox), as I could not see anything.
+
+    I needed to replace old links from Bootstap - but even that did not solve all of my problems. 
+    
+    In the future, I want to remove all of the errors and create a much more customised map, which I saw in Google Maps documentation.
+
+
+
+
+
+
 
 # Deployment
 

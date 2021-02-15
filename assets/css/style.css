@@ -31,7 +31,6 @@ body {
 header,
 footer {
 	background-color: #578368;
-	/*display: inline-flex;*/
 	height: 100px;
 	width: 100%;
 }
@@ -42,14 +41,8 @@ header {
     
 }
 
-
-/*section{
-    height: 100%;
-}*/
-
 footer {
 	bottom: 0;
-	/*display:inline-flex;*/
 	font-weight: 400;
 	left: 0;
 	position: absolute;
@@ -131,7 +124,6 @@ nav ul {
 }
 
 nav ul li a {
-	/*color:  black;*/
 	display: inline-block;
 	font-family: 'Kaushan Script', cursive;
 	font-size: 24px;
@@ -141,25 +133,9 @@ nav ul li a {
 }
 
 a {
-	/*color:black;*/
 	margin: 0.25em 30px 1em 5px;
 	font-size: 16px;
 }
-
-
-/*.page-header{
-    overflow:hidden;
-    position:relative;
-}
-
-.page-header #sectionLinks{
-    display:none;
-}
-
-.page-header a.icon{
-    float:right;
-}*/
-
 
 /*----------------------------------logo image*/
 
@@ -212,7 +188,6 @@ a {
 	line-height: normal;
 	text-align: center;
 	text-decoration: none;
-	/*top: 22em;*/
 	width: 18em;
 }
 
@@ -262,7 +237,6 @@ a {
     }
 }
 
-
 /*-------------------------------- the map section*/
 
 
@@ -285,21 +259,6 @@ https://developers.google.com/maps/documentation/javascript/coordinates
 	margin-bottom: auto;
 	height: 400px;
 }
-
-#floating-panel {
-  position: absolute;
-  top: 10px;
-  left: 25%;
-  z-index: 5;
-  background-color:#f5f3f5;
-  padding: 5px;
-  border: 1px solid #1f3b2c;
-  text-align: center;
-  font-family: "Open Sans", sans-serif;
-  line-height: 25px;
-  padding-left: 10px;
-}
-
 
 #legend {
     background: #f5f3f5;
@@ -369,15 +328,6 @@ https://developers.google.com/maps/documentation/javascript/coordinates
 	font-weight: 500;
     }
 
-/*.email-address{
-    display:inline-flex;
-}
-
-.visitor-name,
-.visitor-message{
-    box-sizing: content-box;
-}*/
-
 
 /*---------------------------------footer section*/
 
@@ -400,7 +350,7 @@ a:hover {
 .social-links {
 	color: black;
 	padding: 15px;
-	/*margin-top:15px; */
+	
 }
 
 #footer-design {

@@ -105,6 +105,46 @@ function initMap() {
         },
     ];
 
+    const iconBase = "assets/img/";  
+    // array with icons   
+    const iconArray = [
+                
+            {   name:"surfing",
+                icon: iconBase + "surfing.png"
+            },  
+
+            {
+                name:"ruins",
+                icon: iconBase +"ruins-2.png"
+                
+            },
+            {
+                name:"smallcity",
+                icon: iconBase + "smallcity.png"
+            },
+            {
+                name:"museum",
+                icon: iconBase + "art-museum-2.png"
+            
+            },
+            {
+                name:palace,
+                icon: iconBase + "palace-2.png"
+            
+            },
+            {
+                name:"shore",
+                icon: iconBase + "shore.png"
+        
+            },
+            {
+                name:"restaurant",
+                icon: iconBase + "restaurant.png"
+                
+            }
+    ];
+
+
     function addMarkerInfo() {
     for (var i = 0; i < locations.length; i++) {
         var contentString = `<h3> ${'locations[i].placeName'}</h3>` + `<p> ${'locations[i].information'}</p>`;
@@ -121,12 +161,12 @@ function initMap() {
             maxWidth:300
         });
 
-        marker.addListner("click", function() {
+        marker.addListener("click", function() {
             closeOtherInfo();
             infowindow.open(map.marker);
             infoObj[0] = infowindow;
         });
-    }
+    }}
 
     //clear out previous information   
     function closeOtherInfo() {
@@ -136,3 +176,5 @@ function initMap() {
             infoObj[0].length = 0;
         }
     }
+}
+
