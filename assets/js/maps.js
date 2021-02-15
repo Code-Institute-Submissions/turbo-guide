@@ -24,7 +24,7 @@ function initMap() {
         map: map,
     });
 }
-    map.setTilt(45);
+    //map.setTilt(45);
 
     // source: https://developers.google.com/maps/documentation/javascript/examples/aerial-rotation#all
     

@@ -210,7 +210,7 @@ a {
 	position: relative;
 	left: 5em;
 	line-height: normal;
-	/*text-align: center;*/
+	text-align: center;
 	text-decoration: none;
 	/*top: 22em;*/
 	width: 18em;
@@ -223,7 +223,7 @@ a {
 }
 
 
-/*@media (max-width:991px){
+@media (max-width:991px){
     .home-section-button,
     .home-section-button:hover{
         display:none;
@@ -260,7 +260,7 @@ a {
     h1{
         display:none;
     }
-}*/
+}
 
 
 /*-------------------------------- the map section*/
@@ -342,9 +342,10 @@ https://developers.google.com/maps/documentation/javascript/coordinates
 	border-radius: 5em;
 	border-style: none;
 	box-sizing: border-box;
-	display: block;
-	max-width: 100%;
-	margin: 0.25em 5px 1em 30px;
+    display: block;
+    max-width: 100%;
+    margin:0.5em;
+	/*margin: 0.25em 15px 1em 30px;*/
 }
 
 .selector {
@@ -409,5 +410,5 @@ a:hover {
 
 #footer-design {
 	padding-bottom: 0;
-	text-align: center;
+    text-align: center;
 }

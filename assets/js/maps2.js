@@ -45,5 +45,4 @@ function initMap() {
             infoObj[0].set("marker", null);
             infoObj[0].close();
             infoObj[0].length = 0;
-        }
-    }
+        });

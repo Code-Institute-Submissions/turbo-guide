@@ -1,6 +1,9 @@
-const hamburger = document.getElementById("hamburger");
-const navUL = document.getElementById("item");
-
-hamburger.addEventListener("click",()=>{
-    navUL.classList.toggle("show");
-});
+ 
+    function myFunction() {
+        var x = document.getElementById("sectionsLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+        x.style.display = "block";
+        }
+    }
